@@ -1,0 +1,383 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f5f2ea;
+  --surface: #fcfbf7;
+  --ink: #171714;
+  --muted: #6d6a62;
+  --rule: #d8d3c8;
+  --red: #c9472d;
+  --red-soft: #f3ddd6;
+  --green: #1e5a46;
+  --green-soft: #dde9e1;
+  --yellow-soft: #eee4c4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, "Noto Sans SC", "Noto Sans JP", sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--red-soft);
+}
+
+.app-frame {
+  min-height: 100vh;
+}
+
+.desktop-rail {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 30;
+  display: flex;
+  width: 196px;
+  flex-direction: column;
+  border-right: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 28px 20px;
+}
+
+.brand-lockup,
+.mobile-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 6px;
+  background: var(--red);
+  color: white;
+  font-family: serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.brand-lockup strong,
+.brand-lockup small {
+  display: block;
+}
+
+.brand-lockup strong {
+  font-size: 15px;
+}
+
+.brand-lockup small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.rail-nav {
+  display: grid;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.rail-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  border-radius: 6px;
+  padding: 0 12px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rail-link:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.rail-link.active {
+  background: var(--ink);
+  color: white;
+}
+
+.rail-level {
+  margin-top: auto;
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+}
+
+.rail-level span,
+.rail-level strong {
+  display: block;
+}
+
+.rail-level span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.rail-level strong {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.mobile-header,
+.mobile-nav {
+  display: none;
+}
+
+.app-content {
+  min-height: 100vh;
+  margin-left: 196px;
+  padding: 38px clamp(28px, 5vw, 72px) 64px;
+}
+
+.page-wrap {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-title {
+  margin: 8px 0 0;
+  font-family: Georgia, "Noto Serif JP", serif;
+  font-size: clamp(34px, 4.5vw, 58px);
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.primary-button,
+.secondary-button,
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  border-radius: 6px;
+  padding: 0 18px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.primary-button {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: white;
+}
+
+.primary-button:hover {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.secondary-button {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.secondary-button:hover {
+  border-color: var(--ink);
+}
+
+.text-button {
+  min-height: auto;
+  border: 0;
+  background: transparent;
+  padding: 4px;
+  color: var(--muted);
+}
+
+.section-rule {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 32px 0;
+}
+
+.status-tag,
+.level-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  border-radius: 999px;
+  padding: 0 9px;
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.mode-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 4px;
+}
+
+.mode-tabs button {
+  min-height: 52px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.mode-tabs button.active {
+  background: var(--ink);
+  color: white;
+}
+
+.mode-tabs span,
+.mode-tabs small {
+  display: block;
+}
+
+.mode-tabs span {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mode-tabs small {
+  margin-top: 3px;
+  font-size: 10px;
+  line-height: 1.3;
+  opacity: 0.72;
+}
+
+@media (max-width: 760px) {
+  .desktop-rail {
+    display: none;
+  }
+
+  .mobile-header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 62px;
+    border-bottom: 1px solid var(--rule);
+    background: color-mix(in srgb, var(--surface) 94%, transparent);
+    padding: 0 18px;
+    backdrop-filter: blur(12px);
+  }
+
+  .mobile-brand strong {
+    font-size: 15px;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .app-content {
+    min-height: calc(100vh - 62px);
+    margin-left: 0;
+    padding: 24px 18px 96px;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 40;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    border-top: 1px solid var(--rule);
+    background: var(--surface);
+    padding: 6px 6px calc(6px + env(safe-area-inset-bottom));
+  }
+
+  .mobile-link {
+    display: flex;
+    min-width: 0;
+    min-height: 46px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .mobile-link span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-link.active {
+    color: var(--red);
+  }
+
+  .page-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 560px) {
+  .mode-tabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mode-tabs button {
+    min-height: 40px;
+    padding: 6px 4px;
+    text-align: center;
+  }
+
+  .mode-tabs small {
+    display: none;
+  }
+}

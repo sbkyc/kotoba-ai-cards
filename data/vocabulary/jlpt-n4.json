@@ -1,0 +1,8962 @@
+[
+  {
+    "id": "n4-2394370",
+    "level": "N4",
+    "word": "あ",
+    "kana": "あ",
+    "meaningZh": "Ah",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2085080",
+    "level": "N4",
+    "word": "ああ",
+    "kana": "ああ",
+    "meaningZh": "like that",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1151120",
+    "level": "N4",
+    "word": "あいさつ",
+    "kana": "あいさつ",
+    "meaningZh": "to greet",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1215230",
+    "level": "N4",
+    "word": "間",
+    "kana": "あいだ",
+    "meaningZh": "a space",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1284430",
+    "level": "N4",
+    "word": "合う",
+    "kana": "あう",
+    "meaningZh": "to match",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1383260",
+    "level": "N4",
+    "word": "あかちゃん",
+    "kana": "あかちゃん",
+    "meaningZh": "infant",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1352290",
+    "level": "N4",
+    "word": "上る",
+    "kana": "あがる",
+    "meaningZh": "to rise",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1383310",
+    "level": "N4",
+    "word": "赤ん坊",
+    "kana": "あかんぼう",
+    "meaningZh": "baby",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1586270",
+    "level": "N4",
+    "word": "空く",
+    "kana": "あく",
+    "meaningZh": "to open, to become empty",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1015220",
+    "level": "N4",
+    "word": "アクセサリー",
+    "kana": "アクセサリー",
+    "meaningZh": "accessory",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1352320",
+    "level": "N4",
+    "word": "あげる",
+    "kana": "あげる",
+    "meaningZh": "to give",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1390800",
+    "level": "N4",
+    "word": "浅い",
+    "kana": "あさい",
+    "meaningZh": "shallow,superficial",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1526960",
+    "level": "N4",
+    "word": "味",
+    "kana": "あじ",
+    "meaningZh": "flavour",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1015840",
+    "level": "N4",
+    "word": "アジア",
+    "kana": "アジア",
+    "meaningZh": "Asia",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1584660",
+    "level": "N4",
+    "word": "明日",
+    "kana": "あす",
+    "meaningZh": "tomorrow",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1542070",
+    "level": "N4",
+    "word": "遊び",
+    "kana": "あそび",
+    "meaningZh": "play",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1333550",
+    "level": "N4",
+    "word": "集る",
+    "kana": "あつまる",
+    "meaningZh": "to gather",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1333560",
+    "level": "N4",
+    "word": "集める",
+    "kana": "あつめる",
+    "meaningZh": "to collect something",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1017330",
+    "level": "N4",
+    "word": "アナウンサー",
+    "kana": "アナウンサー",
+    "meaningZh": "announcer",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1929050",
+    "level": "N4",
+    "word": "アフリカ",
+    "kana": "アフリカ",
+    "meaningZh": "Africa",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1149830",
+    "level": "N4",
+    "word": "アメリカ",
+    "kana": "アメリカ",
+    "meaningZh": "America",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1323010",
+    "level": "N4",
+    "word": "謝る",
+    "kana": "あやまる",
+    "meaningZh": "to apologize",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1019280",
+    "level": "N4",
+    "word": "アルコール",
+    "kana": "アルコール",
+    "meaningZh": "alcohol",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1019420",
+    "level": "N4",
+    "word": "アルバイト",
+    "kana": "アルバイト",
+    "meaningZh": "part-time job",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1153890",
+    "level": "N4",
+    "word": "安心",
+    "kana": "あんしん",
+    "meaningZh": "relief",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1153930",
+    "level": "N4",
+    "word": "安全",
+    "kana": "あんぜん",
+    "meaningZh": "safety",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1000590",
+    "level": "N4",
+    "word": "あんな",
+    "kana": "あんな",
+    "meaningZh": "such",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1154860",
+    "level": "N4",
+    "word": "案内",
+    "kana": "あんない",
+    "meaningZh": "to guide",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1155060",
+    "level": "N4",
+    "word": "以下",
+    "kana": "いか",
+    "meaningZh": "less than",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1155090",
+    "level": "N4",
+    "word": "以外",
+    "kana": "いがい",
+    "meaningZh": "with the exception of",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1159810",
+    "level": "N4",
+    "word": "医学",
+    "kana": "いがく",
+    "meaningZh": "medical science",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1378520",
+    "level": "N4",
+    "word": "生きる",
+    "kana": "いきる",
+    "meaningZh": "to live",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1156530",
+    "level": "N4",
+    "word": "意見",
+    "kana": "いけん",
+    "meaningZh": "opinion",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1382440",
+    "level": "N4",
+    "word": "石",
+    "kana": "いし",
+    "meaningZh": "stone",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1195140",
+    "level": "N4",
+    "word": "いじめる",
+    "kana": "いじめる",
+    "meaningZh": "to tease",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1155120",
+    "level": "N4",
+    "word": "以上",
+    "kana": "いじょう",
+    "meaningZh": "more than,this is all",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1228650",
+    "level": "N4",
+    "word": "急ぐ",
+    "kana": "いそぐ",
+    "meaningZh": "to hurry",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1421900",
+    "level": "N4",
+    "word": "致す",
+    "kana": "いたす",
+    "meaningZh": "(humble) to do",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1587290",
+    "level": "N4",
+    "word": "いただく",
+    "kana": "いただく",
+    "meaningZh": "(humble) to receive",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1576250",
+    "level": "N4",
+    "word": "一度",
+    "kana": "いちど",
+    "meaningZh": "once",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1164010",
+    "level": "N4",
+    "word": "一生懸命",
+    "kana": "いっしょうけんめい",
+    "meaningZh": "with utmost effort",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1165670",
+    "level": "N4",
+    "word": "一杯",
+    "kana": "いっぱい",
+    "meaningZh": "full",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1311450",
+    "level": "N4",
+    "word": "糸",
+    "kana": "いと",
+    "meaningZh": "thread",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1155180",
+    "level": "N4",
+    "word": "以内",
+    "kana": "いない",
+    "meaningZh": "within",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1442750",
+    "level": "N4",
+    "word": "田舎",
+    "kana": "いなか",
+    "meaningZh": "countryside",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1222770",
+    "level": "N4",
+    "word": "祈る",
+    "kana": "いのる",
+    "meaningZh": "to pray",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1000940",
+    "level": "N4",
+    "word": "いらっしゃる",
+    "kana": "いらっしゃる",
+    "meaningZh": "(respectful) to be,to come or to go",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1357250",
+    "level": "N4",
+    "word": "植える",
+    "kana": "うえる",
+    "meaningZh": "to plant,to grow",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1305700",
+    "level": "N4",
+    "word": "伺う",
+    "kana": "うかがう",
+    "meaningZh": "to visit",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1588060",
+    "level": "N4",
+    "word": "受付",
+    "kana": "うけつけ",
+    "meaningZh": "receipt",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1329590",
+    "level": "N4",
+    "word": "受ける",
+    "kana": "うける",
+    "meaningZh": "to take a lesson or test",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1451210",
+    "level": "N4",
+    "word": "動く",
+    "kana": "うごく",
+    "meaningZh": "to move",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1172400",
+    "level": "N4",
+    "word": "嘘",
+    "kana": "うそ",
+    "meaningZh": "a lie",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1457730",
+    "level": "N4",
+    "word": "内",
+    "kana": "うち",
+    "meaningZh": "within",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1408810",
+    "level": "N4",
+    "word": "打つ",
+    "kana": "うつ",
+    "meaningZh": "to hit",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1486360",
+    "level": "N4",
+    "word": "美しい",
+    "kana": "うつくしい",
+    "meaningZh": "beautiful",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1588320",
+    "level": "N4",
+    "word": "写す",
+    "kana": "うつす",
+    "meaningZh": "to copy or photograph",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1158210",
+    "level": "N4",
+    "word": "移る",
+    "kana": "うつる",
+    "meaningZh": "to move house or transfer",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1562850",
+    "level": "N4",
+    "word": "腕",
+    "kana": "うで",
+    "meaningZh": "arm",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1310460",
+    "level": "N4",
+    "word": "上手い",
+    "kana": "うまい",
+    "meaningZh": "delicious",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1550190",
+    "level": "N4",
+    "word": "裏",
+    "kana": "うら",
+    "meaningZh": "reverse side",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1588550",
+    "level": "N4",
+    "word": "売り場",
+    "kana": "うりば",
+    "meaningZh": "place where things are sold",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1219510",
+    "level": "N4",
+    "word": "うれしい",
+    "kana": "うれしい",
+    "meaningZh": "glad",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1001090",
+    "level": "N4",
+    "word": "うん",
+    "kana": "うん",
+    "meaningZh": "(informal) yes",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1172830",
+    "level": "N4",
+    "word": "運転",
+    "kana": "うんてん",
+    "meaningZh": "to drive",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1172870",
+    "level": "N4",
+    "word": "運転手",
+    "kana": "うんてんしゅ",
+    "meaningZh": "driver",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1172910",
+    "level": "N4",
+    "word": "運動",
+    "kana": "うんどう",
+    "meaningZh": "to exercise",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1028580",
+    "level": "N4",
+    "word": "エスカレーター",
+    "kana": "エスカレーター",
+    "meaningZh": "escalator",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1310530",
+    "level": "N4",
+    "word": "枝",
+    "kana": "えだ",
+    "meaningZh": "branch, twig",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1588730",
+    "level": "N4",
+    "word": "選ぶ",
+    "kana": "えらぶ",
+    "meaningZh": "to choose",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1178450",
+    "level": "N4",
+    "word": "遠慮",
+    "kana": "えんりょ",
+    "meaningZh": "to be reserved, to be restrained",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1001180",
+    "level": "N4",
+    "word": "おいでになる",
+    "kana": "おいでになる",
+    "meaningZh": "(respectful) to be",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1612770",
+    "level": "N4",
+    "word": "お祝い",
+    "kana": "おいわい",
+    "meaningZh": "congratulation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1032030",
+    "level": "N4",
+    "word": "オートバイ",
+    "kana": "オートバイ",
+    "meaningZh": "motorcycle",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1001640",
+    "level": "N4",
+    "word": "おかげ",
+    "kana": "おかげ",
+    "meaningZh": "owing to",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1190860",
+    "level": "N4",
+    "word": "おかしい",
+    "kana": "おかしい",
+    "meaningZh": "strange or funny",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1182620",
+    "level": "N4",
+    "word": "億",
+    "kana": "おく",
+    "meaningZh": "one hundred million",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1182710",
+    "level": "N4",
+    "word": "屋上",
+    "kana": "おくじょう",
+    "meaningZh": "rooftop",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1589030",
+    "level": "N4",
+    "word": "贈り物",
+    "kana": "おくりもの",
+    "meaningZh": "gift",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1402730",
+    "level": "N4",
+    "word": "送る",
+    "kana": "おくる",
+    "meaningZh": "to send",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1589040",
+    "level": "N4",
+    "word": "遅れる",
+    "kana": "おくれる",
+    "meaningZh": "to be late",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1223660",
+    "level": "N4",
+    "word": "起す",
+    "kana": "おこす",
+    "meaningZh": "to wake",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1589060",
+    "level": "N4",
+    "word": "行う",
+    "kana": "おこなう",
+    "meaningZh": "to do",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1445690",
+    "level": "N4",
+    "word": "怒る",
+    "kana": "おこる",
+    "meaningZh": "to get angry,to be angry",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1589110",
+    "level": "N4",
+    "word": "押し入れ",
+    "kana": "おしいれ",
+    "meaningZh": "closet",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1002170",
+    "level": "N4",
+    "word": "お嬢さん",
+    "kana": "おじょうさん",
+    "meaningZh": "young lady",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1002400",
+    "level": "N4",
+    "word": "お宅",
+    "kana": "おたく",
+    "meaningZh": "(polite) your house",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1548550",
+    "level": "N4",
+    "word": "落る",
+    "kana": "おちる",
+    "meaningZh": "to fall or drop",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1238840",
+    "level": "N4",
+    "word": "おっしゃる",
+    "kana": "おっしゃる",
+    "meaningZh": "(respectful) to say",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1496480",
+    "level": "N4",
+    "word": "夫",
+    "kana": "おっと",
+    "meaningZh": "husband",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1270550",
+    "level": "N4",
+    "word": "おつり",
+    "kana": "おつり",
+    "meaningZh": "change from purchase, balance",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1576900",
+    "level": "N4",
+    "word": "音",
+    "kana": "おと",
+    "meaningZh": "sound,note",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1589260",
+    "level": "N4",
+    "word": "落す",
+    "kana": "おとす",
+    "meaningZh": "to drop",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1546880",
+    "level": "N4",
+    "word": "踊り",
+    "kana": "おどり",
+    "meaningZh": "a dance",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1538440",
+    "level": "N4",
+    "word": "踊る",
+    "kana": "おどる",
+    "meaningZh": "to dance",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1238680",
+    "level": "N4",
+    "word": "驚く",
+    "kana": "おどろく",
+    "meaningZh": "to be surprised",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1604135",
+    "level": "N4",
+    "word": "お祭り",
+    "kana": "おまつり",
+    "meaningZh": "festival",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1001870",
+    "level": "N4",
+    "word": "お見舞い",
+    "kana": "おみまい",
+    "meaningZh": "calling on someone who is ill,enquiry",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1002500",
+    "level": "N4",
+    "word": "お土産",
+    "kana": "おみやげ",
+    "meaningZh": "souvenir",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1309260",
+    "level": "N4",
+    "word": "思い出す",
+    "kana": "おもいだす",
+    "meaningZh": "to remember",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1589350",
+    "level": "N4",
+    "word": "思う",
+    "kana": "おもう",
+    "meaningZh": "to think,to feel",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1217070",
+    "level": "N4",
+    "word": "おもちゃ",
+    "kana": "おもちゃ",
+    "meaningZh": "toy",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1489340",
+    "level": "N4",
+    "word": "表",
+    "kana": "おもて",
+    "meaningZh": "the front",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1365040",
+    "level": "N4",
+    "word": "親",
+    "kana": "おや",
+    "meaningZh": "parents",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1589500",
+    "level": "N4",
+    "word": "下りる",
+    "kana": "おりる",
+    "meaningZh": "to get off",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1385910",
+    "level": "N4",
+    "word": "折る",
+    "kana": "おる",
+    "meaningZh": "to break or to fold",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1270810",
+    "level": "N4",
+    "word": "お礼",
+    "kana": "おれい",
+    "meaningZh": "expression of gratitude",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1385920",
+    "level": "N4",
+    "word": "折れる",
+    "kana": "おれる",
+    "meaningZh": "to break or be folded",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1589590",
+    "level": "N4",
+    "word": "終わり",
+    "kana": "おわり",
+    "meaningZh": "the end",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1036290",
+    "level": "N4",
+    "word": "カーテン",
+    "kana": "カーテン",
+    "meaningZh": "curtain",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1201280",
+    "level": "N4",
+    "word": "海岸",
+    "kana": "かいがん",
+    "meaningZh": "coast",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1198360",
+    "level": "N4",
+    "word": "会議",
+    "kana": "かいぎ",
+    "meaningZh": "meeting",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1198380",
+    "level": "N4",
+    "word": "会議室",
+    "kana": "かいぎしつ",
+    "meaningZh": "meeting room",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1198660",
+    "level": "N4",
+    "word": "会場",
+    "kana": "かいじょう",
+    "meaningZh": "assembly hall or meeting place",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1198880",
+    "level": "N4",
+    "word": "会話",
+    "kana": "かいわ",
+    "meaningZh": "conversation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1221250",
+    "level": "N4",
+    "word": "帰り",
+    "kana": "かえり",
+    "meaningZh": "return",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1510650",
+    "level": "N4",
+    "word": "変える",
+    "kana": "かえる",
+    "meaningZh": "to change",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1192700",
+    "level": "N4",
+    "word": "科学",
+    "kana": "かがく",
+    "meaningZh": "science",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1238550",
+    "level": "N4",
+    "word": "鏡",
+    "kana": "かがみ",
+    "meaningZh": "mirror",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1357210",
+    "level": "N4",
+    "word": "飾る",
+    "kana": "かざる",
+    "meaningZh": "to decorate",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1193950",
+    "level": "N4",
+    "word": "火事",
+    "kana": "かじ",
+    "meaningZh": "fire",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1040060",
+    "level": "N4",
+    "word": "ガス",
+    "kana": "ガス",
+    "meaningZh": "petrol",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1040250",
+    "level": "N4",
+    "word": "ガソリン",
+    "kana": "ガソリン",
+    "meaningZh": "petrol",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1040260",
+    "level": "N4",
+    "word": "ガソリンスタンド",
+    "kana": "ガソリンスタンド",
+    "meaningZh": "petrol station",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1257110",
+    "level": "N4",
+    "word": "堅い",
+    "kana": "かたい",
+    "meaningZh": "hard",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1257110-126",
+    "level": "N4",
+    "word": "硬い",
+    "kana": "かたい",
+    "meaningZh": "hard",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1257110-127",
+    "level": "N4",
+    "word": "固い",
+    "kana": "かたい",
+    "meaningZh": "hard",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1250220",
+    "level": "N4",
+    "word": "形",
+    "kana": "かたち",
+    "meaningZh": "shape",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1511790",
+    "level": "N4",
+    "word": "片付ける",
+    "kana": "かたづける",
+    "meaningZh": "to tidy up",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1195840",
+    "level": "N4",
+    "word": "課長",
+    "kana": "かちょう",
+    "meaningZh": "section manager",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1346150",
+    "level": "N4",
+    "word": "勝つ",
+    "kana": "かつ",
+    "meaningZh": "to win",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1590480",
+    "level": "N4",
+    "word": "格好",
+    "kana": "かっこう",
+    "meaningZh": "appearance",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1192420",
+    "level": "N4",
+    "word": "家内",
+    "kana": "かない",
+    "meaningZh": "housewife",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1483190",
+    "level": "N4",
+    "word": "悲しい",
+    "kana": "かなしい",
+    "meaningZh": "sad",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1487400",
+    "level": "N4",
+    "word": "必ず",
+    "kana": "かならず",
+    "meaningZh": "certainly,necessarily",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2429350",
+    "level": "N4",
+    "word": "お金持ち",
+    "kana": "おかねもち",
+    "meaningZh": "rich man",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1242970",
+    "level": "N4",
+    "word": "金持ち",
+    "kana": "かねもち",
+    "meaningZh": "rich man",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1483150",
+    "level": "N4",
+    "word": "彼女",
+    "kana": "かのじょ",
+    "meaningZh": "she,girlfriend",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1509290",
+    "level": "N4",
+    "word": "壁",
+    "kana": "かべ",
+    "meaningZh": "wall",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1279680",
+    "level": "N4",
+    "word": "かまう",
+    "kana": "かまう",
+    "meaningZh": "to mind",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1477950",
+    "level": "N4",
+    "word": "髪",
+    "kana": "かみ",
+    "meaningZh": "hair",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1209240",
+    "level": "N4",
+    "word": "噛む",
+    "kana": "かむ",
+    "meaningZh": "to bite,to chew",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1432850",
+    "level": "N4",
+    "word": "通う",
+    "kana": "かよう",
+    "meaningZh": "to commute",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1040380",
+    "level": "N4",
+    "word": "ガラス",
+    "kana": "ガラス",
+    "meaningZh": "a glass pane",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1483070",
+    "level": "N4",
+    "word": "彼",
+    "kana": "かれ",
+    "meaningZh": "he,boyfriend",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1483090",
+    "level": "N4",
+    "word": "彼ら",
+    "kana": "かれら",
+    "meaningZh": "they",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1209650",
+    "level": "N4",
+    "word": "乾く",
+    "kana": "かわく",
+    "meaningZh": "to get dry",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1590770",
+    "level": "N4",
+    "word": "代わり",
+    "kana": "かわり",
+    "meaningZh": "substitute,alternate",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1510790",
+    "level": "N4",
+    "word": "変わる",
+    "kana": "かわる",
+    "meaningZh": "to change",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1281020",
+    "level": "N4",
+    "word": "考える",
+    "kana": "かんがえる",
+    "meaningZh": "to consider",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1215810",
+    "level": "N4",
+    "word": "関係",
+    "kana": "かんけい",
+    "meaningZh": "relationship",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1213870",
+    "level": "N4",
+    "word": "看護婦",
+    "kana": "かんごふ",
+    "meaningZh": "female nurse",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1214330",
+    "level": "N4",
+    "word": "簡単",
+    "kana": "かんたん",
+    "meaningZh": "simple",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1221520",
+    "level": "N4",
+    "word": "気",
+    "kana": "き",
+    "meaningZh": "spirit,mood",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1220800",
+    "level": "N4",
+    "word": "機会",
+    "kana": "きかい",
+    "meaningZh": "opportunity",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1218560",
+    "level": "N4",
+    "word": "危険",
+    "kana": "きけん",
+    "meaningZh": "danger",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1591150",
+    "level": "N4",
+    "word": "聞こえる",
+    "kana": "きこえる",
+    "meaningZh": "to be heard",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1222700",
+    "level": "N4",
+    "word": "汽車",
+    "kana": "きしゃ",
+    "meaningZh": "steam train",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1225130",
+    "level": "N4",
+    "word": "技術",
+    "kana": "ぎじゅつ",
+    "meaningZh": "art,technology,skill",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1222840",
+    "level": "N4",
+    "word": "季節",
+    "kana": "きせつ",
+    "meaningZh": "season",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1223021",
+    "level": "N4",
+    "word": "規則",
+    "kana": "きそく",
+    "meaningZh": "regulations",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1003430",
+    "level": "N4",
+    "word": "きっと",
+    "kana": "きっと",
+    "meaningZh": "surely",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1258710",
+    "level": "N4",
+    "word": "絹",
+    "kana": "きぬ",
+    "meaningZh": "silk",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1262530",
+    "level": "N4",
+    "word": "厳しい",
+    "kana": "きびしい",
+    "meaningZh": "strict",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1222590",
+    "level": "N4",
+    "word": "気分",
+    "kana": "きぶん",
+    "meaningZh": "mood",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1591420",
+    "level": "N4",
+    "word": "決る",
+    "kana": "きまる",
+    "meaningZh": "to be decided",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1247250",
+    "level": "N4",
+    "word": "君",
+    "kana": "きみ",
+    "meaningZh": "(informal) You (used by men towards women)",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1254180",
+    "level": "N4",
+    "word": "決める",
+    "kana": "きめる",
+    "meaningZh": "to decide",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1591430",
+    "level": "N4",
+    "word": "気持ち",
+    "kana": "きもち",
+    "meaningZh": "feeling,mood",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1423240",
+    "level": "N4",
+    "word": "着物",
+    "kana": "きもの",
+    "meaningZh": "kimono",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1226630",
+    "level": "N4",
+    "word": "客",
+    "kana": "きゃく",
+    "meaningZh": "guest,customer",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1228560",
+    "level": "N4",
+    "word": "急",
+    "kana": "きゅう",
+    "meaningZh": "urgent, steep",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1228690",
+    "level": "N4",
+    "word": "急行",
+    "kana": "きゅうこう",
+    "meaningZh": "speedy, express",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1236950",
+    "level": "N4",
+    "word": "教育",
+    "kana": "きょういく",
+    "meaningZh": "education",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1237030",
+    "level": "N4",
+    "word": "教会",
+    "kana": "きょうかい",
+    "meaningZh": "church",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1234140",
+    "level": "N4",
+    "word": "競争",
+    "kana": "きょうそう",
+    "meaningZh": "competition",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1238410",
+    "level": "N4",
+    "word": "興味",
+    "kana": "きょうみ",
+    "meaningZh": "an interest",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1242350",
+    "level": "N4",
+    "word": "近所",
+    "kana": "きんじょ",
+    "meaningZh": "neighbourhood",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1592500",
+    "level": "N4",
+    "word": "具合",
+    "kana": "ぐあい",
+    "meaningZh": "condition,health",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1245470",
+    "level": "N4",
+    "word": "空気",
+    "kana": "くうき",
+    "meaningZh": "air,atmosphere",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1245570",
+    "level": "N4",
+    "word": "空港",
+    "kana": "くうこう",
+    "meaningZh": "airport",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1401910",
+    "level": "N4",
+    "word": "草",
+    "kana": "くさ",
+    "meaningZh": "grass",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1184280",
+    "level": "N4",
+    "word": "くださる",
+    "kana": "くださる",
+    "meaningZh": "(respectful) to give",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1592270",
+    "level": "N4",
+    "word": "首",
+    "kana": "くび",
+    "meaningZh": "neck",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1173100",
+    "level": "N4",
+    "word": "雲",
+    "kana": "くも",
+    "meaningZh": "cloud",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1483540",
+    "level": "N4",
+    "word": "比べる",
+    "kana": "くらべる",
+    "meaningZh": "to compare",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1269130",
+    "level": "N4",
+    "word": "呉れる",
+    "kana": "くれる",
+    "meaningZh": "to give",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1514960",
+    "level": "N4",
+    "word": "暮れる",
+    "kana": "くれる",
+    "meaningZh": "to get dark,to come to an end",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1247260",
+    "level": "N4",
+    "word": "君",
+    "kana": "くん",
+    "meaningZh": "suffix for familiar young male",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1533820",
+    "level": "N4",
+    "word": "毛",
+    "kana": "け",
+    "meaningZh": "hair or fur",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1252090",
+    "level": "N4",
+    "word": "計画",
+    "kana": "けいかく",
+    "meaningZh": "to plan",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1251270",
+    "level": "N4",
+    "word": "経験",
+    "kana": "けいけん",
+    "meaningZh": "to experience",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1251320",
+    "level": "N4",
+    "word": "経済",
+    "kana": "けいざい",
+    "meaningZh": "finance,economy",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1252390",
+    "level": "N4",
+    "word": "警察",
+    "kana": "けいさつ",
+    "meaningZh": "police",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1047860",
+    "level": "N4",
+    "word": "ケーキ",
+    "kana": "ケーキ",
+    "meaningZh": "cake",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1200220",
+    "level": "N4",
+    "word": "怪我",
+    "kana": "けが",
+    "meaningZh": "to injure",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1250870",
+    "level": "N4",
+    "word": "景色",
+    "kana": "けしき",
+    "meaningZh": "scene,landscape",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1350080",
+    "level": "N4",
+    "word": "消しゴム",
+    "kana": "けしゴム",
+    "meaningZh": "eraser",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1185290",
+    "level": "N4",
+    "word": "下宿",
+    "kana": "げしゅく",
+    "meaningZh": "lodging",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1254130",
+    "level": "N4",
+    "word": "決して",
+    "kana": "けっして",
+    "meaningZh": "never",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2853889",
+    "level": "N4",
+    "word": "けれど",
+    "kana": "けれど",
+    "meaningZh": "however",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2853889-202",
+    "level": "N4",
+    "word": "けれども",
+    "kana": "けれども",
+    "meaningZh": "however",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1261190",
+    "level": "N4",
+    "word": "原因",
+    "kana": "げんいん",
+    "meaningZh": "cause,source",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1257040",
+    "level": "N4",
+    "word": "喧嘩",
+    "kana": "けんか",
+    "meaningZh": "to quarrel",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1258520",
+    "level": "N4",
+    "word": "研究",
+    "kana": "けんきゅう",
+    "meaningZh": "research",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1258570",
+    "level": "N4",
+    "word": "研究室",
+    "kana": "けんきゅうしつ",
+    "meaningZh": "study room,laboratory",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1260000",
+    "level": "N4",
+    "word": "見物",
+    "kana": "けんぶつ",
+    "meaningZh": "sightseeing",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1307770",
+    "level": "N4",
+    "word": "子",
+    "kana": "こ",
+    "meaningZh": "child",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1004310",
+    "level": "N4",
+    "word": "斯う",
+    "kana": "こう",
+    "meaningZh": "this way",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1282490",
+    "level": "N4",
+    "word": "郊外",
+    "kana": "こうがい",
+    "meaningZh": "outskirts",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1282260",
+    "level": "N4",
+    "word": "講義",
+    "kana": "こうぎ",
+    "meaningZh": "lecture",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1278040",
+    "level": "N4",
+    "word": "工業",
+    "kana": "こうぎょう",
+    "meaningZh": "the manufacturing industry",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1283500",
+    "level": "N4",
+    "word": "高校",
+    "kana": "こうこう",
+    "meaningZh": "high school",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1283510",
+    "level": "N4",
+    "word": "高校生",
+    "kana": "こうこうせい",
+    "meaningZh": "high school student",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1578700",
+    "level": "N4",
+    "word": "工場",
+    "kana": "こうじょう",
+    "meaningZh": "factory",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1279590",
+    "level": "N4",
+    "word": "校長",
+    "kana": "こうちょう",
+    "meaningZh": "headmaster",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1272280",
+    "level": "N4",
+    "word": "交通",
+    "kana": "こうつう",
+    "meaningZh": "traffic,transportation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1282340",
+    "level": "N4",
+    "word": "講堂",
+    "kana": "こうどう",
+    "meaningZh": "auditorium",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1283860",
+    "level": "N4",
+    "word": "高等学校",
+    "kana": "こうとうがっこう",
+    "meaningZh": "high school",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1274820",
+    "level": "N4",
+    "word": "公務員",
+    "kana": "こうむいん",
+    "meaningZh": "government worker",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1286400",
+    "level": "N4",
+    "word": "国際",
+    "kana": "こくさい",
+    "meaningZh": "international",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1360480",
+    "level": "N4",
+    "word": "心",
+    "kana": "こころ",
+    "meaningZh": "core,heart",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1270390",
+    "level": "N4",
+    "word": "御主人",
+    "kana": "ごしゅじん",
+    "meaningZh": "(honorable) your husband",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1267180",
+    "level": "N4",
+    "word": "故障",
+    "kana": "こしょう",
+    "meaningZh": "to break-down",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1593570",
+    "level": "N4",
+    "word": "ご存じ",
+    "kana": "ごぞんじ",
+    "meaningZh": "knowing,acquaintance",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1449530",
+    "level": "N4",
+    "word": "答",
+    "kana": "こたえ",
+    "meaningZh": "response",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1593590",
+    "level": "N4",
+    "word": "ごちそう",
+    "kana": "ごちそう",
+    "meaningZh": "a feast",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2524270",
+    "level": "N4",
+    "word": "こと",
+    "kana": "こと",
+    "meaningZh": "thing,matter",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1348530",
+    "level": "N4",
+    "word": "小鳥",
+    "kana": "ことり",
+    "meaningZh": "small bird",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1004690",
+    "level": "N4",
+    "word": "このあいだ",
+    "kana": "このあいだ",
+    "meaningZh": "the other day,recently",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1004710",
+    "level": "N4",
+    "word": "このごろ",
+    "kana": "このごろ",
+    "meaningZh": "these days,nowadays",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1295530",
+    "level": "N4",
+    "word": "細かい",
+    "kana": "こまかい",
+    "meaningZh": "small, fine",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1369900",
+    "level": "N4",
+    "word": "塵",
+    "kana": "ごみ",
+    "meaningZh": "rubbish",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1593410",
+    "level": "N4",
+    "word": "込む",
+    "kana": "こむ",
+    "meaningZh": "to be crowded",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1508750",
+    "level": "N4",
+    "word": "米",
+    "kana": "こめ",
+    "meaningZh": "uncooked rice",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2217040",
+    "level": "N4",
+    "word": "ごらんになる",
+    "kana": "ごらんになる",
+    "meaningZh": "(respectful) to see",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1004790",
+    "level": "N4",
+    "word": "これから",
+    "kana": "これから",
+    "meaningZh": "after this",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1593480",
+    "level": "N4",
+    "word": "怖い",
+    "kana": "こわい",
+    "meaningZh": "frightening",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1199890",
+    "level": "N4",
+    "word": "壊す",
+    "kana": "こわす",
+    "meaningZh": "to break",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1199900",
+    "level": "N4",
+    "word": "壊れる",
+    "kana": "こわれる",
+    "meaningZh": "to be broken",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1051970",
+    "level": "N4",
+    "word": "コンサート",
+    "kana": "コンサート",
+    "meaningZh": "concert",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1289370",
+    "level": "N4",
+    "word": "今度",
+    "kana": "こんど",
+    "meaningZh": "now,next time",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1053350",
+    "level": "N4",
+    "word": "コンピュータ",
+    "kana": "コンピュータ",
+    "meaningZh": "computer",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1053350-244",
+    "level": "N4",
+    "word": "コンピューター",
+    "kana": "コンピューター",
+    "meaningZh": "computer",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1289520",
+    "level": "N4",
+    "word": "今夜",
+    "kana": "こんや",
+    "meaningZh": "tonight",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1293780",
+    "level": "N4",
+    "word": "最近",
+    "kana": "さいきん",
+    "meaningZh": "latest,nowadays",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1293810",
+    "level": "N4",
+    "word": "最後",
+    "kana": "さいご",
+    "meaningZh": "last,end",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1293990",
+    "level": "N4",
+    "word": "最初",
+    "kana": "さいしょ",
+    "meaningZh": "beginning,first",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1297110",
+    "level": "N4",
+    "word": "坂",
+    "kana": "さか",
+    "meaningZh": "slope,hill",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1593670",
+    "level": "N4",
+    "word": "探す",
+    "kana": "さがす",
+    "meaningZh": "to look for",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1184160",
+    "level": "N4",
+    "word": "下る",
+    "kana": "さがる",
+    "meaningZh": "to get down,to descend",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1379750",
+    "level": "N4",
+    "word": "盛ん",
+    "kana": "さかん",
+    "meaningZh": "popularity,prosperous",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1184170",
+    "level": "N4",
+    "word": "下げる",
+    "kana": "さげる",
+    "meaningZh": "to hang,to lower,to move back",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1291270",
+    "level": "N4",
+    "word": "差し上げる",
+    "kana": "さしあげる",
+    "meaningZh": "(polite) to give",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1005180",
+    "level": "N4",
+    "word": "先",
+    "kana": "さっき",
+    "meaningZh": "some time ago",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1579720",
+    "level": "N4",
+    "word": "寂しい",
+    "kana": "さびしい",
+    "meaningZh": "lonely",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1293640",
+    "level": "N4",
+    "word": "さ来月",
+    "kana": "さらいげつ",
+    "meaningZh": "the month after next",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1293650",
+    "level": "N4",
+    "word": "さ来週",
+    "kana": "さらいしゅう",
+    "meaningZh": "the week after next",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1057850",
+    "level": "N4",
+    "word": "サラダ",
+    "kana": "サラダ",
+    "meaningZh": "salad",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1403040",
+    "level": "N4",
+    "word": "騒ぐ",
+    "kana": "さわぐ",
+    "meaningZh": "to make noise,to be excited",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1357980",
+    "level": "N4",
+    "word": "触る",
+    "kana": "さわる",
+    "meaningZh": "to touch",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1303770",
+    "level": "N4",
+    "word": "産業",
+    "kana": "さんぎょう",
+    "meaningZh": "industry",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1058480",
+    "level": "N4",
+    "word": "サンダル",
+    "kana": "サンダル",
+    "meaningZh": "sandal",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1058580",
+    "level": "N4",
+    "word": "サンドイッチ",
+    "kana": "サンドイッチ",
+    "meaningZh": "sandwich",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1304680",
+    "level": "N4",
+    "word": "残念",
+    "kana": "ざんねん",
+    "meaningZh": "disappointment",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1308090",
+    "level": "N4",
+    "word": "市",
+    "kana": "し",
+    "meaningZh": "city",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1315130",
+    "level": "N4",
+    "word": "字",
+    "kana": "じ",
+    "meaningZh": "character",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1312420",
+    "level": "N4",
+    "word": "試合",
+    "kana": "しあい",
+    "meaningZh": "match,game",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1594110",
+    "level": "N4",
+    "word": "仕方",
+    "kana": "しかた",
+    "meaningZh": "method",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1394730",
+    "level": "N4",
+    "word": "然る",
+    "kana": "しかる",
+    "meaningZh": "a particular",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1312350",
+    "level": "N4",
+    "word": "試験",
+    "kana": "しけん",
+    "meaningZh": "examination",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1313850",
+    "level": "N4",
+    "word": "事故",
+    "kana": "じこ",
+    "meaningZh": "accident",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1421210",
+    "level": "N4",
+    "word": "地震",
+    "kana": "じしん",
+    "meaningZh": "earthquake",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1316300",
+    "level": "N4",
+    "word": "時代",
+    "kana": "じだい",
+    "meaningZh": "era",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1185930",
+    "level": "N4",
+    "word": "下着",
+    "kana": "したぎ",
+    "meaningZh": "underwear",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1310260",
+    "level": "N4",
+    "word": "支度",
+    "kana": "したく",
+    "meaningZh": "to prepare",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1594400",
+    "level": "N4",
+    "word": "しっかり",
+    "kana": "しっかり",
+    "meaningZh": "firmly,steadily",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1320140",
+    "level": "N4",
+    "word": "失敗",
+    "kana": "しっぱい",
+    "meaningZh": "failure,mistake",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1595270",
+    "level": "N4",
+    "word": "辞典",
+    "kana": "じてん",
+    "meaningZh": "dictionary",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1490670",
+    "level": "N4",
+    "word": "品物",
+    "kana": "しなもの",
+    "meaningZh": "goods",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1304420",
+    "level": "N4",
+    "word": "しばらく",
+    "kana": "しばらく",
+    "meaningZh": "little while",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1446760",
+    "level": "N4",
+    "word": "島",
+    "kana": "しま",
+    "meaningZh": "island",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1308690",
+    "level": "N4",
+    "word": "市民",
+    "kana": "しみん",
+    "meaningZh": "citizen",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1314400",
+    "level": "N4",
+    "word": "事務所",
+    "kana": "じむしょ",
+    "meaningZh": "office",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1322700",
+    "level": "N4",
+    "word": "社会",
+    "kana": "しゃかい",
+    "meaningZh": "society,public",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1322920",
+    "level": "N4",
+    "word": "社長",
+    "kana": "しゃちょう",
+    "meaningZh": "company president",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1323500",
+    "level": "N4",
+    "word": "じゃま",
+    "kana": "じゃま",
+    "meaningZh": "hindrance,intrusion",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1065680",
+    "level": "N4",
+    "word": "ジャム",
+    "kana": "ジャム",
+    "meaningZh": "jam",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1318720",
+    "level": "N4",
+    "word": "自由",
+    "kana": "じゆう",
+    "meaningZh": "freedom",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1333090",
+    "level": "N4",
+    "word": "習慣",
+    "kana": "しゅうかん",
+    "meaningZh": "custom,manners",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1334080",
+    "level": "N4",
+    "word": "住所",
+    "kana": "じゅうしょ",
+    "meaningZh": "an address,a residence",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1335440",
+    "level": "N4",
+    "word": "柔道",
+    "kana": "じゅうどう",
+    "meaningZh": "judo",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1335080",
+    "level": "N4",
+    "word": "十分",
+    "kana": "じゅうぶん",
+    "meaningZh": "enough",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1339460",
+    "level": "N4",
+    "word": "出席",
+    "kana": "しゅっせき",
+    "meaningZh": "to attend",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1340000",
+    "level": "N4",
+    "word": "出発",
+    "kana": "しゅっぱつ",
+    "meaningZh": "to depart",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1329000",
+    "level": "N4",
+    "word": "趣味",
+    "kana": "しゅみ",
+    "meaningZh": "hobby",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1341670",
+    "level": "N4",
+    "word": "準備",
+    "kana": "じゅんび",
+    "meaningZh": "to prepare",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1351430",
+    "level": "N4",
+    "word": "紹介",
+    "kana": "しょうかい",
+    "meaningZh": "introduction",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1347870",
+    "level": "N4",
+    "word": "小学校",
+    "kana": "しょうがっこう",
+    "meaningZh": "elementary school",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1348430",
+    "level": "N4",
+    "word": "小説",
+    "kana": "しょうせつ",
+    "meaningZh": "novel",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1349610",
+    "level": "N4",
+    "word": "招待",
+    "kana": "しょうたい",
+    "meaningZh": "to invite",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1349480",
+    "level": "N4",
+    "word": "承知",
+    "kana": "しょうち",
+    "meaningZh": "to consent",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1347710",
+    "level": "N4",
+    "word": "将来",
+    "kana": "しょうらい",
+    "meaningZh": "future,prospects",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1358490",
+    "level": "N4",
+    "word": "食事",
+    "kana": "しょくじ",
+    "meaningZh": "to have a meal",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1358680",
+    "level": "N4",
+    "word": "食料品",
+    "kana": "しょくりょうひん",
+    "meaningZh": "groceries",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1345250",
+    "level": "N4",
+    "word": "女性",
+    "kana": "じょせい",
+    "meaningZh": "woman",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1420410",
+    "level": "N4",
+    "word": "知らせる",
+    "kana": "しらせる",
+    "meaningZh": "to notify",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1429060",
+    "level": "N4",
+    "word": "調べる",
+    "kana": "しらべる",
+    "meaningZh": "to investigate",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1367300",
+    "level": "N4",
+    "word": "人口",
+    "kana": "じんこう",
+    "meaningZh": "population",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1364670",
+    "level": "N4",
+    "word": "神社",
+    "kana": "じんじゃ",
+    "meaningZh": "Shinto shrine",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1365250",
+    "level": "N4",
+    "word": "親切",
+    "kana": "しんせつ",
+    "meaningZh": "kindness",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1360930",
+    "level": "N4",
+    "word": "心配",
+    "kana": "しんぱい",
+    "meaningZh": "to worry",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1362400",
+    "level": "N4",
+    "word": "新聞社",
+    "kana": "しんぶんしゃ",
+    "meaningZh": "newspaper company",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1371320",
+    "level": "N4",
+    "word": "水泳",
+    "kana": "すいえい",
+    "meaningZh": "swimming",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1371920",
+    "level": "N4",
+    "word": "水道",
+    "kana": "すいどう",
+    "meaningZh": "water supply",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1372800",
+    "level": "N4",
+    "word": "ずいぶん",
+    "kana": "ずいぶん",
+    "meaningZh": "extremely",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1372980",
+    "level": "N4",
+    "word": "数学",
+    "kana": "すうがく",
+    "meaningZh": "mathematics,arithmetic",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1066680",
+    "level": "N4",
+    "word": "スーツ",
+    "kana": "スーツ",
+    "meaningZh": "suit",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1066690",
+    "level": "N4",
+    "word": "スーツケース",
+    "kana": "スーツケース",
+    "meaningZh": "suitcase",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1195970",
+    "level": "N4",
+    "word": "過ぎる",
+    "kana": "すぎる",
+    "meaningZh": "to exceed",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1586265",
+    "level": "N4",
+    "word": "空く",
+    "kana": "すく",
+    "meaningZh": "to become empty",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1068550",
+    "level": "N4",
+    "word": "スクリーン",
+    "kana": "スクリーン",
+    "meaningZh": "screen",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1374550",
+    "level": "N4",
+    "word": "凄い",
+    "kana": "すごい",
+    "meaningZh": "terrific",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1365980",
+    "level": "N4",
+    "word": "進む",
+    "kana": "すすむ",
+    "meaningZh": "to make progress",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1006110",
+    "level": "N4",
+    "word": "すっかり",
+    "kana": "すっかり",
+    "meaningZh": "completely",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1006140",
+    "level": "N4",
+    "word": "すっと",
+    "kana": "すっと",
+    "meaningZh": "straight,all of a sudden",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1070280",
+    "level": "N4",
+    "word": "ステーキ",
+    "kana": "ステーキ",
+    "meaningZh": "steak",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1322320",
+    "level": "N4",
+    "word": "捨てる",
+    "kana": "すてる",
+    "meaningZh": "to throw away",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1070650",
+    "level": "N4",
+    "word": "ステレオ",
+    "kana": "ステレオ",
+    "meaningZh": "stereo",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1291500",
+    "level": "N4",
+    "word": "砂",
+    "kana": "すな",
+    "meaningZh": "sand",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1397300",
+    "level": "N4",
+    "word": "すばらしい",
+    "kana": "すばらしい",
+    "meaningZh": "wonderful",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1208640",
+    "level": "N4",
+    "word": "滑る",
+    "kana": "すべる",
+    "meaningZh": "to slide,to slip",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1246440",
+    "level": "N4",
+    "word": "隅",
+    "kana": "すみ",
+    "meaningZh": "corner,nook",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1295070",
+    "level": "N4",
+    "word": "済む",
+    "kana": "すむ",
+    "meaningZh": "to finish",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1567450",
+    "level": "N4",
+    "word": "掏摸",
+    "kana": "すり",
+    "meaningZh": "pickpocket",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1006280",
+    "level": "N4",
+    "word": "すると",
+    "kana": "すると",
+    "meaningZh": "then",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1378860",
+    "level": "N4",
+    "word": "生活",
+    "kana": "せいかつ",
+    "meaningZh": "to live",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1378990",
+    "level": "N4",
+    "word": "生産",
+    "kana": "せいさん",
+    "meaningZh": "to produce",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1375970",
+    "level": "N4",
+    "word": "政治",
+    "kana": "せいじ",
+    "meaningZh": "politics,government",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1381100",
+    "level": "N4",
+    "word": "西洋",
+    "kana": "せいよう",
+    "meaningZh": "western countries",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1373860",
+    "level": "N4",
+    "word": "世界",
+    "kana": "せかい",
+    "meaningZh": "the world",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1382250",
+    "level": "N4",
+    "word": "席",
+    "kana": "せき",
+    "meaningZh": "seat",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1386460",
+    "level": "N4",
+    "word": "説明",
+    "kana": "せつめい",
+    "meaningZh": "explanation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1472800",
+    "level": "N4",
+    "word": "背中",
+    "kana": "せなか",
+    "meaningZh": "back of the body",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1374530",
+    "level": "N4",
+    "word": "ぜひ",
+    "kana": "ぜひ",
+    "meaningZh": "without fail",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1374300",
+    "level": "N4",
+    "word": "世話",
+    "kana": "せわ",
+    "meaningZh": "to look after",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1391780",
+    "level": "N4",
+    "word": "線",
+    "kana": "せん",
+    "meaningZh": "line",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1395620",
+    "level": "N4",
+    "word": "全然",
+    "kana": "ぜんぜん",
+    "meaningZh": "not entirely (used in a negative sentence)",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1390360",
+    "level": "N4",
+    "word": "戦争",
+    "kana": "せんそう",
+    "meaningZh": "war",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1388410",
+    "level": "N4",
+    "word": "先輩",
+    "kana": "せんぱい",
+    "meaningZh": "senior",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1006610",
+    "level": "N4",
+    "word": "そう",
+    "kana": "そう",
+    "meaningZh": "really",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1401210",
+    "level": "N4",
+    "word": "相談",
+    "kana": "そうだん",
+    "meaningZh": "to discuss",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1160570",
+    "level": "N4",
+    "word": "育てる",
+    "kana": "そだてる",
+    "meaningZh": "to rear,to bring up",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1405890",
+    "level": "N4",
+    "word": "卒業",
+    "kana": "そつぎょう",
+    "meaningZh": "graduation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1396840",
+    "level": "N4",
+    "word": "祖父",
+    "kana": "そふ",
+    "meaningZh": "grandfather",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1075500",
+    "level": "N4",
+    "word": "ソフト",
+    "kana": "ソフト",
+    "meaningZh": "soft",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1396860",
+    "level": "N4",
+    "word": "祖母",
+    "kana": "そぼ",
+    "meaningZh": "grandmother",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1007000",
+    "level": "N4",
+    "word": "それで",
+    "kana": "それで",
+    "meaningZh": "because of that",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1007040",
+    "level": "N4",
+    "word": "それに",
+    "kana": "それに",
+    "meaningZh": "moreover",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1007060",
+    "level": "N4",
+    "word": "それほど",
+    "kana": "それほど",
+    "meaningZh": "to that extent",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1345605",
+    "level": "N4",
+    "word": "そろそろ",
+    "kana": "そろそろ",
+    "meaningZh": "gradually,soon",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1007130",
+    "level": "N4",
+    "word": "そんな",
+    "kana": "そんな",
+    "meaningZh": "that sort of",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2008740",
+    "level": "N4",
+    "word": "そんなに",
+    "kana": "そんなに",
+    "meaningZh": "so much,like that",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1411300",
+    "level": "N4",
+    "word": "退院",
+    "kana": "たいいん",
+    "meaningZh": "to leave hospital",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1413260",
+    "level": "N4",
+    "word": "大学生",
+    "kana": "だいがくせい",
+    "meaningZh": "university student",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1413940",
+    "level": "N4",
+    "word": "大事",
+    "kana": "だいじ",
+    "meaningZh": "important,valuable,serious matter",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1414470",
+    "level": "N4",
+    "word": "大体",
+    "kana": "だいたい",
+    "meaningZh": "generally",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1414580",
+    "level": "N4",
+    "word": "大抵",
+    "kana": "たいてい",
+    "meaningZh": "usually",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1075940",
+    "level": "N4",
+    "word": "タイプ",
+    "kana": "タイプ",
+    "meaningZh": "type,style",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1414920",
+    "level": "N4",
+    "word": "大分",
+    "kana": "だいぶ",
+    "meaningZh": "greatly",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1596780",
+    "level": "N4",
+    "word": "台風",
+    "kana": "たいふう",
+    "meaningZh": "typhoon",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1445790",
+    "level": "N4",
+    "word": "倒れる",
+    "kana": "たおれる",
+    "meaningZh": "to break down",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1007310",
+    "level": "N4",
+    "word": "だから",
+    "kana": "だから",
+    "meaningZh": "so,therefore",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1596930",
+    "level": "N4",
+    "word": "確か",
+    "kana": "たしか",
+    "meaningZh": "definite",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1404700",
+    "level": "N4",
+    "word": "足す",
+    "kana": "たす",
+    "meaningZh": "to add a number",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1518070",
+    "level": "N4",
+    "word": "訪ねる",
+    "kana": "たずねる",
+    "meaningZh": "to visit",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1369940",
+    "level": "N4",
+    "word": "尋ねる",
+    "kana": "たずねる",
+    "meaningZh": "to ask",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1376600",
+    "level": "N4",
+    "word": "正しい",
+    "kana": "ただしい",
+    "meaningZh": "correct",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1356750",
+    "level": "N4",
+    "word": "畳",
+    "kana": "たたみ",
+    "meaningZh": "Japanese straw mat",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1551530",
+    "level": "N4",
+    "word": "立てる",
+    "kana": "たてる",
+    "meaningZh": "to stand something up",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1257330",
+    "level": "N4",
+    "word": "建てる",
+    "kana": "たてる",
+    "meaningZh": "to build",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1556370",
+    "level": "N4",
+    "word": "例えば",
+    "kana": "たとえば",
+    "meaningZh": "for example",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1416700",
+    "level": "N4",
+    "word": "棚",
+    "kana": "たな",
+    "meaningZh": "shelves",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1207250",
+    "level": "N4",
+    "word": "楽しみ",
+    "kana": "たのしみ",
+    "meaningZh": "joy",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1207270",
+    "level": "N4",
+    "word": "楽む",
+    "kana": "たのしむ",
+    "meaningZh": "to enjoy oneself",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1634500",
+    "level": "N4",
+    "word": "たまに",
+    "kana": "たまに",
+    "meaningZh": "occasionally",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1157080",
+    "level": "N4",
+    "word": "為",
+    "kana": "ため",
+    "meaningZh": "in order to",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1409110",
+    "level": "N4",
+    "word": "だめ",
+    "kana": "だめ",
+    "meaningZh": "no good",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1404740",
+    "level": "N4",
+    "word": "足りる",
+    "kana": "たりる",
+    "meaningZh": "to be enough",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1420160",
+    "level": "N4",
+    "word": "男性",
+    "kana": "だんせい",
+    "meaningZh": "male",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1419860",
+    "level": "N4",
+    "word": "暖房",
+    "kana": "だんぼう",
+    "meaningZh": "heating",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1255060",
+    "level": "N4",
+    "word": "血",
+    "kana": "ち",
+    "meaningZh": "blood",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1077550",
+    "level": "N4",
+    "word": "チェック",
+    "kana": "チェック",
+    "meaningZh": "to check",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1554820",
+    "level": "N4",
+    "word": "力",
+    "kana": "ちから",
+    "meaningZh": "strength,power",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1007560",
+    "level": "N4",
+    "word": "ちっとも",
+    "kana": "ちっとも",
+    "meaningZh": "not at all (used with a negative verb)",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1007660",
+    "level": "N4",
+    "word": "ちゃん",
+    "kana": "ちゃん",
+    "meaningZh": "suffix for familiar female person",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1426530",
+    "level": "N4",
+    "word": "注意",
+    "kana": "ちゅうい",
+    "meaningZh": "caution",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1423650",
+    "level": "N4",
+    "word": "中学校",
+    "kana": "ちゅうがっこう",
+    "meaningZh": "junior high school,middle school",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1426590",
+    "level": "N4",
+    "word": "注射",
+    "kana": "ちゅうしゃ",
+    "meaningZh": "injection",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1426920",
+    "level": "N4",
+    "word": "駐車場",
+    "kana": "ちゅうしゃじょう",
+    "meaningZh": "parking lot",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1421540",
+    "level": "N4",
+    "word": "地理",
+    "kana": "ちり",
+    "meaningZh": "geography",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1597780",
+    "level": "N4",
+    "word": "捕まえる",
+    "kana": "つかまえる",
+    "meaningZh": "to seize",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1255430",
+    "level": "N4",
+    "word": "月",
+    "kana": "つき",
+    "meaningZh": "moon",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1495740",
+    "level": "N4",
+    "word": "付く",
+    "kana": "つく",
+    "meaningZh": "to be attached",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1433680",
+    "level": "N4",
+    "word": "漬ける",
+    "kana": "つける",
+    "meaningZh": "to soak,to pickle",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1444980",
+    "level": "N4",
+    "word": "都合",
+    "kana": "つごう",
+    "meaningZh": "circumstances,convenience",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1441870",
+    "level": "N4",
+    "word": "伝える",
+    "kana": "つたえる",
+    "meaningZh": "to report",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1405790",
+    "level": "N4",
+    "word": "続く",
+    "kana": "つづく",
+    "meaningZh": "to be continued",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1405800",
+    "level": "N4",
+    "word": "続ける",
+    "kana": "つづける",
+    "meaningZh": "to continue",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1584060",
+    "level": "N4",
+    "word": "包む",
+    "kana": "つつむ",
+    "meaningZh": "to wrap",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1294330",
+    "level": "N4",
+    "word": "妻",
+    "kana": "つま",
+    "meaningZh": "(humble) wife",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1382980",
+    "level": "N4",
+    "word": "積もり",
+    "kana": "つもり",
+    "meaningZh": "intention",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1434120",
+    "level": "N4",
+    "word": "釣る",
+    "kana": "つる",
+    "meaningZh": "to fish",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1559290",
+    "level": "N4",
+    "word": "連れる",
+    "kana": "つれる",
+    "meaningZh": "to lead",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1427360",
+    "level": "N4",
+    "word": "丁寧",
+    "kana": "ていねい",
+    "meaningZh": "polite",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1079290",
+    "level": "N4",
+    "word": "テキスト",
+    "kana": "テキスト",
+    "meaningZh": "text,text book",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1437450",
+    "level": "N4",
+    "word": "適当",
+    "kana": "てきとう",
+    "meaningZh": "suitability",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1340460",
+    "level": "N4",
+    "word": "できるだけ",
+    "kana": "できるだけ",
+    "meaningZh": "as much as possible",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1328190",
+    "level": "N4",
+    "word": "手伝う",
+    "kana": "てつだう",
+    "meaningZh": "to assist",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1080000",
+    "level": "N4",
+    "word": "テニス",
+    "kana": "テニス",
+    "meaningZh": "tennis",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1328090",
+    "level": "N4",
+    "word": "手袋",
+    "kana": "てぶくろ",
+    "meaningZh": "glove",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1315240",
+    "level": "N4",
+    "word": "寺",
+    "kana": "てら",
+    "meaningZh": "temple",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1441390",
+    "level": "N4",
+    "word": "点",
+    "kana": "てん",
+    "meaningZh": "point,dot",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1440670",
+    "level": "N4",
+    "word": "店員",
+    "kana": "てんいん",
+    "meaningZh": "shop assistant",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1438770",
+    "level": "N4",
+    "word": "天気予報",
+    "kana": "てんきよほう",
+    "meaningZh": "weather forecast",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1443660",
+    "level": "N4",
+    "word": "電灯",
+    "kana": "でんとう",
+    "meaningZh": "electric light",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1443760",
+    "level": "N4",
+    "word": "電報",
+    "kana": "でんぽう",
+    "meaningZh": "telegram",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1440660",
+    "level": "N4",
+    "word": "展覧会",
+    "kana": "てんらんかい",
+    "meaningZh": "exhibition",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1621470",
+    "level": "N4",
+    "word": "都",
+    "kana": "と",
+    "meaningZh": "metropolitan",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1454180",
+    "level": "N4",
+    "word": "道具",
+    "kana": "どうぐ",
+    "meaningZh": "tool,means",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1449890",
+    "level": "N4",
+    "word": "到頭",
+    "kana": "とうとう",
+    "meaningZh": "finally, after all",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1451490",
+    "level": "N4",
+    "word": "動物園",
+    "kana": "どうぶつえん",
+    "meaningZh": "zoo",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1177820",
+    "level": "N4",
+    "word": "遠く",
+    "kana": "とおく",
+    "meaningZh": "distant",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1433030",
+    "level": "N4",
+    "word": "通る",
+    "kana": "とおる",
+    "meaningZh": "to go through",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1454670",
+    "level": "N4",
+    "word": "特に",
+    "kana": "とくに",
+    "meaningZh": "particularly,especially",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1455280",
+    "level": "N4",
+    "word": "特別",
+    "kana": "とくべつ",
+    "meaningZh": "special",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1349410",
+    "level": "N4",
+    "word": "とこや",
+    "kana": "とこや",
+    "meaningZh": "barber",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1582200",
+    "level": "N4",
+    "word": "途中",
+    "kana": "とちゅう",
+    "meaningZh": "on the way",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1454750",
+    "level": "N4",
+    "word": "特急",
+    "kana": "とっきゅう",
+    "meaningZh": "limited express train (faster than an express train)",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1457210",
+    "level": "N4",
+    "word": "届ける",
+    "kana": "とどける",
+    "meaningZh": "to reach",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1474850",
+    "level": "N4",
+    "word": "泊まる",
+    "kana": "とまる",
+    "meaningZh": "to lodge at",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1310670",
+    "level": "N4",
+    "word": "止める",
+    "kana": "とめる",
+    "meaningZh": "to stop something",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1326830",
+    "level": "N4",
+    "word": "取り替える",
+    "kana": "とりかえる",
+    "meaningZh": "to exchange",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1599340",
+    "level": "N4",
+    "word": "泥棒",
+    "kana": "どろぼう",
+    "meaningZh": "thief",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1009320",
+    "level": "N4",
+    "word": "どんどん",
+    "kana": "どんどん",
+    "meaningZh": "more and more",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1599390",
+    "level": "N4",
+    "word": "直す",
+    "kana": "なおす",
+    "meaningZh": "to fix,to repair",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2846390",
+    "level": "N4",
+    "word": "直る",
+    "kana": "なおる",
+    "meaningZh": "to be fixed,to be repaired",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1599400",
+    "level": "N4",
+    "word": "治る",
+    "kana": "なおる",
+    "meaningZh": "to be cured,to heal",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1599420",
+    "level": "N4",
+    "word": "中々",
+    "kana": "なかなか",
+    "meaningZh": "considerably",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1229840",
+    "level": "N4",
+    "word": "泣く",
+    "kana": "なく",
+    "meaningZh": "to weep",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1529550",
+    "level": "N4",
+    "word": "無くなる",
+    "kana": "なくなる",
+    "meaningZh": "to disappear,to get lost",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1518540",
+    "level": "N4",
+    "word": "亡くなる",
+    "kana": "なくなる",
+    "meaningZh": "to die",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1447000",
+    "level": "N4",
+    "word": "投げる",
+    "kana": "なげる",
+    "meaningZh": "to throw or cast away",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1157090",
+    "level": "N4",
+    "word": "なさる",
+    "kana": "なさる",
+    "meaningZh": "(respectful) to do",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1532910",
+    "level": "N4",
+    "word": "鳴る",
+    "kana": "なる",
+    "meaningZh": "to sound",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1375620",
+    "level": "N4",
+    "word": "なるべく",
+    "kana": "なるべく",
+    "meaningZh": "as much as possible",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1375820",
+    "level": "N4",
+    "word": "なるほど",
+    "kana": "なるほど",
+    "meaningZh": "now I understand",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1212670",
+    "level": "N4",
+    "word": "慣れる",
+    "kana": "なれる",
+    "meaningZh": "to grow accustomed to",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1599760",
+    "level": "N4",
+    "word": "におい",
+    "kana": "におい",
+    "meaningZh": "a smell",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1244310",
+    "level": "N4",
+    "word": "苦い",
+    "kana": "にがい",
+    "meaningZh": "bitter",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1599800",
+    "level": "N4",
+    "word": "二階建て",
+    "kana": "にかいだて",
+    "meaningZh": "two storied",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1450330",
+    "level": "N4",
+    "word": "逃げる",
+    "kana": "にげる",
+    "meaningZh": "to escape",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1463930",
+    "level": "N4",
+    "word": "日記",
+    "kana": "にっき",
+    "meaningZh": "journal",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1465720",
+    "level": "N4",
+    "word": "入院",
+    "kana": "にゅういん",
+    "meaningZh": "to hospitalise",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1465850",
+    "level": "N4",
+    "word": "入学",
+    "kana": "にゅうがく",
+    "meaningZh": "to enter school or university",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1314600",
+    "level": "N4",
+    "word": "似る",
+    "kana": "にる",
+    "meaningZh": "to be similar",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1367120",
+    "level": "N4",
+    "word": "人形",
+    "kana": "にんぎょう",
+    "meaningZh": "doll, figure",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1448440",
+    "level": "N4",
+    "word": "盗む",
+    "kana": "ぬすむ",
+    "meaningZh": "to steal",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1444270",
+    "level": "N4",
+    "word": "塗る",
+    "kana": "ぬる",
+    "meaningZh": "to paint,to plaster",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1467620",
+    "level": "N4",
+    "word": "ぬれる",
+    "kana": "ぬれる",
+    "meaningZh": "to get wet",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1600160",
+    "level": "N4",
+    "word": "ねだん",
+    "kana": "ねだん",
+    "meaningZh": "price",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1467710",
+    "level": "N4",
+    "word": "熱",
+    "kana": "ねつ",
+    "meaningZh": "fever",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1467910",
+    "level": "N4",
+    "word": "ねっしん",
+    "kana": "ねっしん",
+    "meaningZh": "enthusiasm",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1360320",
+    "level": "N4",
+    "word": "寝坊",
+    "kana": "ねぼう",
+    "meaningZh": "sleeping in late",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1529330",
+    "level": "N4",
+    "word": "眠い",
+    "kana": "ねむい",
+    "meaningZh": "sleepy",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1529390",
+    "level": "N4",
+    "word": "眠る",
+    "kana": "ねむる",
+    "meaningZh": "to sleep",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1304510",
+    "level": "N4",
+    "word": "残る",
+    "kana": "のこる",
+    "meaningZh": "to remain",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1600280",
+    "level": "N4",
+    "word": "喉",
+    "kana": "のど",
+    "meaningZh": "throat",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1600470",
+    "level": "N4",
+    "word": "乗り換える",
+    "kana": "のりかえる",
+    "meaningZh": "to change between buses or trains",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1600530",
+    "level": "N4",
+    "word": "乗り物",
+    "kana": "のりもの",
+    "meaningZh": "vehicle",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1546550",
+    "level": "N4",
+    "word": "葉",
+    "kana": "は",
+    "meaningZh": "leaf",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1355810",
+    "level": "N4",
+    "word": "場合",
+    "kana": "ばあい",
+    "meaningZh": "situation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1100810",
+    "level": "N4",
+    "word": "パート",
+    "kana": "パート",
+    "meaningZh": "part time",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1473230",
+    "level": "N4",
+    "word": "倍",
+    "kana": "ばい",
+    "meaningZh": "double",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1472270",
+    "level": "N4",
+    "word": "拝見",
+    "kana": "はいけん",
+    "meaningZh": "(humble) to look at",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1313080",
+    "level": "N4",
+    "word": "歯医者",
+    "kana": "はいしゃ",
+    "meaningZh": "dentist",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1172660",
+    "level": "N4",
+    "word": "運ぶ",
+    "kana": "はこぶ",
+    "meaningZh": "to transport",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1307550",
+    "level": "N4",
+    "word": "始める",
+    "kana": "はじめる",
+    "meaningZh": "to begin",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1355850",
+    "level": "N4",
+    "word": "場所",
+    "kana": "ばしょ",
+    "meaningZh": "location",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1476430",
+    "level": "N4",
+    "word": "筈",
+    "kana": "はず",
+    "meaningZh": "it should be so",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1421630",
+    "level": "N4",
+    "word": "恥ずかしい",
+    "kana": "はずかしい",
+    "meaningZh": "embarrassed",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1101570",
+    "level": "N4",
+    "word": "パソコン",
+    "kana": "パソコン",
+    "meaningZh": "personal computer",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1477170",
+    "level": "N4",
+    "word": "発音",
+    "kana": "はつおん",
+    "meaningZh": "pronunciation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1010150",
+    "level": "N4",
+    "word": "はっきり",
+    "kana": "はっきり",
+    "meaningZh": "clearly",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1194660",
+    "level": "N4",
+    "word": "花見",
+    "kana": "はなみ",
+    "meaningZh": "cherry-blossom viewing",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1555440",
+    "level": "N4",
+    "word": "林",
+    "kana": "はやし",
+    "meaningZh": "woods,forester",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1501620",
+    "level": "N4",
+    "word": "払う",
+    "kana": "はらう",
+    "meaningZh": "to pay",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1482340",
+    "level": "N4",
+    "word": "番組",
+    "kana": "ばんぐみ",
+    "meaningZh": "television or radio program",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1480670",
+    "level": "N4",
+    "word": "反対",
+    "kana": "はんたい",
+    "meaningZh": "opposition",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1096770",
+    "level": "N4",
+    "word": "ハンドバッグ",
+    "kana": "ハンドバッグ",
+    "meaningZh": "handbag",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1463770",
+    "level": "N4",
+    "word": "日",
+    "kana": "ひ",
+    "meaningZh": "day, sun",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1193610",
+    "level": "N4",
+    "word": "火",
+    "kana": "ひ",
+    "meaningZh": "fire",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1106400",
+    "level": "N4",
+    "word": "ピアノ",
+    "kana": "ピアノ",
+    "meaningZh": "piano",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1556630",
+    "level": "N4",
+    "word": "冷える",
+    "kana": "ひえる",
+    "meaningZh": "to grow cold",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1272780",
+    "level": "N4",
+    "word": "光",
+    "kana": "ひかり",
+    "meaningZh": "light",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1272820",
+    "level": "N4",
+    "word": "光る",
+    "kana": "ひかる",
+    "meaningZh": "to shine,to glitter",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1601650",
+    "level": "N4",
+    "word": "引き出し",
+    "kana": "ひきだし",
+    "meaningZh": "drawer,drawing out",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1601660",
+    "level": "N4",
+    "word": "引き出す",
+    "kana": "ひきだす",
+    "meaningZh": "to withdraw",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1601810",
+    "level": "N4",
+    "word": "髭",
+    "kana": "ひげ",
+    "meaningZh": "beard",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1485520",
+    "level": "N4",
+    "word": "飛行場",
+    "kana": "ひこうじょう",
+    "meaningZh": "airport",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1227370",
+    "level": "N4",
+    "word": "久しぶり",
+    "kana": "ひさしぶり",
+    "meaningZh": "after a long time",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1486460",
+    "level": "N4",
+    "word": "美術館",
+    "kana": "びじゅつかん",
+    "meaningZh": "art gallery",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1484930",
+    "level": "N4",
+    "word": "非常に",
+    "kana": "ひじょうに",
+    "meaningZh": "extremely",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1226360",
+    "level": "N4",
+    "word": "びっくり",
+    "kana": "びっくり",
+    "meaningZh": "to be surprised",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1169340",
+    "level": "N4",
+    "word": "引っ越す",
+    "kana": "ひっこす",
+    "meaningZh": "to move house",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1487660",
+    "level": "N4",
+    "word": "必要",
+    "kana": "ひつよう",
+    "meaningZh": "necessary",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1602060",
+    "level": "N4",
+    "word": "ひどい",
+    "kana": "ひどい",
+    "meaningZh": "awful",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1202440",
+    "level": "N4",
+    "word": "開く",
+    "kana": "ひらく",
+    "meaningZh": "to open an event",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1106010",
+    "level": "N4",
+    "word": "ビル",
+    "kana": "ビル",
+    "meaningZh": "building or bill",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1581710",
+    "level": "N4",
+    "word": "昼間",
+    "kana": "ひるま",
+    "meaningZh": "daytime,during the day",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1426290",
+    "level": "N4",
+    "word": "昼休み",
+    "kana": "ひるやすみ",
+    "meaningZh": "noon break",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1332570",
+    "level": "N4",
+    "word": "拾う",
+    "kana": "ひろう",
+    "meaningZh": "to pick up,to gather",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1108180",
+    "level": "N4",
+    "word": "ファックス",
+    "kana": "ファックス",
+    "meaningZh": "fax",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1602440",
+    "level": "N4",
+    "word": "増える",
+    "kana": "ふえる",
+    "meaningZh": "to increase",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1362640",
+    "level": "N4",
+    "word": "深い",
+    "kana": "ふかい",
+    "meaningZh": "deep",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1501350",
+    "level": "N4",
+    "word": "複雑",
+    "kana": "ふくざつ",
+    "meaningZh": "complexity,complication",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1500800",
+    "level": "N4",
+    "word": "復習",
+    "kana": "ふくしゅう",
+    "meaningZh": "revision",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1499460",
+    "level": "N4",
+    "word": "部長",
+    "kana": "ぶちょう",
+    "meaningZh": "head of a section",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1497190",
+    "level": "N4",
+    "word": "普通",
+    "kana": "ふつう",
+    "meaningZh": "usually, or a train that stops at every station",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1499230",
+    "level": "N4",
+    "word": "葡萄",
+    "kana": "ぶどう",
+    "meaningZh": "grapes",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1408220",
+    "level": "N4",
+    "word": "太る",
+    "kana": "ふとる",
+    "meaningZh": "to become fat",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1496890",
+    "level": "N4",
+    "word": "布団",
+    "kana": "ふとん",
+    "meaningZh": "Japanese bedding, futon",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1602800",
+    "level": "N4",
+    "word": "舟",
+    "kana": "ふね",
+    "meaningZh": "ship",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1494860",
+    "level": "N4",
+    "word": "不便",
+    "kana": "ふべん",
+    "meaningZh": "inconvenience",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1450270",
+    "level": "N4",
+    "word": "踏む",
+    "kana": "ふむ",
+    "meaningZh": "to step on",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1282770",
+    "level": "N4",
+    "word": "降り出す",
+    "kana": "ふりだす",
+    "meaningZh": "to start to rain",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1116840",
+    "level": "N4",
+    "word": "プレゼント",
+    "kana": "プレゼント",
+    "meaningZh": "present",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1505120",
+    "level": "N4",
+    "word": "文化",
+    "kana": "ぶんか",
+    "meaningZh": "culture",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1505190",
+    "level": "N4",
+    "word": "文学",
+    "kana": "ぶんがく",
+    "meaningZh": "literature",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1505600",
+    "level": "N4",
+    "word": "文法",
+    "kana": "ぶんぽう",
+    "meaningZh": "grammar",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1509430",
+    "level": "N4",
+    "word": "別",
+    "kana": "べつ",
+    "meaningZh": "different",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1120010",
+    "level": "N4",
+    "word": "ベル",
+    "kana": "ベル",
+    "meaningZh": "bell",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1510640",
+    "level": "N4",
+    "word": "変",
+    "kana": "へん",
+    "meaningZh": "strange",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1512220",
+    "level": "N4",
+    "word": "返事",
+    "kana": "へんじ",
+    "meaningZh": "reply",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1520120",
+    "level": "N4",
+    "word": "貿易",
+    "kana": "ぼうえき",
+    "meaningZh": "trade",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1516750",
+    "level": "N4",
+    "word": "放送",
+    "kana": "ほうそう",
+    "meaningZh": "to broadcast",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1517480",
+    "level": "N4",
+    "word": "法律",
+    "kana": "ほうりつ",
+    "meaningZh": "law",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1521400",
+    "level": "N4",
+    "word": "僕",
+    "kana": "ぼく",
+    "meaningZh": "I (used by males)",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1376310",
+    "level": "N4",
+    "word": "星",
+    "kana": "ほし",
+    "meaningZh": "star",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1436510",
+    "level": "N4",
+    "word": "程",
+    "kana": "ほど",
+    "meaningZh": "extent",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1522050",
+    "level": "N4",
+    "word": "ほとんど",
+    "kana": "ほとんど",
+    "meaningZh": "mostly",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1603550",
+    "level": "N4",
+    "word": "ほめる",
+    "kana": "ほめる",
+    "meaningZh": "to praise",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1523400",
+    "level": "N4",
+    "word": "翻訳",
+    "kana": "ほんやく",
+    "meaningZh": "translation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1302070",
+    "level": "N4",
+    "word": "参る",
+    "kana": "まいる",
+    "meaningZh": "(humble) to go,to come",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1497980",
+    "level": "N4",
+    "word": "負ける",
+    "kana": "まける",
+    "meaningZh": "to lose",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1364360",
+    "level": "N4",
+    "word": "まじめ",
+    "kana": "まじめ",
+    "meaningZh": "serious",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1387240",
+    "level": "N4",
+    "word": "先ず",
+    "kana": "まず",
+    "meaningZh": "first of all",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1524990",
+    "level": "N4",
+    "word": "または",
+    "kana": "または",
+    "meaningZh": "or,otherwise",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1215330",
+    "level": "N4",
+    "word": "間違える",
+    "kana": "まちがえる",
+    "meaningZh": "to make a mistake",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1215260",
+    "level": "N4",
+    "word": "間に合う",
+    "kana": "まにあう",
+    "meaningZh": "to be in time for",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1604290",
+    "level": "N4",
+    "word": "周り",
+    "kana": "まわり",
+    "meaningZh": "surroundings",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1604300",
+    "level": "N4",
+    "word": "回る",
+    "kana": "まわる",
+    "meaningZh": "to go around",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1526920",
+    "level": "N4",
+    "word": "漫画",
+    "kana": "まんが",
+    "meaningZh": "comic",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1604350",
+    "level": "N4",
+    "word": "真ん中",
+    "kana": "まんなか",
+    "meaningZh": "middle",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1259140",
+    "level": "N4",
+    "word": "見える",
+    "kana": "みえる",
+    "meaningZh": "to be in sight",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1267280",
+    "level": "N4",
+    "word": "湖",
+    "kana": "みずうみ",
+    "meaningZh": "lake",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1527040",
+    "level": "N4",
+    "word": "味噌",
+    "kana": "みそ",
+    "meaningZh": "bean paste",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1604550",
+    "level": "N4",
+    "word": "見つかる",
+    "kana": "みつかる",
+    "meaningZh": "to be discovered",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1604570",
+    "level": "N4",
+    "word": "見つける",
+    "kana": "みつける",
+    "meaningZh": "to discover",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1202150",
+    "level": "N4",
+    "word": "皆",
+    "kana": "みな",
+    "meaningZh": "everybody",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1279990",
+    "level": "N4",
+    "word": "港",
+    "kana": "みなと",
+    "meaningZh": "harbour",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1604800",
+    "level": "N4",
+    "word": "向かう",
+    "kana": "むかう",
+    "meaningZh": "to face",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1253190",
+    "level": "N4",
+    "word": "迎える",
+    "kana": "むかえる",
+    "meaningZh": "to go out to meet",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1382370",
+    "level": "N4",
+    "word": "昔",
+    "kana": "むかし",
+    "meaningZh": "olden days, former",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1426680",
+    "level": "N4",
+    "word": "虫",
+    "kana": "むし",
+    "meaningZh": "insect",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1404390",
+    "level": "N4",
+    "word": "息子",
+    "kana": "むすこ",
+    "meaningZh": "(humble) son",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1531190",
+    "level": "N4",
+    "word": "娘",
+    "kana": "むすめ",
+    "meaningZh": "(humble) daughter",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1530970",
+    "level": "N4",
+    "word": "無理",
+    "kana": "むり",
+    "meaningZh": "impossible",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1346370",
+    "level": "N4",
+    "word": "召し上がる",
+    "kana": "めしあがる",
+    "meaningZh": "(polite) to eat",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1431850",
+    "level": "N4",
+    "word": "珍しい",
+    "kana": "めずらしい",
+    "meaningZh": "rare",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1362950",
+    "level": "N4",
+    "word": "申し上げる",
+    "kana": "もうしあげる",
+    "meaningZh": "(humble) to say,to tell",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1363090",
+    "level": "N4",
+    "word": "申す",
+    "kana": "もうす",
+    "meaningZh": "(humble) to be called,to say",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2015610",
+    "level": "N4",
+    "word": "もうすぐ",
+    "kana": "もうすぐ",
+    "meaningZh": "soon",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2607730",
+    "level": "N4",
+    "word": "もし",
+    "kana": "もし",
+    "meaningZh": "if",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1535780",
+    "level": "N4",
+    "word": "もちろん",
+    "kana": "もちろん",
+    "meaningZh": "of course",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1293700",
+    "level": "N4",
+    "word": "最も",
+    "kana": "もっとも",
+    "meaningZh": "extremely",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1535880",
+    "level": "N4",
+    "word": "戻る",
+    "kana": "もどる",
+    "meaningZh": "to turn back",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1534870",
+    "level": "N4",
+    "word": "木綿",
+    "kana": "もめん",
+    "meaningZh": "cotton",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1535910",
+    "level": "N4",
+    "word": "もらう",
+    "kana": "もらう",
+    "meaningZh": "to receive",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1362490",
+    "level": "N4",
+    "word": "森",
+    "kana": "もり",
+    "meaningZh": "forest",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1350600",
+    "level": "N4",
+    "word": "焼く",
+    "kana": "やく",
+    "meaningZh": "to bake,to grill",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1538130",
+    "level": "N4",
+    "word": "約束",
+    "kana": "やくそく",
+    "meaningZh": "promise",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1537980",
+    "level": "N4",
+    "word": "役に立つ",
+    "kana": "やくにたつ",
+    "meaningZh": "to be helpful",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1350610",
+    "level": "N4",
+    "word": "焼ける",
+    "kana": "やける",
+    "meaningZh": "to burn,to be roasted",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1539040",
+    "level": "N4",
+    "word": "優しい",
+    "kana": "やさしい",
+    "meaningZh": "kind",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1605510",
+    "level": "N4",
+    "word": "痩せる",
+    "kana": "やせる",
+    "meaningZh": "to become thin",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1012800",
+    "level": "N4",
+    "word": "やっと",
+    "kana": "やっと",
+    "meaningZh": "at last",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2772770",
+    "level": "N4",
+    "word": "やはり",
+    "kana": "やはり",
+    "meaningZh": "as I thought,absolutely",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1012810",
+    "level": "N4",
+    "word": "やっぱり",
+    "kana": "やっぱり",
+    "meaningZh": "as I thought,absolutely",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1310640",
+    "level": "N4",
+    "word": "止む",
+    "kana": "やむ",
+    "meaningZh": "to stop",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1310680",
+    "level": "N4",
+    "word": "止める",
+    "kana": "やめる",
+    "meaningZh": "to stop",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1605630",
+    "level": "N4",
+    "word": "柔らかい",
+    "kana": "やわらかい",
+    "meaningZh": "soft",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1448580",
+    "level": "N4",
+    "word": "湯",
+    "kana": "ゆ",
+    "meaningZh": "hot water",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1538820",
+    "level": "N4",
+    "word": "輸出",
+    "kana": "ゆしゅつ",
+    "meaningZh": "to export",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1538870",
+    "level": "N4",
+    "word": "輸入",
+    "kana": "ゆにゅう",
+    "meaningZh": "to import",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1309650",
+    "level": "N4",
+    "word": "指",
+    "kana": "ゆび",
+    "meaningZh": "finger",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1310050",
+    "level": "N4",
+    "word": "指輪",
+    "kana": "ゆびわ",
+    "meaningZh": "finger ring",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1529410",
+    "level": "N4",
+    "word": "夢",
+    "kana": "ゆめ",
+    "meaningZh": "dream",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1545710",
+    "level": "N4",
+    "word": "揺れる",
+    "kana": "ゆれる",
+    "meaningZh": "to shake,to sway",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1546200",
+    "level": "N4",
+    "word": "用",
+    "kana": "よう",
+    "meaningZh": "use",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1546220",
+    "level": "N4",
+    "word": "用意",
+    "kana": "ようい",
+    "meaningZh": "preparation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1546300",
+    "level": "N4",
+    "word": "用事",
+    "kana": "ようじ",
+    "meaningZh": "things to do",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1179005",
+    "level": "N4",
+    "word": "汚れる",
+    "kana": "よごれる",
+    "meaningZh": "to get dirty",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1543070",
+    "level": "N4",
+    "word": "予習",
+    "kana": "よしゅう",
+    "meaningZh": "preparation for a lesson",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1543240",
+    "level": "N4",
+    "word": "予定",
+    "kana": "よてい",
+    "meaningZh": "arrangement",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1543750",
+    "level": "N4",
+    "word": "予約",
+    "kana": "よやく",
+    "meaningZh": "reservation",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1219680",
+    "level": "N4",
+    "word": "寄る",
+    "kana": "よる",
+    "meaningZh": "to visit",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1218760",
+    "level": "N4",
+    "word": "喜ぶ",
+    "kana": "よろこぶ",
+    "meaningZh": "to be delighted",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1224880",
+    "level": "N4",
+    "word": "よろしい",
+    "kana": "よろしい",
+    "meaningZh": "(respectful) OK,all right",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1550140",
+    "level": "N4",
+    "word": "理由",
+    "kana": "りゆう",
+    "meaningZh": "reason",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1549660",
+    "level": "N4",
+    "word": "利用",
+    "kana": "りよう",
+    "meaningZh": "utilization",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1554010",
+    "level": "N4",
+    "word": "両方",
+    "kana": "りょうほう",
+    "meaningZh": "both sides",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1553130",
+    "level": "N4",
+    "word": "旅館",
+    "kana": "りょかん",
+    "meaningZh": "Japanese hotel",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1552760",
+    "level": "N4",
+    "word": "留守",
+    "kana": "るす",
+    "meaningZh": "absence",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1557290",
+    "level": "N4",
+    "word": "冷房",
+    "kana": "れいぼう",
+    "meaningZh": "air conditioning",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1558050",
+    "level": "N4",
+    "word": "歴史",
+    "kana": "れきし",
+    "meaningZh": "history",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1145130",
+    "level": "N4",
+    "word": "レジ",
+    "kana": "レジ",
+    "meaningZh": "register",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1145990",
+    "level": "N4",
+    "word": "レポート",
+    "kana": "レポート",
+    "meaningZh": "report",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1145990-629",
+    "level": "N4",
+    "word": "リポート",
+    "kana": "リポート",
+    "meaningZh": "report",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1559900",
+    "level": "N4",
+    "word": "連絡",
+    "kana": "れんらく",
+    "meaningZh": "contact",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1148520",
+    "level": "N4",
+    "word": "ワープロ",
+    "kana": "ワープロ",
+    "meaningZh": "word processor",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1501660",
+    "level": "N4",
+    "word": "沸かす",
+    "kana": "わかす",
+    "meaningZh": "to boil,to heat",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1606590",
+    "level": "N4",
+    "word": "別れる",
+    "kana": "わかれる",
+    "meaningZh": "to separate",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1606680",
+    "level": "N4",
+    "word": "沸く",
+    "kana": "わく",
+    "meaningZh": "to boil, to grow hot,to get excited",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1538330",
+    "level": "N4",
+    "word": "訳",
+    "kana": "わけ",
+    "meaningZh": "meaning,reason",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1519230",
+    "level": "N4",
+    "word": "忘れ物",
+    "kana": "わすれもの",
+    "meaningZh": "lost article",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1351360",
+    "level": "N4",
+    "word": "笑う",
+    "kana": "わらう",
+    "meaningZh": "to laugh,to smile",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1606810",
+    "level": "N4",
+    "word": "割合",
+    "kana": "わりあい",
+    "meaningZh": "rate,ratio,percentage",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-1208020",
+    "level": "N4",
+    "word": "割れる",
+    "kana": "われる",
+    "meaningZh": "to break",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  },
+  {
+    "id": "n4-2005990",
+    "level": "N4",
+    "word": "泳ぎ方",
+    "kana": "およぎかた",
+    "meaningZh": "way of swimming",
+    "partOfSpeech": "vocabulary",
+    "exampleJa": "",
+    "exampleZh": "",
+    "tags": [
+      "jlpt",
+      "n4"
+    ]
+  }
+]
