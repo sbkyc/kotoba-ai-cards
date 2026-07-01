@@ -1,4 +1,9 @@
-const CACHE_NAME = "kotoba-ai-cards-v3";
+const CACHE_NAME = "kotoba-ai-cards-v4";
+const SCOPE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, "");
+const withScope = (path) => {
+  if (!SCOPE_PATH) return path;
+  return path === "/" ? `${SCOPE_PATH}/` : `${SCOPE_PATH}${path}`;
+};
 const APP_SHELL = [
   "/",
   "/study",
@@ -11,7 +16,7 @@ const APP_SHELL = [
   "/kotoba-icon.svg",
   "/kotoba-icon-192.png",
   "/kotoba-icon-512.png"
-];
+].map(withScope);
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -45,7 +50,7 @@ self.addEventListener("fetch", (event) => {
         const copy = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
         return response;
-      }).catch(() => caches.match("/"));
+      }).catch(() => caches.match(withScope("/")));
     })
   );
 });

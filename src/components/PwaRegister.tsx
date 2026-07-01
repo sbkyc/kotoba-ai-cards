@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { withBasePath } from "@/lib/site/paths";
 
 export function PwaRegister() {
   const [offline, setOffline] = useState(false);
@@ -20,7 +21,7 @@ export function PwaRegister() {
   useEffect(() => {
     if (!("serviceWorker" in navigator) || process.env.NODE_ENV !== "production") return undefined;
     let cancelled = false;
-    navigator.serviceWorker.register("/sw.js").then((registration) => {
+    navigator.serviceWorker.register(withBasePath("/sw.js"), { scope: withBasePath("/") }).then((registration) => {
       if (cancelled) return;
       if (registration.waiting) setWaitingWorker(registration.waiting);
       registration.addEventListener("updatefound", () => {

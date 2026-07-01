@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { PwaRegister } from "@/components/PwaRegister";
+import { withBasePath } from "@/lib/site/paths";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,10 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kotoba AI Cards",
   description: "AI vocabulary cards for CET-4, CET-6, and JLPT N5-N1 learners.",
-  manifest: "/manifest.webmanifest",
+  manifest: withBasePath("/manifest.webmanifest"),
   icons: {
-    icon: "/kotoba-icon.svg",
-    apple: "/kotoba-icon-192.png",
+    icon: withBasePath("/kotoba-icon.svg"),
+    apple: withBasePath("/kotoba-icon-192.png"),
   },
   appleWebApp: {
     capable: true,

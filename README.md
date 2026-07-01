@@ -4,6 +4,8 @@ Kotoba AI Cards is an open-source vocabulary study app for CET-4, CET-6, and JLP
 
 It works as a normal flashcard app without an API key. If learners add their own API key in Settings, they can generate example sentences, word-difference explanations, and original exam-style memory checks for the current card. The AI panel supports OpenAI, DeepSeek, Qwen/DashScope, Kimi/Moonshot, Zhipu GLM, OpenRouter, Gemini, Anthropic Claude, and custom OpenAI-compatible endpoints.
 
+Live site: https://sbkyc.github.io/kotoba-ai-cards/
+
 ## Features
 
 - CET-4, CET-6, and JLPT N5-N1 vocabulary card study
@@ -33,6 +35,16 @@ npm run dev
 ```
 
 Open http://127.0.0.1:3000.
+
+## Install On Android
+
+After the GitHub Pages deployment finishes, open the live site in Android Chrome or Edge:
+
+```text
+https://sbkyc.github.io/kotoba-ai-cards/
+```
+
+Use the browser menu and choose **Install app** or **Add to Home screen**. Kotoba will then open from the phone launcher like a standalone app.
 
 ## Useful Commands
 
