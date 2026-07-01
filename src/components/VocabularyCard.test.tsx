@@ -16,20 +16,24 @@ const card: VocabularyCard = {
 };
 
 describe("VocabularyCardView", () => {
-  it("keeps rating controls disabled until the answer is revealed", () => {
-    render(<VocabularyCardView card={card} onRate={vi.fn()} />);
+  it("lets learners rate directly without revealing first", () => {
+    const onRate = vi.fn();
+
+    render(<VocabularyCardView card={card} onRate={onRate} />);
 
     expect(screen.getAllByText("houshin")).toHaveLength(2);
     expect(screen.queryByText("policy direction")).not.toBeInTheDocument();
 
-    const buttons = screen.getAllByRole("button");
-    const ratingButtons = buttons.slice(-3);
-    ratingButtons.forEach((button) => expect(button).toBeDisabled());
+    const unknownButton = screen.getByRole("button", { name: "不认识" });
+    const fuzzyButton = screen.getByRole("button", { name: "模糊" });
+    const knownButton = screen.getByRole("button", { name: "认识" });
+    expect(unknownButton).toBeEnabled();
+    expect(fuzzyButton).toBeEnabled();
+    expect(knownButton).toBeEnabled();
 
-    fireEvent.click(buttons[0]);
+    fireEvent.click(unknownButton);
 
-    expect(screen.getByText("policy direction")).toBeInTheDocument();
-    ratingButtons.forEach((button) => expect(button).toBeEnabled());
+    expect(onRate).toHaveBeenCalledWith("unknown");
   });
 
   it("omits the example block when a generated vocabulary entry has no example", () => {

@@ -3,6 +3,22 @@ import { describe, expect, it, vi } from "vitest";
 import { AiPanel } from "./AiPanel";
 
 describe("AiPanel", () => {
+  it("uses a cat loading indicator while AI is generating", () => {
+    render(
+      <AiPanel
+        loading
+        error=""
+        payload={null}
+        aiEnabled
+        revealed={false}
+        onAction={vi.fn()}
+      />,
+    );
+
+    expect(screen.getByLabelText("小猫加载中")).toBeInTheDocument();
+    expect(screen.getByText("小猫正在生成")).toBeInTheDocument();
+  });
+
   it("shows the exam quiz action by default and gates answer-revealing helpers", () => {
     render(
       <AiPanel

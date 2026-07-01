@@ -5,6 +5,7 @@ import type { StudyMode } from "@/lib/study/queue";
 const modeOptions: { value: StudyMode; label: string; description: string }[] = [
   { value: "daily", label: "今日计划", description: "到期复习和新词" },
   { value: "difficult", label: "错题优先", description: "模糊和不认识" },
+  { value: "core", label: "核心词", description: "先看懂大部分句子" },
   { value: "favorites", label: "重点词", description: "手动收藏词" },
 ];
 

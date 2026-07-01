@@ -90,9 +90,9 @@ export function VocabularyCardView({
       </div>
 
       <div className="rating-bar" aria-label="掌握程度评分">
-        <RatingButton rating="unknown" label="不认识" shortcut="1" preview={previews?.unknown.label} disabled={!revealed} onRate={onRate} />
-        <RatingButton rating="fuzzy" label="模糊" shortcut="2" preview={previews?.fuzzy.label} disabled={!revealed} onRate={onRate} />
-        <RatingButton rating="known" label="认识" shortcut="3" preview={previews?.known.label} disabled={!revealed} onRate={onRate} />
+        <RatingButton rating="unknown" label="不认识" shortcut="1" preview={previews?.unknown.label} onRate={onRate} />
+        <RatingButton rating="fuzzy" label="模糊" shortcut="2" preview={previews?.fuzzy.label} onRate={onRate} />
+        <RatingButton rating="known" label="认识" shortcut="3" preview={previews?.known.label} onRate={onRate} />
       </div>
 
       <style jsx>{`
@@ -131,30 +131,29 @@ export function VocabularyCardView({
   );
 }
 
-function RatingButton({ rating, label, shortcut, preview, disabled, onRate }: {
+function RatingButton({ rating, label, shortcut, preview, onRate }: {
   rating: ReviewRating;
   label: string;
   shortcut: string;
   preview?: string;
-  disabled: boolean;
   onRate: (rating: ReviewRating) => void;
 }) {
   return (
     <button
       type="button"
       className={`rating-button ${rating}`}
-      disabled={disabled}
       onClick={() => onRate(rating)}
       aria-label={label}
     >
       <span>{label}</span>
       <small>{preview ?? "—"} · {shortcut}</small>
       <style jsx>{`
-        .rating-button { min-height:62px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); color:var(--ink); }
+        .rating-button { min-height:62px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); color:var(--ink); transition:border-color .18s ease, background .18s ease, color .18s ease, transform .18s ease, opacity .18s ease; }
         .rating-button:disabled { cursor:not-allowed; opacity:.38; }
         .rating-button:not(:disabled):hover.unknown { border-color:var(--red); background:var(--red-soft); }
         .rating-button:not(:disabled):hover.fuzzy { border-color:#a47c18; background:var(--yellow-soft); }
         .rating-button:not(:disabled):hover.known { border-color:var(--green); background:var(--green-soft); }
+        .rating-button:not(:disabled):active { transform:translateY(1px) scale(.99); }
         span,small { display:block; }
         span { font-weight:700; }
         small { margin-top:4px; color:var(--muted); font-size:10px; }

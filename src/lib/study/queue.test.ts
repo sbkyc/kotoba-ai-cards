@@ -143,4 +143,50 @@ describe("buildStudyQueue", () => {
 
     expect(queue.map((card) => card.id)).toEqual(["new-a", "future-c"]);
   });
+
+  it("builds a core queue from high-coverage words before advanced words", () => {
+    const coreCards: VocabularyCard[] = [
+      {
+        id: "rare-gre",
+        level: "CET4",
+        word: "abstruse",
+        kana: "/əbˈstruːs/",
+        meaningZh: "深奥的",
+        partOfSpeech: "adjective",
+        exampleJa: "The argument is abstruse.",
+        exampleZh: "这个论证很深奥。",
+        tags: ["gre"],
+      },
+      {
+        id: "core-the",
+        level: "CET4",
+        word: "the",
+        kana: "/ði/",
+        meaningZh: "这个；那个",
+        partOfSpeech: "article",
+        exampleJa: "The book is here.",
+        exampleZh: "那本书在这里。",
+        tags: ["zk", "gk", "cet4"],
+      },
+      {
+        id: "core-make",
+        level: "CET4",
+        word: "make",
+        kana: "/meɪk/",
+        meaningZh: "制作；使得",
+        partOfSpeech: "verb",
+        exampleJa: "Make a sentence.",
+        exampleZh: "造一个句子。",
+        tags: ["gk", "cet4"],
+      },
+    ];
+
+    const queue = buildStudyQueue(coreCards, {}, {
+      now: new Date("2026-06-16T08:00:00.000Z"),
+      dailyGoal: 2,
+      mode: "core",
+    });
+
+    expect(queue.map((card) => card.id)).toEqual(["core-the", "core-make"]);
+  });
 });

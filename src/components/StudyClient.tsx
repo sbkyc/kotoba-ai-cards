@@ -9,7 +9,7 @@ import { previewReview, type ReviewRating } from "@/lib/scheduler/scheduler";
 import { mapStudyKey } from "@/lib/study/keyboard";
 import { buildStudyQueue, type StudyMode } from "@/lib/study/queue";
 import { getNextQueueIndexAfterRating, recordSessionRating, type SessionStats } from "@/lib/study/session";
-import { getVocabularyByLevel } from "@/lib/vocabulary/data";
+import { getCoreVocabularyByLevel, getVocabularyByLevel } from "@/lib/vocabulary/data";
 import { AiPanel } from "@/components/AiPanel";
 import { AppShell } from "@/components/AppShell";
 import { StudyModeTabs } from "@/components/StudyModeTabs";
@@ -26,7 +26,10 @@ export function StudyClient() {
   const toggleFavorite = useStudyStore((state) => state.toggleFavorite);
   const [mode, setMode] = useState<StudyMode>("daily");
 
-  const cards = useMemo(() => getVocabularyByLevel(settings.level), [settings.level]);
+  const cards = useMemo(
+    () => (mode === "core" ? getCoreVocabularyByLevel(settings.level) : getVocabularyByLevel(settings.level)),
+    [mode, settings.level],
+  );
   const queue = useMemo(
     () => buildStudyQueue(cards, progress, { dailyGoal: settings.dailyGoal, favoriteIds: favorites, mode }),
     [cards, favorites, mode, progress, settings.dailyGoal],
@@ -52,14 +55,14 @@ export function StudyClient() {
   }, [resetCardView]);
 
   const handleRate = useCallback((rating: ReviewRating) => {
-    if (!card || !revealed) return;
+    if (!card) return;
     rateCard(card.id, rating);
     setSessionStats((stats) => recordSessionRating(stats, rating));
     setRevealed(false);
     setAiPayload(null);
     setAiError("");
     setIndex((value) => getNextQueueIndexAfterRating({ previousIndex: value, nextQueueLength: queue.length - 1 }));
-  }, [card, queue.length, rateCard, revealed]);
+  }, [card, queue.length, rateCard]);
 
   const handleQuizRate = useCallback((rating: "known" | "unknown") => {
     if (!card) return;
@@ -211,18 +214,21 @@ export function StudyClient() {
 
 function queueLabel(mode: StudyMode) {
   if (mode === "difficult") return "待攻克";
+  if (mode === "core") return "核心词";
   if (mode === "favorites") return "重点词";
   return "待学习";
 }
 
 function emptyTitle(mode: StudyMode) {
   if (mode === "difficult") return "暂时没有错题要攻克。";
+  if (mode === "core") return "核心词已经刷完一轮了。";
   if (mode === "favorites") return "还没有重点词任务。";
   return "今天的学习完成了。";
 }
 
 function emptyHint(mode: StudyMode) {
   if (mode === "difficult") return "继续日常计划，新的模糊词会自动进入这里。";
+  if (mode === "core") return "可以切回今日计划继续扩展词汇，核心词会随着等级自动更新。";
   if (mode === "favorites") return "在词汇库或学习页点亮星标后，会出现在这里。";
   return "可以切换到错题优先或重点词，再做一轮强化。";
 }

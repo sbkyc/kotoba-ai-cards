@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getStudyLevelMeta, getVocabularyByLevel, studyLevels, vocabularyCards } from "./data";
+import { getCoreVocabularyByLevel, getStudyLevelMeta, getVocabularyByLevel, studyLevels, vocabularyCards } from "./data";
 
 describe("vocabulary data", () => {
   it("loads both CET and JLPT study levels", () => {
@@ -16,6 +16,30 @@ describe("vocabulary data", () => {
   it("keeps generated vocabulary ids unique", () => {
     const ids = vocabularyCards.map((card) => card.id);
     expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it("builds a core vocabulary pool from foundational lower levels", () => {
+    const n3CoreLevels = new Set(getCoreVocabularyByLevel("N3").map((card) => card.level));
+    const cet6CoreLevels = new Set(getCoreVocabularyByLevel("CET6").map((card) => card.level));
+
+    expect(n3CoreLevels).toEqual(new Set(["N5", "N4", "N3"]));
+    expect(cet6CoreLevels).toEqual(new Set(["CET4", "CET6"]));
+    expect(getCoreVocabularyByLevel("N3").length).toBeGreaterThan(getCoreVocabularyByLevel("N5").length);
+  });
+
+  it("does not expose TODO placeholders in user-visible vocabulary fields", () => {
+    const placeholderCards = vocabularyCards.filter((card) => (
+      /todo|fixme|待补|待完善/i.test([
+        card.word,
+        card.kana,
+        card.meaningZh,
+        card.partOfSpeech,
+        card.exampleJa,
+        card.exampleZh,
+      ].join(" "))
+    ));
+
+    expect(placeholderCards).toEqual([]);
   });
 
   it("derives usable parts of speech for generated CET decks", () => {

@@ -251,7 +251,7 @@ button {
 
 .mode-tabs {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 6px;
   border: 1px solid var(--rule);
   border-radius: 8px;
@@ -368,7 +368,7 @@ button {
 
 @media (max-width: 560px) {
   .mode-tabs {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .mode-tabs button {

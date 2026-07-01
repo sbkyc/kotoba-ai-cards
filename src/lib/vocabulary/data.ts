@@ -5,6 +5,7 @@ import n2Cards from "../../../data/vocabulary/jlpt-n2.json";
 import n3Cards from "../../../data/vocabulary/jlpt-n3.json";
 import n4Cards from "../../../data/vocabulary/jlpt-n4.json";
 import n5Cards from "../../../data/vocabulary/jlpt-n5.json";
+import { compareCoreVocabulary, getCoreSourceLevels, getCoreSourceLimit, isCoreVocabularyCard } from "./core";
 import type { StudyLevel, VocabularyCard } from "./types";
 
 export type StudyLevelMeta = {
@@ -90,6 +91,27 @@ export const vocabularyCards = [...cet4Cards, ...cet6Cards, ...n5Cards, ...n4Car
 export function getVocabularyByLevel(level: StudyLevel | "all" = "all"): VocabularyCard[] {
   if (level === "all") return vocabularyCards;
   return vocabularyCards.filter((card) => card.level === level);
+}
+
+export function getCoreVocabularyByLevel(level: StudyLevel): VocabularyCard[] {
+  const seen = new Set<string>();
+  const coreCards: VocabularyCard[] = [];
+
+  for (const sourceLevel of getCoreSourceLevels(level)) {
+    const candidates = getVocabularyByLevel(sourceLevel)
+      .filter(isCoreVocabularyCard)
+      .sort(compareCoreVocabulary)
+      .slice(0, getCoreSourceLimit(sourceLevel));
+
+    for (const card of candidates) {
+      const key = `${card.word.trim().toLowerCase()}|${card.kana.trim().toLowerCase()}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      coreCards.push(card);
+    }
+  }
+
+  return coreCards;
 }
 
 export function getStudyLevelMeta(level: StudyLevel): StudyLevelMeta {

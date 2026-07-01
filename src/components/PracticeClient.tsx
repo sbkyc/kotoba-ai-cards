@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, BrainCircuit, CheckCircle2, Loader2, RotateCcw, XCircle } from "lucide-react";
+import { ArrowRight, BrainCircuit, CheckCircle2, RotateCcw, XCircle } from "lucide-react";
 import { requestAiJson } from "@/lib/ai/client";
 import { buildPracticePaperPrompt } from "@/lib/ai/prompts";
 import {
@@ -18,6 +18,7 @@ import {
 } from "@/lib/practice/practice";
 import { getStudyLevelMeta, getVocabularyByLevel } from "@/lib/vocabulary/data";
 import { AppShell } from "@/components/AppShell";
+import { CatLoader } from "@/components/CatLoader";
 import { useStudyStore } from "@/store/useStudyStore";
 
 const questionCount = 10;
@@ -125,8 +126,7 @@ export function PracticeClient() {
           </div>
           <div className="hero-actions">
             <button type="button" className="primary-button" onClick={generatePaper} disabled={loading || !canGenerate}>
-              {loading ? <Loader2 size={17} className="spin" /> : <BrainCircuit size={17} />}
-              生成专项小测
+              {loading ? <CatLoader label="生成中" size={17} /> : <><BrainCircuit size={17} />生成专项小测</>}
             </button>
             <button type="button" className="secondary-button" onClick={reset}>
               <RotateCcw size={16} />
@@ -347,8 +347,6 @@ export function PracticeClient() {
         .review-row p,.review-row small,.review-row span { margin:0; line-height:1.65; }
         .review-row small { color:var(--muted); }
         .report-actions { display:flex; flex-wrap:wrap; gap:10px; }
-        .spin { animation:spin 1s linear infinite; }
-        @keyframes spin { to { transform:rotate(360deg); } }
         @media(max-width:720px) {
           .practice-hero { grid-template-columns:1fr; }
           .practice-mode-grid { grid-template-columns:1fr 1fr; }

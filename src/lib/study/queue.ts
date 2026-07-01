@@ -1,4 +1,5 @@
 import type { CardProgress } from "@/lib/scheduler/scheduler";
+import { compareCoreVocabulary, isCoreVocabularyCard } from "@/lib/vocabulary/core";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
 
 type QueueOptions = {
@@ -8,7 +9,7 @@ type QueueOptions = {
   favoriteIds?: string[];
 };
 
-export type StudyMode = "daily" | "difficult" | "favorites";
+export type StudyMode = "daily" | "difficult" | "core" | "favorites";
 
 export function buildStudyQueue(
   cards: VocabularyCard[],
@@ -32,6 +33,24 @@ export function buildStudyQueue(
       .filter((card) => favoriteIds.has(card.id))
       .sort((a, b) => getFavoritePriority(progress[b.id]) - getFavoritePriority(progress[a.id]))
       .slice(0, limit);
+  }
+
+  if (mode === "core") {
+    const coreCards = cards.filter(isCoreVocabularyCard);
+    const dueReviews = coreCards.filter((card) => {
+      const cardProgress = progress[card.id];
+      return cardProgress ? new Date(cardProgress.dueAt).getTime() <= now.getTime() : false;
+    }).sort((a, b) => (
+      getReviewPriority(progress[b.id]) - getReviewPriority(progress[a.id])
+      || compareCoreVocabulary(a, b)
+    ));
+    const remainingNewSlots = Math.max(limit - dueReviews.length, 0);
+    const newCards = coreCards
+      .filter((card) => !progress[card.id])
+      .sort(compareCoreVocabulary)
+      .slice(0, remainingNewSlots);
+
+    return [...dueReviews, ...newCards].slice(0, limit);
   }
 
   const dueReviews = cards.filter((card) => {

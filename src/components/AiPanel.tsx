@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AlertCircle, ChevronDown, Loader2, Sparkles } from "lucide-react";
+import { AlertCircle, ChevronDown, Sparkles } from "lucide-react";
 import type { AiPayload } from "@/lib/ai/client";
+import { CatLoader } from "@/components/CatLoader";
 
 type AiPanelProps = {
   loading: boolean;
@@ -38,7 +39,7 @@ export function AiPanel({ loading, error, payload, aiEnabled, revealed = false, 
               <button type="button" disabled={!revealed} onClick={() => onAction("difference")}>解释区别</button>
             </div>
           )}
-          {loading ? <p className="loading"><Loader2 size={15} className="spin" /> 正在生成</p> : null}
+          {loading ? <p className="loading"><CatLoader size={15} /></p> : null}
           {error ? <p className="error"><AlertCircle size={15} /> {error}</p> : null}
           {payload ? isExamQuizPayload(payload) ? (
             <ExamQuizResult
@@ -78,8 +79,6 @@ export function AiPanel({ loading, error, payload, aiEnabled, revealed = false, 
         .ai-result div { border-left:2px solid var(--red); padding-left:12px; }
         .ai-result strong { color:var(--red); font-size:11px; }
         .ai-result p { margin:4px 0 0; white-space:pre-wrap; line-height:1.7; }
-        .spin { animation:spin 1s linear infinite; }
-        @keyframes spin { to { transform:rotate(360deg); } }
       `}</style>
     </div>
   );
