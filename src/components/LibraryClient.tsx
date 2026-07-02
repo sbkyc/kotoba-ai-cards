@@ -55,32 +55,32 @@ export function LibraryClient() {
         <header className="library-header">
           <div>
             <p className="eyebrow">Vocabulary</p>
-            <h1 className="page-title">词汇库</h1>
+            <h1 className="page-title">???</h1>
           </div>
-          <p>{filtered.length} / {vocabularyCards.length} 个词</p>
+          <p>{filtered.length} / {vocabularyCards.length} ??</p>
         </header>
 
         <div className="filter-bar">
           <label className="search-field">
             <Search size={17} />
-            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索词汇" />
+            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="????" />
           </label>
           <select value={level} onChange={(event) => setLevel(event.target.value as StudyLevel | "all")}>
-            <option value="all">全部词库</option>
+            <option value="all">????</option>
             {studyLevels.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}
           </select>
           <select value={mastery} onChange={(event) => setMastery(event.target.value as typeof mastery)}>
-            <option value="all">全部状态</option><option value="new">未学习</option><option value="learning">学习中</option><option value="known">已掌握</option>
+            <option value="all">????</option><option value="new">???</option><option value="learning">???</option><option value="known">???</option>
           </select>
           <select value={partOfSpeech} onChange={(event) => setPartOfSpeech(event.target.value)}>
-            <option value="">全部词性</option>
+            <option value="">????</option>
             {getPartsOfSpeech().map((part) => <option key={part} value={part}>{part}</option>)}
           </select>
           <select value={tag} onChange={(event) => setTag(event.target.value)}>
-            <option value="">更多筛选</option>
+            <option value="">????</option>
             {getVocabularyTags().map((item) => <option key={item} value={item}>{item}</option>)}
           </select>
-          <button type="button" className={favoriteOnly ? "favorite-filter active" : "favorite-filter"} onClick={() => setFavoriteOnly((value) => !value)} aria-label="只看重点词">
+          <button type="button" className={favoriteOnly ? "favorite-filter active" : "favorite-filter"} onClick={() => setFavoriteOnly((value) => !value)} aria-label="?????">
             <Star size={17} fill={favoriteOnly ? "currentColor" : "none"} />
           </button>
         </div>
@@ -88,12 +88,12 @@ export function LibraryClient() {
         <div className="vocab-table">
           <div className="table-head">
             <span />
-            <span>词汇</span>
-            <span>中文释义</span>
-            <span>等级</span>
-            <span>状态</span>
-            <span>难度记录</span>
-            <span>下次复习</span>
+            <span>??</span>
+            <span>??</span>
+            <span>??</span>
+            <span>??</span>
+            <span>????</span>
+            <span>????</span>
             <span />
           </div>
           {visibleVocabulary.visibleItems.map((card) => {
@@ -103,26 +103,26 @@ export function LibraryClient() {
             const evidence = buildVocabularyEvidence(card);
             return (
               <article key={card.id} className={expanded ? "vocab-row expanded" : "vocab-row"}>
-                <button type="button" className={favorites.includes(card.id) ? "row-star active" : "row-star"} onClick={() => toggleFavorite(card.id)} aria-label={favorites.includes(card.id) ? "取消重点词" : "加入重点词"}>
+                <button type="button" className={favorites.includes(card.id) ? "row-star active" : "row-star"} onClick={() => toggleFavorite(card.id)} aria-label={favorites.includes(card.id) ? "?????" : "?????"}>
                   <Star size={16} fill={favorites.includes(card.id) ? "currentColor" : "none"} />
                 </button>
                 <div className="word-cell"><strong>{card.word}</strong><small>{card.kana}</small></div>
-                <span className="meaning-cell">{card.meaningZh}</span>
+                <span className="meaning-cell"><small>{getStudyLevelMeta(card.level).meaningLabel}</small>{card.meaningZh}</span>
                 <span className="status-tag">{getStudyLevelMeta(card.level).shortLabel}</span>
                 <span className={`mastery ${cardProgress?.status ?? "new"}`}>{statusLabel(cardProgress?.status)}</span>
-                <span className="difficulty">{cardProgress ? `${cardProgress.unknownCount} 错 / ${cardProgress.fuzzyCount} 模糊` : "—"}</span>
+                <span className="difficulty">{cardProgress ? `${cardProgress.unknownCount} ? / ${cardProgress.fuzzyCount} ??` : "?"}</span>
                 <span className="next-review">{formatDue(cardProgress?.dueAt)}</span>
-                <button type="button" className="expand-button" onClick={() => setExpandedId(expanded ? null : card.id)} aria-label={expanded ? "收起详情" : "展开详情"}>
+                <button type="button" className="expand-button" onClick={() => setExpandedId(expanded ? null : card.id)} aria-label={expanded ? "????" : "????"}>
                   <ChevronDown size={17} className={expanded ? "rotate" : ""} />
                 </button>
                 {expanded ? (
                   <div className="row-details">
                     <div><span>{getStudyLevelMeta(card.level).exampleLabel}</span><p>{exampleDetail.primary}</p><small>{exampleDetail.secondary}</small></div>
-                    <div><span>易混词</span><p>{getRelatedWordsDetail(card)}</p></div>
-                    <div><span>标签</span><p>{card.tags.join(" / ")}</p></div>
-                    <div><span>复习记录</span><p>{cardProgress ? `${cardProgress.reviewCount} 次复习，${cardProgress.knownCount} 次认识` : "还未开始学习"}</p></div>
+                    <div><span>???</span><p>{getRelatedWordsDetail(card)}</p></div>
+                    <div><span>??</span><p>{card.tags.join(" / ")}</p></div>
+                    <div><span>????</span><p>{cardProgress ? `${cardProgress.reviewCount} ????${cardProgress.knownCount} ???` : "??????"}</p></div>
                     <div className="evidence-detail">
-                      <span>来源与推荐依据</span>
+                      <span>???????</span>
                       <div className="source-badges">
                         {evidence.recommendationBadges.map((badge) => <b key={badge}>{badge}</b>)}
                         {evidence.sourceBadges.map((badge) => <em key={badge.label}>{badge.label}</em>)}
@@ -144,13 +144,13 @@ export function LibraryClient() {
               className="secondary-button"
               onClick={() => setVisibleState({ filterKey, limit: visibleLimit + PAGE_SIZE })}
             >
-              加载更多 {visibleVocabulary.visibleCount} / {visibleVocabulary.totalCount}
+              ???? {visibleVocabulary.visibleCount} / {visibleVocabulary.totalCount}
             </button>
           </div>
         ) : null}
 
         {!filtered.length ? (
-          <div className="empty-list"><p>没有符合当前筛选条件的词汇。</p><button type="button" className="secondary-button" onClick={resetFilters}>重置筛选</button></div>
+          <div className="empty-list"><p>??????????????</p><button type="button" className="secondary-button" onClick={resetFilters}>????</button></div>
         ) : null}
       </div>
 
@@ -174,7 +174,8 @@ export function LibraryClient() {
         .word-cell strong,.word-cell small { display:block; }
         .word-cell strong { font-family:Georgia,"Noto Serif JP",serif; font-size:20px; }
         .word-cell small,.difficulty,.next-review { margin-top:3px; color:var(--muted); font-size:11px; }
-        .meaning-cell { font-size:13px; }
+        .meaning-cell { display:grid; gap:3px; font-size:13px; line-height:1.45; }
+        .meaning-cell small { color:var(--muted); font-size:10px; font-weight:700; }
         .mastery { font-size:11px; font-weight:700; }
         .mastery.known { color:var(--green); }
         .mastery.learning { color:var(--red); }
@@ -214,15 +215,15 @@ export function LibraryClient() {
 }
 
 function statusLabel(status?: "new" | "learning" | "known") {
-  if (status === "known") return "已掌握";
-  if (status === "learning") return "学习中";
-  return "未学习";
+  if (status === "known") return "???";
+  if (status === "learning") return "???";
+  return "???";
 }
 
 function formatDue(dueAt?: string) {
-  if (!dueAt) return "—";
+  if (!dueAt) return "?";
   const days = Math.ceil((new Date(dueAt).getTime() - Date.now()) / 86_400_000);
-  if (days <= 0) return "今天";
-  if (days === 1) return "明天";
-  return `${days}天后`;
+  if (days <= 0) return "??";
+  if (days === 1) return "??";
+  return `${days}??`;
 }

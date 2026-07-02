@@ -32,10 +32,11 @@ export function createBackup({
   practiceSessions = [],
   exportedAt = new Date(),
 }: CreateBackupInput): string {
+  const safeSettings: AppSettings = { ...settings, apiKey: "" };
   const backup: AppBackup = {
     version: 2,
     exportedAt: exportedAt.toISOString(),
-    settings,
+    settings: safeSettings,
     progress,
     favorites,
     reviewEvents,
@@ -51,15 +52,15 @@ export function parseBackup(value: string): ParseBackupResult {
   try {
     parsed = JSON.parse(value);
   } catch {
-    return { ok: false, error: "备份文件不是有效 JSON。" };
+    return { ok: false, error: "???????? JSON?" };
   }
 
   if (!isRecord(parsed) || (parsed.version !== 1 && parsed.version !== 2)) {
-    return { ok: false, error: "不支持的备份版本。" };
+    return { ok: false, error: "?????????" };
   }
 
   if (!isRecord(parsed.settings) || !isRecord(parsed.progress) || typeof parsed.exportedAt !== "string") {
-    return { ok: false, error: "备份文件缺少必要字段。" };
+    return { ok: false, error: "???????????" };
   }
 
   if (!Array.isArray(parsed.favorites)) {
@@ -74,7 +75,7 @@ export function parseBackup(value: string): ParseBackupResult {
     parsed.practiceSessions = [];
   }
 
-  const settings = { ...defaultSettings, ...(parsed.settings as Partial<AppSettings>) };
+  const settings = { ...defaultSettings, ...(parsed.settings as Partial<AppSettings>), apiKey: "" };
 
   return {
     ok: true,

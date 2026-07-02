@@ -127,6 +127,14 @@ requirements. See [data/vocabulary/NOTICE.md](./data/vocabulary/NOTICE.md).
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for vocabulary format, data rules, and pull request checks.
 
+## License And Data Terms
+
+- App source code: MIT, see [LICENSE](./LICENSE).
+- CET vocabulary data: generated from ECDICT, MIT licensed, with upstream attribution retained in [data/vocabulary/NOTICE.md](./data/vocabulary/NOTICE.md).
+- JLPT vocabulary data: generated from community JLPT/JMdict-aligned sources under CC BY-SA 4.0 terms. JLPT does not publish official vocabulary lists, so these decks are reference lists, not official exam requirements.
+
+When redistributing APKs, forks, or modified vocabulary files, keep the data notice with the app.
+
 ## AI Key Notice
 
 The first version is static-first and stores the API key in the user's browser storage. This is convenient for personal or self-hosted use, but browser-side keys are visible to the local browser environment. For shared or production deployments, add a server-side proxy before accepting other users' keys.

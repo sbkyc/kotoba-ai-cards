@@ -24,9 +24,9 @@ describe("VocabularyCardView", () => {
     expect(screen.getAllByText("houshin")).toHaveLength(2);
     expect(screen.queryByText("policy direction")).not.toBeInTheDocument();
 
-    const unknownButton = screen.getByRole("button", { name: "不认识" });
-    const fuzzyButton = screen.getByRole("button", { name: "模糊" });
-    const knownButton = screen.getByRole("button", { name: "认识" });
+    const unknownButton = screen.getByRole("button", { name: "???" });
+    const fuzzyButton = screen.getByRole("button", { name: "??" });
+    const knownButton = screen.getByRole("button", { name: "??" });
     expect(unknownButton).toBeEnabled();
     expect(fuzzyButton).toBeEnabled();
     expect(knownButton).toBeEnabled();
@@ -45,14 +45,27 @@ describe("VocabularyCardView", () => {
     expect(container.querySelector(".example-block")).toBeNull();
   });
 
+  it("labels JLPT imported meanings as English glosses", () => {
+    render(<VocabularyCardView card={card} onRate={vi.fn()} revealed />);
+
+    expect(screen.getByText("????")).toBeInTheDocument();
+    expect(screen.queryByText("????")).not.toBeInTheDocument();
+  });
+
+  it("labels CET imported meanings as Chinese meanings", () => {
+    render(<VocabularyCardView card={{ ...card, level: "CET4", meaningZh: "????" }} onRate={vi.fn()} revealed />);
+
+    expect(screen.getByText("????")).toBeInTheDocument();
+  });
+
   it("keeps study tools visible before the answer is revealed", () => {
     render(
       <VocabularyCardView card={card} onRate={vi.fn()}>
-        <button type="button">AI 刷题</button>
+        <button type="button">AI ??</button>
       </VocabularyCardView>,
     );
 
-    expect(screen.getByRole("button", { name: "AI 刷题" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "AI ??" })).toBeInTheDocument();
     expect(screen.queryByText("policy direction")).not.toBeInTheDocument();
   });
 
@@ -63,15 +76,15 @@ describe("VocabularyCardView", () => {
         onRate={vi.fn()}
         evidence={{
           sourceBadges: [{ label: "ECDICT CET-4", detail: "source" }],
-          recommendationBadges: ["常考词"],
-          reason: "命中来源标签。",
-          caution: "不等同于真题频次统计。",
+          recommendationBadges: ["???"],
+          reason: "???????",
+          caution: "???????????",
         }}
       />,
     );
 
-    expect(screen.getByText("常考词")).toBeInTheDocument();
+    expect(screen.getByText("???")).toBeInTheDocument();
     expect(screen.getByText("ECDICT CET-4")).toBeInTheDocument();
-    expect(screen.getByText("命中来源标签。")).toBeInTheDocument();
+    expect(screen.getByText("???????")).toBeInTheDocument();
   });
 });

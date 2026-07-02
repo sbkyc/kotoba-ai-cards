@@ -1,5 +1,8 @@
 # Vocabulary Data Notice
 
+The app source code is MIT licensed, but vocabulary data keeps its upstream
+license terms.
+
 The English CET-4 and CET-6 vocabulary JSON files are generated from
 [`skywind3000/ECDICT`](https://github.com/skywind3000/ECDICT), which is
 licensed under the MIT License. ECDICT tags are used to select `cet4` and
@@ -18,6 +21,10 @@ Attribution-ShareAlike 4.0 International.
 
 JLPT does not publish official vocabulary lists. These decks should be treated
 as community reference lists, not official exam requirements.
+
+For current imported JLPT entries, `meaningZh` contains the upstream English
+gloss. The UI labels these entries as English meanings until a checked Chinese
+meaning source is added.
 
 Generated files:
 

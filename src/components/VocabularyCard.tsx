@@ -79,7 +79,7 @@ export function VocabularyCardView({
       <div className={revealed ? "answer-panel visible" : "answer-panel"}>
         {revealed ? (
           <>
-            <p className="answer-label">????</p>
+            <p className="answer-label">{levelMeta.meaningLabel}</p>
             <h2>{card.meaningZh}</h2>
             {hasExample ? (
               <div className="example-block">

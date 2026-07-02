@@ -41,7 +41,7 @@ export function SettingsClient() {
     anchor.download = `kotoba-backup-${new Date().toISOString().slice(0, 10)}.json`;
     anchor.click();
     URL.revokeObjectURL(url);
-    setMessage("本地备份已导出。");
+    setMessage("????????API Key ????????");
   };
 
   const importBackup = async (file?: File) => {
@@ -58,13 +58,13 @@ export function SettingsClient() {
       result.data.reviewEvents,
       result.data.practiceSessions,
     );
-    setMessage("备份已恢复。");
+    setMessage("??????API Key ???????");
   };
 
   const confirmClear = () => {
-    if (window.confirm("确定清空全部学习进度吗？重点词和设置不会被删除。")) {
+    if (window.confirm("????????????????????????")) {
       clearProgress();
-      setMessage("学习进度已清空。");
+      setMessage("????????");
     }
   };
 
@@ -73,25 +73,25 @@ export function SettingsClient() {
       <div className="page-wrap settings-page">
         <header>
           <p className="eyebrow">Preferences</p>
-          <h1 className="page-title">设置</h1>
+          <h1 className="page-title">??</h1>
         </header>
 
-        <SettingsSection title="学习偏好" description="调整默认词库和每日学习量。">
-          <SettingRow label="默认考试词库">
+        <SettingsSection title="????" description="?????????????">
+          <SettingRow label="??????">
             <select value={settings.level} onChange={(event) => updateSettings({ level: event.target.value as StudyLevel })}>
               {studyLevels.map((level) => <option key={level.value} value={level.value}>{level.label}</option>)}
             </select>
           </SettingRow>
-          <SettingRow label="每日新词目标">
+          <SettingRow label="??????">
             <input type="number" min={1} max={100} value={settings.dailyGoal} onChange={(event) => updateSettings({ dailyGoal: Number(event.target.value) })} />
           </SettingRow>
         </SettingsSection>
 
-        <SettingsSection title="AI 提供商" description="浏览器直连适合个人使用，不要在公共设备保存密钥。">
-          <SettingRow label="启用 AI 工具">
+        <SettingsSection title="AI ???" description="????????????????????????">
+          <SettingRow label="?? AI ??">
             <input type="checkbox" checked={settings.aiEnabled} onChange={(event) => updateSettings({ aiEnabled: event.target.checked })} />
           </SettingRow>
-          <SettingRow label="AI 服务商">
+          <SettingRow label="AI ???">
             <select value={selectedProvider} onChange={(event) => updateAiProvider(event.target.value as AiProvider)}>
               {aiProviderPresets.map((preset) => <option key={preset.value} value={preset.value}>{preset.label}</option>)}
             </select>
@@ -100,31 +100,40 @@ export function SettingsClient() {
           <SettingRow label="API Key">
             <div className="inline-control">
               <input type="password" autoComplete="new-password" value={settings.apiKey} onChange={(event) => updateSettings({ apiKey: event.target.value })} placeholder={providerPreset.keyPlaceholder} />
-              <button type="button" className="secondary-button" onClick={() => updateSettings({ apiKey: "", aiEnabled: false })}><KeyRound size={15} /> 清除</button>
+              <button type="button" className="secondary-button" onClick={() => updateSettings({ apiKey: "", aiEnabled: false })}><KeyRound size={15} /> ??</button>
             </div>
           </SettingRow>
-          <SettingRow label="模型">
+          <SettingRow label="??">
             <input value={settings.model} onChange={(event) => updateSettings({ model: event.target.value })} />
           </SettingRow>
           <SettingRow label="API Endpoint">
             <input value={settings.endpoint} onChange={(event) => updateSettings({ endpoint: event.target.value })} />
           </SettingRow>
+          <p className="security-note">API Key ??????????????????????? Endpoint ??????? OpenAI-compatible ???</p>
         </SettingsSection>
 
-        <SettingsSection title="数据备份" description="导出或恢复本地设置、进度、重点词和学习历史。">
+        <SettingsSection title="????" description="???????????????????????????? API Key?">
           <div className="action-row">
-            <button type="button" className="secondary-button" onClick={exportBackup}><Download size={16} /> 导出 JSON</button>
-            <button type="button" className="secondary-button" onClick={() => fileInputRef.current?.click()}><Upload size={16} /> 导入 JSON</button>
+            <button type="button" className="secondary-button" onClick={exportBackup}><Download size={16} /> ?? JSON</button>
+            <button type="button" className="secondary-button" onClick={() => fileInputRef.current?.click()}><Upload size={16} /> ?? JSON</button>
             <input ref={fileInputRef} type="file" accept=".json,application/json" hidden onChange={(event) => void importBackup(event.target.files?.[0])} />
           </div>
+          <p className="security-note">????????????? JSON ????? API Key???????????????</p>
         </SettingsSection>
 
-        <SettingsSection title="安装应用" description="把 Kotoba 放到手机主屏幕或电脑桌面，打开时会像独立软件一样运行。">
+        <SettingsSection title="????" description="? Kotoba ???????????????????????????">
           <PwaInstallPanel />
         </SettingsSection>
 
-        <SettingsSection title="危险操作" description="操作不可撤销，建议先导出备份。">
-          <button type="button" className="danger-button" onClick={confirmClear}><Trash2 size={16} /> 清空学习进度</button>
+        <SettingsSection title="????" description="???????????">
+          <div className="source-note">
+            <p>CET ???? ECDICT ????????? MIT ?????????</p>
+            <p>JLPT ??????????? JMdict ?????? CC BY-SA 4.0 ?????????JLPT ??????????? JLPT ??????? gloss?</p>
+          </div>
+        </SettingsSection>
+
+        <SettingsSection title="????" description="???????????????">
+          <button type="button" className="danger-button" onClick={confirmClear}><Trash2 size={16} /> ??????</button>
         </SettingsSection>
 
         {message ? <p className="settings-message">{message}</p> : null}
@@ -135,6 +144,9 @@ export function SettingsClient() {
         .inline-control,.action-row { display:flex; gap:8px; }
         input:not([type="checkbox"]),select { width:min(440px,100%); min-height:42px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); padding:0 12px; color:var(--ink); }
         input[type="checkbox"] { width:20px; height:20px; accent-color:var(--green); }
+        .security-note { margin:12px 0 0; color:var(--muted); font-size:12px; line-height:1.7; }
+        .source-note { display:grid; gap:8px; color:var(--muted); font-size:13px; line-height:1.75; }
+        .source-note p { margin:0; }
         .danger-button { display:inline-flex; gap:8px; align-items:center; min-height:42px; border:1px solid var(--red); border-radius:6px; background:var(--red-soft); padding:0 15px; color:var(--red); font-weight:700; }
         .settings-message { position:sticky; bottom:20px; width:fit-content; margin-left:auto; border-radius:6px; background:var(--ink); padding:10px 14px; color:white; font-size:12px; }
         @media(max-width:620px) { .inline-control,.action-row { flex-direction:column; } }
@@ -164,7 +176,7 @@ function PwaInstallPanel() {
     const handleInstalled = () => {
       setInstallPrompt(null);
       setInstalled(true);
-      setMessage("已经安装，可以从主屏幕或桌面打开。");
+      setMessage("?????????????????");
     };
 
     window.addEventListener("beforeinstallprompt", handlePrompt);
@@ -177,14 +189,14 @@ function PwaInstallPanel() {
 
   const installApp = async () => {
     if (!installPrompt) {
-      setMessage(platform === "ios" ? "iPhone 上请按下方步骤添加到主屏幕。" : "如果没有安装按钮，请按下方步骤从浏览器菜单安装。");
+      setMessage(platform === "ios" ? "iPhone ??????????????" : "????????????????????????");
       return;
     }
 
     await installPrompt.prompt();
     const choice = await installPrompt.userChoice;
     setInstallPrompt(null);
-    setMessage(choice.outcome === "accepted" ? "安装已开始。" : "已取消安装，可以稍后再试。");
+    setMessage(choice.outcome === "accepted" ? "??????" : "?????????????");
   };
 
   const steps = getInstallSteps(platform);
@@ -193,12 +205,12 @@ function PwaInstallPanel() {
     <div className="install-panel">
       <div className="install-head">
         <div>
-          <strong>{standalone || installed ? "已在应用模式运行" : "安装 Kotoba"}</strong>
-          <p>{standalone || installed ? "可以从主屏幕或桌面打开 Kotoba。" : "安装后可全屏启动，并继续使用已缓存页面。"}</p>
+          <strong>{standalone || installed ? "????????" : "?? Kotoba"}</strong>
+          <p>{standalone || installed ? "??????????? Kotoba?" : "????????????????????"}</p>
         </div>
         <button type="button" className="primary-button" onClick={installApp} disabled={standalone || installed}>
           {standalone || installed ? <CheckCircle2 size={16} /> : <Smartphone size={16} />}
-          {standalone || installed ? "已安装" : "安装应用"}
+          {standalone || installed ? "???" : "????"}
         </button>
       </div>
       <ol>
