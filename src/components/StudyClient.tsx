@@ -5,6 +5,8 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, RotateCcw } from "lucide-react";
 import { requestAiJson, type AiPayload } from "@/lib/ai/client";
 import { buildDifferencePrompt, buildExamplePrompt, buildQuizPrompt } from "@/lib/ai/prompts";
+import { getDefaultExamSection } from "@/lib/practice/examSections";
+import { buildOfflineExamQuizPayload } from "@/lib/practice/offlinePaper";
 import { previewReview, type ReviewRating } from "@/lib/scheduler/scheduler";
 import { mapStudyKey } from "@/lib/study/keyboard";
 import { buildStudyQueue, type StudyMode } from "@/lib/study/queue";
@@ -103,7 +105,13 @@ export function StudyClient() {
   const handleAiAction = async (action: "example" | "difference" | "quiz") => {
     if (!card) return;
     if (!settings.aiEnabled || !settings.apiKey) {
-      setAiError("请先在设置页启用 AI 并填写 API Key。");
+      if (action === "quiz") {
+        setAiError("");
+        setAiPayload(buildOfflineExamQuizPayload(card, cards, getDefaultExamSection(settings.level)));
+        return;
+      }
+
+      setAiError("?????????????? AI ??? API Key?");
       return;
     }
 
@@ -120,7 +128,12 @@ export function StudyClient() {
     try {
       setAiPayload(await requestAiJson(prompt, settings));
     } catch (error) {
-      setAiError(error instanceof Error ? error.message : "AI 请求失败。");
+      if (action === "quiz") {
+        setAiPayload(buildOfflineExamQuizPayload(card, cards, getDefaultExamSection(settings.level)));
+        setAiError("AI ??????????????");
+      } else {
+        setAiError(error instanceof Error ? error.message : "AI ?????");
+      }
     } finally {
       setAiLoading(false);
     }
@@ -133,16 +146,16 @@ export function StudyClient() {
           <StudyModeTabs value={mode} onChange={handleModeChange} />
           <p className="eyebrow">Session Complete</p>
           <h1>{emptyTitle(mode)}</h1>
-          <p className="muted">本次完成 {sessionStats.completed} 张词卡。{emptyHint(mode)}</p>
+          <p className="muted">???? {sessionStats.completed} ????{emptyHint(mode)}</p>
           <div className="complete-stats">
-            <SessionStat label="认识" value={sessionStats.known} />
-            <SessionStat label="模糊" value={sessionStats.fuzzy} />
-            <SessionStat label="不认识" value={sessionStats.unknown} />
+            <SessionStat label="??" value={sessionStats.known} />
+            <SessionStat label="??" value={sessionStats.fuzzy} />
+            <SessionStat label="???" value={sessionStats.unknown} />
           </div>
           <div className="complete-actions">
-            <Link href="/" className="primary-button">返回今日 <ArrowRight size={16} /></Link>
-            <Link href="/library" className="secondary-button">复习重点词</Link>
-            <Link href="/settings" className="secondary-button">调整每日目标</Link>
+            <Link href="/" className="primary-button">???? <ArrowRight size={16} /></Link>
+            <Link href="/library" className="secondary-button">?????</Link>
+            <Link href="/settings" className="secondary-button">??????</Link>
           </div>
         </div>
         <style jsx>{`
@@ -166,14 +179,14 @@ export function StudyClient() {
     <AppShell>
       <div className="page-wrap study-page">
         <header className="session-header">
-          <Link href="/" className="text-button"><ArrowLeft size={17} /> 退出学习</Link>
+          <Link href="/" className="text-button"><ArrowLeft size={17} /> ????</Link>
           <div className="session-progress">
-            <span>{sessionStats.completed} 已完成</span>
+            <span>{sessionStats.completed} ???</span>
             <div><i style={{ width: `${progressPercent}%` }} /></div>
             <strong>{queue.length} {queueLabel(mode)}</strong>
           </div>
           <button type="button" className="text-button" onClick={() => setSessionStats(emptySession)}>
-            <RotateCcw size={16} /> 重置统计
+            <RotateCcw size={16} /> ????
           </button>
           <StudyModeTabs value={mode} onChange={handleModeChange} />
         </header>
@@ -220,27 +233,27 @@ export function StudyClient() {
 }
 
 function queueLabel(mode: StudyMode) {
-  if (mode === "difficult") return "待攻克";
-  if (mode === "core") return "核心词";
-  if (mode === "exam") return "常考词";
-  if (mode === "favorites") return "重点词";
-  return "待学习";
+  if (mode === "difficult") return "???";
+  if (mode === "core") return "???";
+  if (mode === "exam") return "???";
+  if (mode === "favorites") return "???";
+  return "???";
 }
 
 function emptyTitle(mode: StudyMode) {
-  if (mode === "difficult") return "暂时没有错题要攻克。";
-  if (mode === "core") return "核心词已经刷完一轮了。";
-  if (mode === "exam") return "常考词已经刷完一轮了。";
-  if (mode === "favorites") return "还没有重点词任务。";
-  return "今天的学习完成了。";
+  if (mode === "difficult") return "??????????";
+  if (mode === "core") return "???????????";
+  if (mode === "exam") return "???????????";
+  if (mode === "favorites") return "?????????";
+  return "?????????";
 }
 
 function emptyHint(mode: StudyMode) {
-  if (mode === "difficult") return "继续日常计划，新的模糊词会自动进入这里。";
-  if (mode === "core") return "可以切回今日计划继续扩展词汇，核心词会随着等级自动更新。";
-  if (mode === "exam") return "可以切到核心词扩大覆盖面，或回到今日计划继续推进。";
-  if (mode === "favorites") return "在词汇库或学习页点亮星标后，会出现在这里。";
-  return "可以切换到错题优先或重点词，再做一轮强化。";
+  if (mode === "difficult") return "????????????????????";
+  if (mode === "core") return "????????????????????????????";
+  if (mode === "exam") return "?????????????????????????";
+  if (mode === "favorites") return "?????????????????????";
+  return "?????????????????????";
 }
 
 function SessionStat({ label, value }: { label: string; value: number }) {

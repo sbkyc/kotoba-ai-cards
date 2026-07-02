@@ -1,3 +1,4 @@
+import type { AiPayload } from "@/lib/ai/client";
 import type { ExamSection } from "@/lib/practice/examSections";
 import type { PracticePaper, PracticeQuestion } from "@/lib/practice/practice";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
@@ -18,8 +19,32 @@ export function buildOfflinePracticePaper(
 
   return {
     kind: "practice-paper",
-    title: `${examSection.family} ${examSection.label} · 离线小测`,
+    title: `${examSection.family} ${examSection.label} ? ????`,
     questions: selectedCards.map((card, index) => buildOfflineQuestion(card, index, sourceCards, examSection)),
+  };
+}
+
+export function buildOfflineExamQuizPayload(
+  card: VocabularyCard,
+  sourceCards: VocabularyCard[],
+  examSection: ExamSection,
+): AiPayload {
+  const question = buildOfflineQuestion(
+    card,
+    0,
+    [card, ...sourceCards.filter((item) => item.id !== card.id)],
+    examSection,
+  );
+
+  return {
+    kind: "exam-quiz",
+    examSection: question.examSection,
+    questionType: question.questionType,
+    question: question.stem,
+    options: question.options,
+    answer: question.answer,
+    explanation: question.explanation,
+    memoryCheck: "????????????????????????",
   };
 }
 
@@ -42,7 +67,7 @@ function buildOfflineQuestion(
     explanation: buildExplanation(card),
     skill: examSection.skill,
     examSection: `${examSection.family} ${examSection.label}`,
-    questionType: "离线原创四选一",
+    questionType: "???????",
   };
 }
 
@@ -56,32 +81,36 @@ function buildStem(card: VocabularyCard, examSection: ExamSection): string {
 
 function buildCetStem(card: VocabularyCard, examSection: ExamSection): string {
   if (examSection.id === "cet-reading-meaning") {
-    return `In the sentence "${englishExample(card)}", which meaning is closest to "${card.word}"?`;
+    const example = englishExample(card);
+    return example
+      ? `In the sentence "${example}", which meaning is closest to "${card.word}"?`
+      : `In this exam-style vocabulary item, which meaning is closest to "${card.word}"?`;
   }
 
   if (examSection.id === "cet-translation-usage") {
-    return `“${card.meaningZh}” is closest to which English expression?`;
+    return `?${card.meaningZh}? is closest to which English expression?`;
   }
 
-  const blanked = replaceWord(englishExample(card), card.word, "____");
+  const example = englishExample(card);
+  const blanked = example ? replaceWord(example, card.word, "____") : "";
   return blanked.includes("____")
     ? blanked
-    : `Choose the word that best completes the sentence: ____ means "${card.meaningZh}".`;
+    : `Choose the word that best completes this definition clue: ____ = ${card.meaningZh}.`;
 }
 
 function buildJlptStem(card: VocabularyCard, examSection: ExamSection): string {
   if (examSection.id === "jlpt-reading-context") {
-    return `${japaneseExample(card)} 「${card.word}」の意味として近いものはどれですか。`;
+    return `${japaneseExample(card)} ?${card.word}??????????????????`;
   }
 
   if (examSection.id === "jlpt-paraphrase") {
-    return `下線部「${card.word}」の意味に近いものはどれですか。`;
+    return `????${card.word}????????????????`;
   }
 
-  const blanked = replaceWord(japaneseExample(card), card.word, "（　）");
-  return blanked.includes("（　）")
+  const blanked = replaceWord(japaneseExample(card), card.word, "???");
+  return blanked.includes("???")
     ? blanked
-    : `文の（　）に入る言葉として最もよいものを選んでください。意味：${card.meaningZh}`;
+    : `???????????????????????????????${card.meaningZh}`;
 }
 
 function buildOptionBodies(
@@ -126,15 +155,15 @@ function labelOptions(answerBody: string, optionBodies: string[], index: number)
 function fallbackOptionBodies(card: VocabularyCard, examSection: ExamSection): string[] {
   if (examSection.id === "cet-reading-meaning" || examSection.id === "jlpt-reading-context" || examSection.id === "jlpt-paraphrase") {
     return [
-      `只表示人名或地名`,
-      `与「${card.word}」无关的固定寒暄`,
-      `表示过去发生的具体日期`,
-      `表示颜色或形状`,
+      `????????`,
+      `??${card.word}????????`,
+      `???????????`,
+      `???????`,
     ];
   }
 
   if (examSection.family === "JLPT") {
-    return ["確認", "準備", "説明", "場合", "理由"];
+    return ["??", "??", "??", "??", "??"];
   }
 
   return ["confirm", "prepare", "explain", "reason", "method"];
@@ -142,15 +171,15 @@ function fallbackOptionBodies(card: VocabularyCard, examSection: ExamSection): s
 
 function buildExplanation(card: VocabularyCard): string {
   const examples = [card.exampleJa, card.exampleZh].filter(Boolean).join(" ");
-  return examples ? `${card.word}：${card.meaningZh}。${examples}` : `${card.word}：${card.meaningZh}。`;
+  return examples ? `${card.word}?${card.meaningZh}?${examples}` : `${card.word}?${card.meaningZh}?`;
 }
 
 function englishExample(card: VocabularyCard): string {
-  return card.exampleJa || `The target word is ${card.word}.`;
+  return card.exampleJa.trim();
 }
 
 function japaneseExample(card: VocabularyCard): string {
-  return card.exampleJa || `${card.word}を使った文を確認します。`;
+  return card.exampleJa || `${card.word}????????????`;
 }
 
 function replaceWord(sentence: string, word: string, replacement: string): string {

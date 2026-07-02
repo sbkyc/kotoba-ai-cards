@@ -1,8 +1,8 @@
 # Kotoba AI Cards
 
-Kotoba AI Cards is an open-source vocabulary study app for CET-4, CET-6, and JLPT N5-N1 learners, with optional AI study helpers.
+Kotoba AI Cards is a vocabulary study app for CET-4, CET-6, and JLPT N5-N1 learners, with optional AI study helpers.
 
-It works as a normal flashcard app without an API key. If learners add their own API key in Settings, they can generate example sentences, word-difference explanations, and original exam-style memory checks for the current card. The AI panel supports OpenAI, DeepSeek, Qwen/DashScope, Kimi/Moonshot, Zhipu GLM, OpenRouter, Gemini, Anthropic Claude, and custom OpenAI-compatible endpoints.
+It works as a normal flashcard and practice app without an API key. Offline mode supports daily study, due review, core words, exam-focus words, mistakes, and original four-option practice. If learners add their own API key in Settings, they can also generate example sentences, word-difference explanations, and more flexible exam-style memory checks for the current card. The AI panel supports OpenAI, DeepSeek, Qwen/DashScope, Kimi/Moonshot, Zhipu GLM, OpenRouter, Gemini, Anthropic Claude, and custom OpenAI-compatible endpoints.
 
 Live site: https://sbkyc.github.io/kotoba-ai-cards/
 
@@ -12,9 +12,12 @@ Live site: https://sbkyc.github.io/kotoba-ai-cards/
 - Local progress for known, fuzzy, and unknown ratings
 - Due-review-first study queue with core vocabulary prioritized before ordinary new cards
 - Core, exam-focus, difficult-word, and favorite-word review modes
+- Offline single-card quizzes and offline practice papers without an API key
+- AI practice falls back to offline questions if the AI request fails
 - Daily stats and vocabulary library filters
 - Mastery status filtering in the library
-- Optional AI helpers using a user-provided API key, including exam-style memory checks
+- Optional AI helpers using a user-provided API key, including exam-style memory checks, examples, and word-difference explanations
+- Android APK packaging through Capacitor
 - Local JSON backup export and import
 - Static-first Next.js app with local browser storage
 - JSON vocabulary files that are easy to improve through pull requests
@@ -38,6 +41,24 @@ Open http://127.0.0.1:3000.
 
 ## Install On Android
 
+For personal use, build and install the debug APK:
+
+```bash
+npm run android:apk
+```
+
+The generated file is:
+
+```text
+android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+Send `app-debug.apk` to your Android phone and open it to install. Android may ask you to allow installs from the app that received the file.
+
+For a signed release APK/AAB, see [docs/android-apk.md](./docs/android-apk.md).
+
+## Install As PWA
+
 After the GitHub Pages deployment finishes, open the live site in Android Chrome or Edge:
 
 ```text
@@ -54,6 +75,8 @@ npm test
 npm run build
 npm run import:cet
 npm run import:jlpt
+npm run android:apk
+npm run android:release:apk
 ```
 
 ## Vocabulary Data
@@ -77,8 +100,8 @@ Record shape:
   "id": "cet-4-abandon",
   "level": "CET4",
   "word": "abandon",
-  "kana": "/ә'bændәn/",
-  "meaningZh": "vt. 放弃, 抛弃, 遗弃, 使屈从, 沉溺, 放纵; n. 放任, 无拘束, 狂热",
+  "kana": "/?'b?nd?n/",
+  "meaningZh": "vt. ??, ??, ??, ???, ??, ??; n. ??, ???, ??",
   "partOfSpeech": "noun / verb",
   "exampleJa": "",
   "exampleZh": "",

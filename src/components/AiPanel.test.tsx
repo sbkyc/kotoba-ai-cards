@@ -15,8 +15,8 @@ describe("AiPanel", () => {
       />,
     );
 
-    expect(screen.getByLabelText("小猫加载中")).toBeInTheDocument();
-    expect(screen.getByText("小猫正在生成")).toBeInTheDocument();
+    expect(screen.getByLabelText("?????")).toBeInTheDocument();
+    expect(screen.getByText("??????")).toBeInTheDocument();
   });
 
   it("shows the exam quiz action by default and gates answer-revealing helpers", () => {
@@ -31,9 +31,27 @@ describe("AiPanel", () => {
       />,
     );
 
-    expect(screen.getByRole("button", { name: "AI 刷题" })).toBeEnabled();
-    expect(screen.getByRole("button", { name: "生成例句" })).toBeDisabled();
-    expect(screen.getByRole("button", { name: "解释区别" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "AI ??" })).toBeEnabled();
+    expect(screen.getByRole("button", { name: "????" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "????" })).toBeDisabled();
+  });
+
+  it("keeps local quiz available when AI is not configured", () => {
+    render(
+      <AiPanel
+        loading={false}
+        error=""
+        payload={null}
+        aiEnabled={false}
+        revealed={false}
+        onAction={vi.fn()}
+      />,
+    );
+
+    expect(screen.getByRole("button", { name: "????" })).toBeEnabled();
+    expect(screen.getByRole("button", { name: "????" })).toBeDisabled();
+    expect(screen.getByRole("button", { name: "????" })).toBeDisabled();
+    expect(screen.getByText(/??? API Key/)).toBeInTheDocument();
   });
 
   it("hides exam quiz answers until the learner reveals them", () => {
@@ -61,7 +79,7 @@ describe("AiPanel", () => {
     expect(screen.getByText("A abandon")).toBeInTheDocument();
     expect(screen.queryByText("abandon means give up.")).not.toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole("button", { name: "显示答案和解析" }));
+    fireEvent.click(screen.getByRole("button", { name: "???????" }));
 
     expect(screen.getByText("abandon means give up.")).toBeInTheDocument();
   });
@@ -89,10 +107,10 @@ describe("AiPanel", () => {
       />,
     );
 
-    expect(screen.queryByRole("button", { name: "答对了" })).not.toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "???" })).not.toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole("button", { name: "显示答案和解析" }));
-    fireEvent.click(screen.getByRole("button", { name: "答对了" }));
+    fireEvent.click(screen.getByRole("button", { name: "???????" }));
+    fireEvent.click(screen.getByRole("button", { name: "???" }));
 
     expect(onQuizRate).toHaveBeenCalledWith("known");
   });

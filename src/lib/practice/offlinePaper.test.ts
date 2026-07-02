@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { findExamSection } from "@/lib/practice/examSections";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
-import { buildOfflinePracticePaper } from "./offlinePaper";
+import { buildOfflineExamQuizPayload, buildOfflinePracticePaper } from "./offlinePaper";
 
 describe("offline practice paper", () => {
   it("generates complete four-option questions tied to the selected source cards", () => {
@@ -12,7 +12,7 @@ describe("offline practice paper", () => {
 
     expect(paper).toMatchObject({
       kind: "practice-paper",
-      title: "CET 词汇语境 · 离线小测",
+      title: "CET ???? ? ????",
     });
     expect(paper.questions).toHaveLength(3);
 
@@ -21,8 +21,8 @@ describe("offline practice paper", () => {
       expect(question.options).toHaveLength(4);
       expect(new Set(question.options).size).toBe(4);
       expect(question.options).toContain(question.answer);
-      expect(question.examSection).toBe("CET 词汇语境");
-      expect(question.questionType).toBe("离线原创四选一");
+      expect(question.examSection).toBe("CET ????");
+      expect(question.questionType).toBe("???????");
     }
   });
 
@@ -33,7 +33,7 @@ describe("offline practice paper", () => {
     });
 
     expect(paper.questions[0].stem).toContain("____");
-    expect(paper.questions[0].skill).toBe("完形填空");
+    expect(paper.questions[0].skill).toBe("????");
   });
 
   it("uses JLPT-style Japanese blanks for moji-goi modules", () => {
@@ -42,9 +42,9 @@ describe("offline practice paper", () => {
       examSection: findExamSection("N3", "jlpt-moji-goi"),
     });
 
-    expect(paper.title).toBe("JLPT 文字語彙 · 离线小测");
-    expect(paper.questions[0].stem).toContain("（　）");
-    expect(paper.questions[0].examSection).toBe("JLPT 文字語彙");
+    expect(paper.title).toBe("JLPT ???? ? ????");
+    expect(paper.questions[0].stem).toContain("???");
+    expect(paper.questions[0].examSection).toBe("JLPT ????");
   });
 
   it("falls back to stable synthetic distractors when the deck is too small", () => {
@@ -57,20 +57,44 @@ describe("offline practice paper", () => {
     expect(new Set(paper.questions[0].options).size).toBe(4);
     expect(paper.questions[0].stem).toContain("meaning is closest to");
   });
+
+  it("uses a definition-clue fallback instead of a generic target-word sentence", () => {
+    const paper = buildOfflinePracticePaper([makeCard("cet-4-brief", "CET4", "brief", "??????", "adj.", "", "")], {
+      questionCount: 1,
+      examSection: findExamSection("CET4", "cet-vocabulary-context"),
+    });
+
+    expect(paper.questions[0].stem).toContain("____");
+    expect(paper.questions[0].stem).toContain("??????");
+    expect(paper.questions[0].stem).not.toContain("The target word is");
+  });
+
+  it("builds a single-card offline exam quiz payload for study cards", () => {
+    const payload = buildOfflineExamQuizPayload(englishCards[0], englishCards, findExamSection("CET4", "cet-cloze"));
+
+    expect(payload).toMatchObject({
+      kind: "exam-quiz",
+      examSection: "CET ????",
+      questionType: "???????",
+      answer: expect.stringContaining("abandon"),
+    });
+    expect(payload.options).toHaveLength(4);
+    expect(payload.question).toContain("____");
+  });
 });
 
 const englishCards: VocabularyCard[] = [
-  makeCard("cet-4-abandon", "CET4", "abandon", "放弃；抛弃", "v.", "The team had to abandon the old plan.", "团队不得不放弃旧计划。"),
-  makeCard("cet-4-ability", "CET4", "ability", "能力；才能", "n.", "She has the ability to solve it.", "她有能力解决它。"),
-  makeCard("cet-4-benefit", "CET4", "benefit", "好处；使受益", "n./v.", "The policy will benefit students.", "这项政策会使学生受益。"),
-  makeCard("cet-4-maintain", "CET4", "maintain", "维持；保持", "v.", "They maintain a steady pace.", "他们保持稳定节奏。"),
+  makeCard("cet-4-abandon", "CET4", "abandon", "?????", "v.", "The team had to abandon the old plan.", "???????????"),
+  makeCard("cet-4-ability", "CET4", "ability", "?????", "n.", "She has the ability to solve it.", "????????"),
+  makeCard("cet-4-benefit", "CET4", "benefit", "??????", "n./v.", "The policy will benefit students.", "???????????"),
+  makeCard("cet-4-maintain", "CET4", "maintain", "?????", "v.", "They maintain a steady pace.", "?????????"),
 ];
 
 const japaneseCards: VocabularyCard[] = [
-  makeCard("jlpt-n3-安心", "N3", "安心", "安心；放心", "名/する", "家族に連絡して安心しました。", "联系家人后放心了。", "あんしん"),
-  makeCard("jlpt-n3-予定", "N3", "予定", "预定；计划", "名", "明日の予定を確認します。", "确认明天的计划。", "よてい"),
-  makeCard("jlpt-n3-必要", "N3", "必要", "必要", "名/な形", "予約が必要です。", "需要预约。", "ひつよう"),
-  makeCard("jlpt-n3-連絡", "N3", "連絡", "联系", "名/する", "先生に連絡します。", "联系老师。", "れんらく"),
+  makeCard("jlpt-n3-??", "N3", "??", "?????", "?/??", "??????????????", "?????????", "????"),
+  makeCard("jlpt-n3-??", "N3", "??", "?????", "?", "????????????", "????????", "???"),
+  makeCard("jlpt-n3-??", "N3", "??", "??", "?/??", "????????", "?????", "????"),
+  makeCard("jlpt-n3-??", "N3", "??", "??", "?/??", "?????????", "?????", "????"),
 ];
 
 function makeCard(

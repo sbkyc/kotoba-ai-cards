@@ -23,22 +23,21 @@ export function AiPanel({ loading, error, payload, aiEnabled, revealed = false, 
 
   return (
     <div className="ai-tools">
-      <button type="button" className="ai-toggle" onClick={() => setOpen((value) => !value)} aria-label="打开 AI 学习工具">
-        <span><Sparkles size={16} /> AI 刷题与学习工具</span>
+      <button type="button" className="ai-toggle" onClick={() => setOpen((value) => !value)} aria-label="?? AI ????">
+        <span><Sparkles size={16} /> AI ???????</span>
         <ChevronDown size={16} className={open ? "rotate" : ""} />
       </button>
 
       {open ? (
         <div className="ai-content">
           {!aiEnabled ? (
-            <p className="ai-note">AI 尚未启用。<Link href="/settings">前往设置</Link>填写自己的 API Key。</p>
-          ) : (
-            <div className="ai-actions">
-              <button type="button" className="quiz-action" onClick={() => onAction("quiz")}>AI 刷题</button>
-              <button type="button" disabled={!revealed} onClick={() => onAction("example")}>生成例句</button>
-              <button type="button" disabled={!revealed} onClick={() => onAction("difference")}>解释区别</button>
-            </div>
-          )}
+            <p className="ai-note">??? API Key???????????????????<Link href="/settings">????</Link>?? AI?</p>
+          ) : null}
+          <div className="ai-actions">
+            <button type="button" className="quiz-action" onClick={() => onAction("quiz")}>{aiEnabled ? "AI ??" : "????"}</button>
+            <button type="button" disabled={!aiEnabled || !revealed} onClick={() => onAction("example")}>????</button>
+            <button type="button" disabled={!aiEnabled || !revealed} onClick={() => onAction("difference")}>????</button>
+          </div>
           {loading ? <p className="loading"><CatLoader size={15} /></p> : null}
           {error ? <p className="error"><AlertCircle size={15} /> {error}</p> : null}
           {payload ? isExamQuizPayload(payload) ? (
@@ -115,6 +114,12 @@ function ExamQuizResult({
             <strong>{aiLabel("answer")}</strong>
             <p>{stringValue(payload.answer)}</p>
           </div>
+          {onQuizRate ? (
+            <div className="quiz-feedback" aria-label="AI??????">
+              <button type="button" onClick={() => onQuizRate("known")}>???</button>
+              <button type="button" onClick={() => onQuizRate("unknown")}>???</button>
+            </div>
+          ) : null}
           <div>
             <strong>{aiLabel("explanation")}</strong>
             <p>{stringValue(payload.explanation)}</p>
@@ -125,15 +130,9 @@ function ExamQuizResult({
               <p>{stringValue(payload.memoryCheck)}</p>
             </div>
           ) : null}
-          {onQuizRate ? (
-            <div className="quiz-feedback" aria-label="AI刷题结果记录">
-              <button type="button" onClick={() => onQuizRate("known")}>答对了</button>
-              <button type="button" onClick={() => onQuizRate("unknown")}>答错了</button>
-            </div>
-          ) : null}
         </div>
       ) : (
-        <button type="button" className="secondary-button" onClick={onRevealAnswer}>显示答案和解析</button>
+        <button type="button" className="secondary-button" onClick={onRevealAnswer}>???????</button>
       )}
       <style jsx>{`
         .exam-quiz { display:grid; gap:12px; margin-top:16px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); padding:14px; }
@@ -166,17 +165,17 @@ function stringValue(value: unknown): string {
 
 function aiLabel(key: string) {
   const labels: Record<string, string> = {
-    answer: "答案",
-    commonMistake: "常见误用",
-    exampleJa: "日语例句",
-    exampleZh: "中文翻译",
-    explanation: "解释",
-    memoryCheck: "记忆检测",
-    options: "选项",
-    question: "问题",
-    raw: "原始输出",
-    usageComparison: "用法比较",
-    usageNote: "用法提示",
+    answer: "??",
+    commonMistake: "????",
+    exampleJa: "????",
+    exampleZh: "????",
+    explanation: "??",
+    memoryCheck: "????",
+    options: "??",
+    question: "??",
+    raw: "????",
+    usageComparison: "????",
+    usageNote: "????",
   };
   return labels[key] ?? key;
 }
