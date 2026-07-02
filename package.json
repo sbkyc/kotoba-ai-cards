@@ -13,6 +13,8 @@
     "test:watch": "vitest",
     "android:sync": "npm run build && cap sync android",
     "android:apk": "npm run android:sync && cd android && gradlew.bat assembleDebug",
+    "android:release:apk": "npm run android:sync && cd android && gradlew.bat assembleRelease",
+    "android:release:aab": "npm run android:sync && cd android && gradlew.bat bundleRelease",
     "android:release": "npm run build && cap build android",
     "android:open": "cap open android",
     "android:twa:update": "npx @bubblewrap/cli update",

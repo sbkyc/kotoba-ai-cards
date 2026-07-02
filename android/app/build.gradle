@@ -1,5 +1,11 @@
 apply plugin: 'com.android.application'
 
+def releaseStoreFile = System.getenv("KOTOBA_RELEASE_STORE_FILE")
+def releaseStorePassword = System.getenv("KOTOBA_RELEASE_STORE_PASSWORD")
+def releaseKeyAlias = System.getenv("KOTOBA_RELEASE_KEY_ALIAS")
+def releaseKeyPassword = System.getenv("KOTOBA_RELEASE_KEY_PASSWORD")
+def hasReleaseSigning = releaseStoreFile && releaseStorePassword && releaseKeyAlias && releaseKeyPassword
+
 android {
     namespace = "io.github.sbkyc.kotoba"
     compileSdk = rootProject.ext.compileSdkVersion
@@ -16,8 +22,21 @@ android {
             ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
     }
+    signingConfigs {
+        release {
+            if (hasReleaseSigning) {
+                storeFile file(releaseStoreFile)
+                storePassword releaseStorePassword
+                keyAlias releaseKeyAlias
+                keyPassword releaseKeyPassword
+            }
+        }
+    }
     buildTypes {
         release {
+            if (hasReleaseSigning) {
+                signingConfig signingConfigs.release
+            }
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

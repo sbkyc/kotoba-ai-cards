@@ -49,6 +49,40 @@ The generated file is:
 android/app/build/outputs/apk/debug/app-debug.apk
 ```
 
+## Release APK / AAB Signing
+
+For an installable test on your own Android phone, the debug APK above is enough. For sharing a release APK or uploading to an app store, create a private signing key on the D drive and keep it out of Git:
+
+```powershell
+New-Item -ItemType Directory -Force D:\KotobaKeys
+keytool -genkeypair -v -keystore D:\KotobaKeys\kotoba-release.jks -alias kotoba -keyalg RSA -keysize 2048 -validity 10000
+```
+
+Set signing variables only in the current PowerShell session:
+
+```powershell
+$env:KOTOBA_RELEASE_STORE_FILE = "D:\KotobaKeys\kotoba-release.jks"
+$env:KOTOBA_RELEASE_STORE_PASSWORD = "<your-keystore-password>"
+$env:KOTOBA_RELEASE_KEY_ALIAS = "kotoba"
+$env:KOTOBA_RELEASE_KEY_PASSWORD = "<your-key-password>"
+```
+
+Then build a release APK or Android App Bundle:
+
+```powershell
+npm run android:release:apk
+npm run android:release:aab
+```
+
+Outputs:
+
+```text
+android/app/build/outputs/apk/release/app-release.apk
+android/app/build/outputs/bundle/release/app-release.aab
+```
+
+If the `KOTOBA_RELEASE_*` variables are not set, Gradle can still create an unsigned release artifact for inspection, but it is not suitable for normal installation or distribution.
+
 ## TWA APK
 
 The repo includes `twa-manifest.json`.

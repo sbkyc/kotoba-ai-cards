@@ -6,6 +6,7 @@ import { ArrowRight, BrainCircuit, CheckCircle2, RotateCcw, XCircle } from "luci
 import { requestAiJson } from "@/lib/ai/client";
 import { buildPracticePaperPrompt } from "@/lib/ai/prompts";
 import { findExamSection, getExamSections } from "@/lib/practice/examSections";
+import { buildOfflinePracticePaper } from "@/lib/practice/offlinePaper";
 import {
   buildPracticeSourceCards,
   buildPracticeSessionRecord,
@@ -62,23 +63,35 @@ export function PracticeClient() {
   const weakCards = report ? buildWeakCardSummaries(report.weakQuestions, cards) : [];
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [notice, setNotice] = useState("");
 
   const selectedCount = paper?.questions.filter((question) => answers[question.id]).length ?? 0;
-  const canGenerate = settings.aiEnabled && Boolean(settings.apiKey) && sourceCards.length > 0;
+  const canUseAi = settings.aiEnabled && Boolean(settings.apiKey);
+  const canGenerate = sourceCards.length > 0;
 
   const generatePaper = async () => {
     if (!canGenerate) {
-      setError(sourceCards.length === 0 ? getEmptyModeMessage(mode) : "请先在设置页启用 AI 并填写 API Key。");
+      setError(getEmptyModeMessage(mode));
       return;
     }
 
     setLoading(true);
     setError("");
+    setNotice("");
     setPaper(null);
     setReport(null);
     setAnswers({});
 
     try {
+      if (!canUseAi) {
+        setPaper(buildOfflinePracticePaper(sourceCards, {
+          questionCount: Math.min(questionCount, sourceCards.length),
+          examSection: selectedExamSection,
+        }));
+        setNotice("当前使用离线组卷；填写 API Key 后可生成更灵活的 AI 原创题。");
+        return;
+      }
+
       const payload = await requestAiJson(
         buildPracticePaperPrompt(sourceCards, {
           questionCount: Math.min(questionCount, sourceCards.length),
@@ -90,7 +103,15 @@ export function PracticeClient() {
       if (!nextPaper.questions.length) throw new Error("AI 返回的题目无法匹配当前词条，请重新生成。");
       setPaper(nextPaper);
     } catch (error) {
-      setError(error instanceof Error ? error.message : "AI 组卷失败，请稍后重试。");
+      setPaper(buildOfflinePracticePaper(sourceCards, {
+        questionCount: Math.min(questionCount, sourceCards.length),
+        examSection: selectedExamSection,
+      }));
+      setNotice(
+        error instanceof Error
+          ? `AI 组卷失败，已切换离线小测：${error.message}`
+          : "AI 组卷失败，已切换离线小测。",
+      );
     } finally {
       setLoading(false);
     }
@@ -119,6 +140,7 @@ export function PracticeClient() {
     setReport(null);
     setAnswers({});
     setError("");
+    setNotice("");
   };
 
   return (
@@ -197,13 +219,15 @@ export function PracticeClient() {
           <p className="mode-empty">{getEmptyModeMessage(mode)}</p>
         ) : null}
 
-        {!settings.aiEnabled || !settings.apiKey ? (
+        {!canUseAi ? (
           <div className="setup-panel">
-            <strong>AI 刷题还没启用</strong>
-            <p>去设置页选择 OpenAI、DeepSeek、通义千问、Gemini、Anthropic、OpenRouter 或兼容接口，并填入自己的密钥。</p>
+            <strong>离线刷题已可用</strong>
+            <p>现在可以直接生成本地真题化小测；去设置页选择 OpenAI、DeepSeek、通义千问、Gemini、Anthropic、OpenRouter 或兼容接口后，可以升级为 AI 动态出题。</p>
             <Link href="/settings" className="secondary-button">去设置</Link>
           </div>
         ) : null}
+
+        {notice ? <p className="practice-notice">{notice}</p> : null}
 
         {error ? <p className="practice-error">{error}</p> : null}
 
@@ -354,6 +378,7 @@ export function PracticeClient() {
         .setup-panel { display:grid; gap:10px; margin-top:24px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); padding:18px; }
         .setup-panel p { margin:0; color:var(--muted); line-height:1.7; }
         .setup-panel .secondary-button { width:max-content; }
+        .practice-notice { margin:18px 0 0; border-left:4px solid var(--green); background:var(--green-soft); padding:12px 14px; color:var(--green); font-weight:700; line-height:1.65; }
         .practice-error { margin:18px 0 0; color:var(--red); font-weight:700; }
         .paper-panel,.report-panel,.history-panel { margin-top:34px; }
         .section-heading { display:flex; justify-content:space-between; align-items:end; gap:18px; margin-bottom:18px; }
@@ -396,7 +421,8 @@ export function PracticeClient() {
           .exam-section-grid { grid-template-columns:1fr 1fr; }
           .practice-mode-grid { grid-template-columns:1fr 1fr; }
           .hero-actions { justify-content:stretch; }
-          .hero-actions button { width:100%; }
+          .hero-actions button { width:100%; justify-content:center; }
+          :global(.practice-page .hero-actions a.secondary-button) { width:100%; justify-content:center; }
           .practice-stats,.report-breakdown { grid-template-columns:1fr; }
           .weak-card-list { grid-template-columns:1fr; }
           .history-row { grid-template-columns:1fr auto; }
