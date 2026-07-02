@@ -1,0 +1,57 @@
+{
+  "packageId": "io.github.sbkyc.kotoba",
+  "host": "sbkyc.github.io",
+  "name": "Kotoba AI Cards",
+  "launcherName": "Kotoba",
+  "display": "standalone",
+  "themeColor": "#F5F2EA",
+  "themeColorDark": "#171714",
+  "navigationColor": "#171714",
+  "navigationColorDark": "#171714",
+  "navigationDividerColor": "#171714",
+  "navigationDividerColorDark": "#171714",
+  "backgroundColor": "#F5F2EA",
+  "enableNotifications": false,
+  "startUrl": "/kotoba-ai-cards/",
+  "iconUrl": "https://sbkyc.github.io/kotoba-ai-cards/kotoba-icon-512.png",
+  "maskableIconUrl": "https://sbkyc.github.io/kotoba-ai-cards/kotoba-icon-512.png",
+  "splashScreenFadeOutDuration": 260,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "kotoba"
+  },
+  "appVersionCode": 1,
+  "appVersion": "0.1.0",
+  "shortcuts": [
+    {
+      "name": "开始学习",
+      "shortName": "学习",
+      "url": "/kotoba-ai-cards/study",
+      "chosenIconUrl": "https://sbkyc.github.io/kotoba-ai-cards/kotoba-icon-192.png"
+    },
+    {
+      "name": "AI 刷题",
+      "shortName": "刷题",
+      "url": "/kotoba-ai-cards/practice",
+      "chosenIconUrl": "https://sbkyc.github.io/kotoba-ai-cards/kotoba-icon-192.png"
+    },
+    {
+      "name": "词汇库",
+      "shortName": "词库",
+      "url": "/kotoba-ai-cards/library",
+      "chosenIconUrl": "https://sbkyc.github.io/kotoba-ai-cards/kotoba-icon-192.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://sbkyc.github.io/kotoba-ai-cards/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://sbkyc.github.io/kotoba-ai-cards/",
+  "minSdkVersion": 23,
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": []
+}

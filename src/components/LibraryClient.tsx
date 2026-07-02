@@ -7,6 +7,7 @@ import { getPartsOfSpeech, getStudyLevelMeta, getVocabularyTags, studyLevels, vo
 import { getExampleDetail, getRelatedWordsDetail } from "@/lib/vocabulary/details";
 import { getVisibleVocabulary } from "@/lib/vocabulary/pagination";
 import { filterVocabulary } from "@/lib/vocabulary/search";
+import { buildVocabularyEvidence } from "@/lib/vocabulary/trust";
 import type { StudyLevel } from "@/lib/vocabulary/types";
 import { AppShell } from "@/components/AppShell";
 import { useStudyStore } from "@/store/useStudyStore";
@@ -99,6 +100,7 @@ export function LibraryClient() {
             const cardProgress = progress[card.id];
             const expanded = expandedId === card.id;
             const exampleDetail = getExampleDetail(card);
+            const evidence = buildVocabularyEvidence(card);
             return (
               <article key={card.id} className={expanded ? "vocab-row expanded" : "vocab-row"}>
                 <button type="button" className={favorites.includes(card.id) ? "row-star active" : "row-star"} onClick={() => toggleFavorite(card.id)} aria-label={favorites.includes(card.id) ? "取消重点词" : "加入重点词"}>
@@ -119,6 +121,15 @@ export function LibraryClient() {
                     <div><span>易混词</span><p>{getRelatedWordsDetail(card)}</p></div>
                     <div><span>标签</span><p>{card.tags.join(" / ")}</p></div>
                     <div><span>复习记录</span><p>{cardProgress ? `${cardProgress.reviewCount} 次复习，${cardProgress.knownCount} 次认识` : "还未开始学习"}</p></div>
+                    <div className="evidence-detail">
+                      <span>来源与推荐依据</span>
+                      <div className="source-badges">
+                        {evidence.recommendationBadges.map((badge) => <b key={badge}>{badge}</b>)}
+                        {evidence.sourceBadges.map((badge) => <em key={badge.label}>{badge.label}</em>)}
+                      </div>
+                      <p>{evidence.reason}</p>
+                      <small>{evidence.caution}</small>
+                    </div>
                   </div>
                 ) : null}
               </article>
@@ -173,6 +184,11 @@ export function LibraryClient() {
         .row-details span { color:var(--red); font-size:10px; font-weight:700; }
         .row-details p { margin:5px 0 0; font-size:13px; line-height:1.6; }
         .row-details small { color:var(--muted); }
+        .evidence-detail { grid-column:1 / -1; border-top:1px solid var(--rule); padding-top:14px; }
+        .source-badges { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+        .source-badges b,.source-badges em { display:inline-flex; min-height:24px; align-items:center; border-radius:999px; padding:0 9px; font-size:11px; font-style:normal; font-weight:700; }
+        .source-badges b { background:var(--ink); color:white; }
+        .source-badges em { background:var(--blue-soft); color:var(--blue); }
         .load-more-row { display:flex; justify-content:center; padding:22px 0 8px; }
         .empty-list { padding:60px 0; text-align:center; color:var(--muted); }
         @media(max-width:1050px) {

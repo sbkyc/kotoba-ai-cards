@@ -55,4 +55,23 @@ describe("VocabularyCardView", () => {
     expect(screen.getByRole("button", { name: "AI 刷题" })).toBeInTheDocument();
     expect(screen.queryByText("policy direction")).not.toBeInTheDocument();
   });
+
+  it("shows vocabulary source evidence when provided", () => {
+    render(
+      <VocabularyCardView
+        card={card}
+        onRate={vi.fn()}
+        evidence={{
+          sourceBadges: [{ label: "ECDICT CET-4", detail: "source" }],
+          recommendationBadges: ["常考词"],
+          reason: "命中来源标签。",
+          caution: "不等同于真题频次统计。",
+        }}
+      />,
+    );
+
+    expect(screen.getByText("常考词")).toBeInTheDocument();
+    expect(screen.getByText("ECDICT CET-4")).toBeInTheDocument();
+    expect(screen.getByText("命中来源标签。")).toBeInTheDocument();
+  });
 });

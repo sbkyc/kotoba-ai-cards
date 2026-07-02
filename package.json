@@ -10,16 +10,25 @@
     "import:jlpt": "node scripts/import-jlpt-vocab.mjs",
     "lint": "eslint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "android:sync": "npm run build && cap sync android",
+    "android:apk": "npm run android:sync && cd android && gradlew.bat assembleDebug",
+    "android:release": "npm run build && cap build android",
+    "android:open": "cap open android",
+    "android:twa:update": "npx @bubblewrap/cli update",
+    "android:twa:apk": "npx @bubblewrap/cli build"
   },
   "dependencies": {
+    "@capacitor/core": "8.4.1",
     "lucide-react": "^1.18.0",
-    "next": "16.2.9",
+    "next": "16.2.10",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "zustand": "^5.0.14"
   },
   "devDependencies": {
+    "@capacitor/android": "8.4.1",
+    "@capacitor/cli": "8.4.1",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",

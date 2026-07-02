@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, BrainCircuit, CheckCircle2, RotateCcw, XCircle } from "lucide-react";
 import { requestAiJson } from "@/lib/ai/client";
 import { buildPracticePaperPrompt } from "@/lib/ai/prompts";
+import { findExamSection, getExamSections } from "@/lib/practice/examSections";
 import {
   buildPracticeSourceCards,
   buildPracticeSessionRecord,
@@ -44,12 +45,15 @@ export function PracticeClient() {
   const practiceSessions = useStudyStore((state) => state.practiceSessions ?? []);
   const initialRetake = useMemo(() => readRetakePaper(), []);
   const [mode, setMode] = useState<PracticeMode>(initialRetake?.mode ?? "weak");
+  const [examSectionId, setExamSectionId] = useState("");
   const cards = useMemo(() => getVocabularyByLevel(settings.level), [settings.level]);
   const sourceCards = useMemo(
     () => buildPracticeSourceCards(cards, progress, { size: questionCount, mode, favoriteIds: favorites }),
     [cards, favorites, mode, progress],
   );
   const levelMeta = getStudyLevelMeta(settings.level);
+  const examSections = useMemo(() => getExamSections(settings.level), [settings.level]);
+  const selectedExamSection = findExamSection(settings.level, examSectionId);
   const selectedMode = practiceModes.find((item) => item.value === mode) ?? practiceModes[0];
   const weakCount = sourceCards.filter((card) => progress[card.id]).length;
   const [paper, setPaper] = useState<PracticePaper | null>(initialRetake?.paper ?? null);
@@ -76,7 +80,10 @@ export function PracticeClient() {
 
     try {
       const payload = await requestAiJson(
-        buildPracticePaperPrompt(sourceCards, { questionCount: Math.min(questionCount, sourceCards.length) }),
+        buildPracticePaperPrompt(sourceCards, {
+          questionCount: Math.min(questionCount, sourceCards.length),
+          examSection: selectedExamSection,
+        }),
         settings,
       );
       const nextPaper = normalizePracticePaper(payload, sourceCards);
@@ -99,6 +106,7 @@ export function PracticeClient() {
       id: `practice-${Date.now()}`,
       level: settings.level,
       mode,
+      examSection: `${selectedExamSection.family} ${selectedExamSection.label}`,
       paper,
       report: nextReport,
       answersByQuestionId: answers,
@@ -119,9 +127,9 @@ export function PracticeClient() {
         <header className="practice-hero">
           <div>
             <p className="eyebrow">AI Practice · {levelMeta.label}</p>
-            <h1 className="page-title">专项刷题，检查是不是真记住了。</h1>
+            <h1 className="page-title">按真题模块刷题。</h1>
             <p className="hero-copy">
-              {selectedMode.description}，生成接近 {levelMeta.language === "ja" ? "JLPT" : "CET"} 的原创四选一小测。
+              {selectedMode.description}，按 {selectedExamSection.family}「{selectedExamSection.label}」生成原创四选一小测。
             </p>
           </div>
           <div className="hero-actions">
@@ -135,6 +143,32 @@ export function PracticeClient() {
             <Link href="/practice/mistakes" className="secondary-button">错题本</Link>
           </div>
         </header>
+
+        <section className="exam-section-panel" aria-label="真题化题型模块">
+          <div className="section-heading compact">
+            <div>
+              <p className="eyebrow">Exam Module</p>
+              <h2>{levelMeta.language === "ja" ? "JLPT 题型模块" : "CET 题型模块"}</h2>
+            </div>
+            <span>{selectedExamSection.outputHint}</span>
+          </div>
+          <div className="exam-section-grid">
+            {examSections.map((section) => (
+              <button
+                key={section.id}
+                type="button"
+                className={selectedExamSection.id === section.id ? "active" : ""}
+                onClick={() => {
+                  setExamSectionId(section.id);
+                  reset();
+                }}
+              >
+                <strong>{section.label}</strong>
+                <small>{section.skill}</small>
+              </button>
+            ))}
+          </div>
+        </section>
 
         <section className="practice-mode-grid" aria-label="刷题模式">
           {practiceModes.map((item) => (
@@ -186,7 +220,7 @@ export function PracticeClient() {
                 <Link key={session.id} href={`/practice/history?session=${encodeURIComponent(session.id)}`} className="history-row">
                   <div>
                     <strong>{session.title}</strong>
-                    <span>{new Date(session.takenAt).toLocaleString("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })}</span>
+                    <span>{new Date(session.takenAt).toLocaleString("zh-CN", { month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })}{session.examSection ? ` · ${session.examSection}` : ""}</span>
                   </div>
                   <b>{session.accuracy}%</b>
                   <small>{session.correct}/{session.total} · {session.weakCardIds.length} 个薄弱词</small>
@@ -217,7 +251,8 @@ export function PracticeClient() {
                 <article key={question.id} className="question-card">
                   <div className="question-head">
                     <span>第 {index + 1} 题</span>
-                    <strong>{question.skill}</strong>
+                    <strong>{question.examSection ?? `${selectedExamSection.family} ${selectedExamSection.label}`}</strong>
+                    <em>{question.questionType ?? question.skill}</em>
                   </div>
                   <p>{question.stem}</p>
                   <div className="option-grid">
@@ -300,6 +335,14 @@ export function PracticeClient() {
         .hero-copy { max-width:680px; margin:16px 0 0; color:var(--muted); font-size:16px; line-height:1.8; }
         .hero-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:10px; }
         button:disabled { cursor:not-allowed; opacity:.5; }
+        .exam-section-panel { margin-top:22px; border-bottom:1px solid var(--rule); padding-bottom:18px; }
+        .section-heading.compact { margin-bottom:12px; }
+        .section-heading.compact span { color:var(--muted); font-size:12px; text-align:right; }
+        .exam-section-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; }
+        .exam-section-grid button { min-height:58px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); color:var(--ink); padding:9px 11px; text-align:left; }
+        .exam-section-grid button.active { border-color:var(--blue); background:var(--blue-soft); color:var(--blue); }
+        .exam-section-grid strong,.exam-section-grid small { display:block; }
+        .exam-section-grid small { margin-top:3px; color:var(--muted); font-size:11px; }
         .practice-mode-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; margin-top:18px; }
         .practice-mode-grid button { min-height:86px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); padding:12px; color:var(--ink); text-align:left; }
         .practice-mode-grid button.active { border-color:var(--ink); background:var(--ink); color:white; }
@@ -323,7 +366,8 @@ export function PracticeClient() {
         .history-row span,.history-row small { color:var(--muted); font-size:12px; }
         .history-row b { font-family:Georgia,serif; font-size:26px; }
         .question-card { border:1px solid var(--rule); border-radius:6px; background:var(--surface); padding:16px; }
-        .question-head { display:flex; justify-content:space-between; gap:12px; color:var(--red); font-size:12px; font-weight:700; }
+        .question-head { display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 12px; color:var(--red); font-size:12px; font-weight:700; }
+        .question-head em { color:var(--muted); font-style:normal; font-weight:700; }
         .question-card p { margin:12px 0; line-height:1.75; }
         .option-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
         .option-grid button { min-height:44px; border:1px solid var(--rule); border-radius:6px; background:var(--paper); padding:9px 11px; color:var(--ink); text-align:left; line-height:1.45; }
@@ -349,6 +393,7 @@ export function PracticeClient() {
         .report-actions { display:flex; flex-wrap:wrap; gap:10px; }
         @media(max-width:720px) {
           .practice-hero { grid-template-columns:1fr; }
+          .exam-section-grid { grid-template-columns:1fr 1fr; }
           .practice-mode-grid { grid-template-columns:1fr 1fr; }
           .hero-actions { justify-content:stretch; }
           .hero-actions button { width:100%; }

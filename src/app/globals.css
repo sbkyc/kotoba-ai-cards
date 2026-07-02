@@ -10,6 +10,8 @@
   --red-soft: #f3ddd6;
   --green: #1e5a46;
   --green-soft: #dde9e1;
+  --blue: #24577a;
+  --blue-soft: #dce8ef;
   --yellow-soft: #eee4c4;
 }
 
@@ -19,6 +21,7 @@
 
 html {
   background: var(--paper);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,6 +44,19 @@ a {
 
 button {
   cursor: pointer;
+}
+
+button,
+a {
+  transition: background-color .18s ease, border-color .18s ease, color .18s ease, opacity .18s ease, transform .18s ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
 }
 
 ::selection {

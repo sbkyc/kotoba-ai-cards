@@ -10,6 +10,7 @@ import { mapStudyKey } from "@/lib/study/keyboard";
 import { buildStudyQueue, type StudyMode } from "@/lib/study/queue";
 import { getNextQueueIndexAfterRating, recordSessionRating, type SessionStats } from "@/lib/study/session";
 import { getCoreVocabularyByLevel, getExamFocusVocabularyByLevel, getVocabularyByLevel } from "@/lib/vocabulary/data";
+import { buildVocabularyEvidence } from "@/lib/vocabulary/trust";
 import { AiPanel } from "@/components/AiPanel";
 import { AppShell } from "@/components/AppShell";
 import { StudyModeTabs } from "@/components/StudyModeTabs";
@@ -45,6 +46,7 @@ export function StudyClient() {
   const [aiError, setAiError] = useState("");
   const [aiLoading, setAiLoading] = useState(false);
   const card = queue[index % Math.max(queue.length, 1)];
+  const evidence = useMemo(() => (card ? buildVocabularyEvidence(card) : undefined), [card]);
 
   const resetCardView = useCallback(() => {
     setIndex(0);
@@ -184,6 +186,7 @@ export function StudyClient() {
           revealed={revealed}
           onReveal={() => setRevealed(true)}
           previews={previews}
+          evidence={mode === "core" || mode === "exam" || evidence?.recommendationBadges.length ? evidence : undefined}
         >
           <AiPanel
             loading={aiLoading}

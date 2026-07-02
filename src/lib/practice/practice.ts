@@ -10,6 +10,8 @@ export type PracticeQuestion = {
   answer: string;
   explanation: string;
   skill: string;
+  examSection?: string;
+  questionType?: string;
 };
 
 export type PracticePaper = {
@@ -31,6 +33,7 @@ export type PracticeSessionSummary = {
   id: string;
   level: StudyLevel;
   mode?: PracticeMode;
+  examSection?: string;
   title: string;
   takenAt: string;
   total: number;
@@ -69,6 +72,7 @@ type PracticeSessionRecordInput = {
   id: string;
   level: StudyLevel;
   mode: PracticeMode;
+  examSection?: string;
   paper: PracticePaper;
   report: PracticeReport;
   answersByQuestionId: Record<string, string>;
@@ -227,6 +231,7 @@ export function buildPracticeSessionRecord({
   id,
   level,
   mode,
+  examSection,
   paper,
   report,
   answersByQuestionId,
@@ -236,6 +241,7 @@ export function buildPracticeSessionRecord({
     id,
     level,
     mode,
+    examSection,
     title: paper.title,
     takenAt: takenAt.toISOString(),
     total: report.total,
@@ -282,6 +288,8 @@ function buildMistakeRetakeQuestion(item: MistakeBookItem, index: number): Pract
     answer: `A ${item.card.meaningZh}`,
     explanation: item.card.exampleZh || item.card.meaningZh,
     skill: "错题复训",
+    examSection: "错题本",
+    questionType: "释义辨析四选一",
   };
 
   if (!item.lastQuestion || item.lastQuestion.options.length !== 4) return fallbackQuestion;
@@ -316,6 +324,8 @@ function normalizeQuestion(
     answer: matchedAnswer,
     explanation: stringValue(value.explanation),
     skill: stringValue(value.skill) || "词汇语境",
+    examSection: stringValue(value.examSection) || undefined,
+    questionType: stringValue(value.questionType) || undefined,
   };
 }
 

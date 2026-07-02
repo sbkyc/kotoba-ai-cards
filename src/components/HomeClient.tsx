@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { ArrowRight, Bookmark, BrainCircuit, CircleAlert, Flame, Target } from "lucide-react";
 import { aggregateRecentActivity, filterReviewEventsByCardIds, rankDifficultCards } from "@/lib/activity/activity";
-import { getDueCardIds, getStudyStats } from "@/lib/progress/progress";
+import { buildLearningLoopInsight } from "@/lib/progress/insights";
+import { getStudyStats } from "@/lib/progress/progress";
 import { getStudyLevelMeta, getVocabularyByLevel, studyLevels } from "@/lib/vocabulary/data";
 import { buildStudyQueue } from "@/lib/study/queue";
 import { AppShell } from "@/components/AppShell";
@@ -22,14 +23,22 @@ export function HomeClient() {
   const cardIds = cards.map((card) => card.id);
   const queue = buildStudyQueue(cards, progress, { dailyGoal: settings.dailyGoal });
   const stats = getStudyStats(progress, new Date(), cardIds);
-  const dueCount = getDueCardIds(progress, new Date(), cardIds).length;
-  const newCount = queue.filter((card) => !progress[card.id]).length;
+  const currentPracticeSessions = practiceSessions.filter((session) => session.level === settings.level);
+  const loopInsight = buildLearningLoopInsight({
+    cards,
+    progress,
+    favoriteIds: favorites,
+    practiceSessions: currentPracticeSessions,
+    dailyGoal: settings.dailyGoal,
+  });
+  const dueCount = loopInsight.dueCount;
+  const newCount = loopInsight.newCount;
   const favoriteCount = favorites.filter((id) => cards.some((card) => card.id === id)).length;
   const masteredCount = cards.filter((card) => progress[card.id]?.status === "known").length;
   const currentReviewEvents = filterReviewEventsByCardIds(reviewEvents, cardIds);
   const activity = aggregateRecentActivity(currentReviewEvents);
   const difficult = rankDifficultCards(cards, progress, favorites, 4).filter((card) => progress[card.id]);
-  const practiceInsight = buildPracticeInsight(practiceSessions.filter((session) => session.level === settings.level), cards);
+  const practiceInsight = buildPracticeInsight(currentPracticeSessions, cards);
   const progressPercent = Math.min(Math.round((stats.learnedToday / Math.max(settings.dailyGoal, 1)) * 100), 100);
   const levelMeta = getStudyLevelMeta(settings.level);
 
@@ -55,9 +64,9 @@ export function HomeClient() {
 
         <section className="start-panel">
           <div className="start-count">
-            <span>今日复习</span>
+            <span>到期复习</span>
             <strong>{dueCount}</strong>
-            <small>words due</small>
+            <small>{loopInsight.reviewReminderLabel}</small>
           </div>
           <div className="start-main">
             <div className="progress-heading">
@@ -71,6 +80,29 @@ export function HomeClient() {
               开始今日学习 <ArrowRight size={17} />
             </Link>
           </div>
+        </section>
+
+        <section className="loop-panel" aria-label="学习闭环">
+          <LoopItem
+            step="学"
+            title={`${newCount} 个新词`}
+            description={`每日目标 ${settings.dailyGoal}，核心词优先进入计划`}
+          />
+          <LoopItem
+            step="复"
+            title={loopInsight.reviewReminderLabel}
+            description={`${dueCount} 个到期词，按错误和模糊优先`}
+          />
+          <LoopItem
+            step="测"
+            title={`${practiceInsight.last7Count} 套小测`}
+            description={`平均正确率 ${practiceInsight.averageAccuracy}%`}
+          />
+          <LoopItem
+            step="改"
+            title={loopInsight.weakSummary}
+            description={loopInsight.weakAreas.map((area) => `${area.label} ${area.count}`).join(" · ") || "继续保持"}
+          />
         </section>
 
         <section className="practice-dashboard">
@@ -126,7 +158,7 @@ export function HomeClient() {
               <Metric icon={Flame} label="连续学习" value={calculateStreak(activity)} suffix="天" />
               <Metric label="已掌握" value={masteredCount} suffix="词" />
               <Metric label="今日已学" value={stats.learnedToday} suffix="词" />
-              <Metric label="掌握率" value={stats.knownRate} suffix="%" />
+              <Metric label="已学掌握率" value={loopInsight.reviewedMasteryRate} suffix="%" />
             </div>
           </section>
         </div>
@@ -184,6 +216,7 @@ export function HomeClient() {
         .progress-track { height:7px; grid-column:1; background:var(--rule); overflow:hidden; }
         .progress-track div { height:100%; background:var(--green); transition:width .3s ease; }
         .start-main .primary-button { grid-column:2; grid-row:1 / span 2; }
+        .loop-panel { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1px; margin-top:24px; border:1px solid var(--rule); background:var(--rule); }
         .today-grid,.insight-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; margin-top:44px; }
         .practice-dashboard { margin-top:36px; border-top:1px solid var(--ink); padding-top:24px; }
         .practice-metrics { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--rule); border-left:1px solid var(--rule); }
@@ -212,11 +245,28 @@ export function HomeClient() {
           .start-main .primary-button { grid-column:1; grid-row:auto; width:100%; }
           .progress-track { grid-column:1; }
           .practice-metrics { grid-template-columns:repeat(2,1fr); }
+          .loop-panel { grid-template-columns:repeat(2,minmax(0,1fr)); }
           .difficult-row { grid-template-columns:1fr auto; }
           .difficult-row p { grid-column:1; }
         }
       `}</style>
     </AppShell>
+  );
+}
+
+function LoopItem({ step, title, description }: { step: string; title: string; description: string }) {
+  return (
+    <div className="loop-item">
+      <span>{step}</span>
+      <strong>{title}</strong>
+      <p>{description}</p>
+      <style jsx>{`
+        .loop-item { min-height:116px; background:var(--surface); padding:16px; }
+        span { display:grid; width:28px; height:28px; place-items:center; border-radius:999px; background:var(--blue-soft); color:var(--blue); font-weight:800; }
+        strong { display:block; margin-top:12px; font-size:15px; line-height:1.35; }
+        p { margin:6px 0 0; color:var(--muted); font-size:12px; line-height:1.55; }
+      `}</style>
+    </div>
   );
 }
 

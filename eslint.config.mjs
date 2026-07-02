@@ -11,6 +11,10 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
+    "android/.gradle/**",
+    "android/**/build/**",
+    "android/app/src/main/assets/**",
+    "android/capacitor-cordova-android-plugins/**",
     "next-env.d.ts",
   ]),
 ]);

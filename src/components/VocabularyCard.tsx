@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Eye, Star } from "lucide-react";
 import type { ReviewPreview, ReviewRating } from "@/lib/scheduler/scheduler";
 import { getStudyLevelMeta } from "@/lib/vocabulary/data";
+import type { VocabularyEvidence } from "@/lib/vocabulary/trust";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
 
 type VocabularyCardViewProps = {
@@ -14,6 +15,7 @@ type VocabularyCardViewProps = {
   revealed?: boolean;
   onReveal?: () => void;
   previews?: Record<ReviewRating, ReviewPreview>;
+  evidence?: VocabularyEvidence;
   children?: React.ReactNode;
 };
 
@@ -25,6 +27,7 @@ export function VocabularyCardView({
   revealed: controlledRevealed,
   onReveal,
   previews,
+  evidence,
   children,
 }: VocabularyCardViewProps) {
   const [internalRevealed, setInternalRevealed] = useState(false);
@@ -55,6 +58,16 @@ export function VocabularyCardView({
           </button>
         ) : null}
       </div>
+
+      {evidence ? (
+        <div className="evidence-strip" aria-label="词库可信度">
+          <div>
+            {evidence.recommendationBadges.map((badge) => <strong key={badge}>{badge}</strong>)}
+            {evidence.sourceBadges.slice(0, 3).map((badge) => <span key={badge.label}>{badge.label}</span>)}
+          </div>
+          <p>{evidence.reason}</p>
+        </div>
+      ) : null}
 
       <div className={`word-center ${levelMeta.language}`}>
         <h1>{card.word}</h1>
@@ -101,6 +114,12 @@ export function VocabularyCardView({
         .word-meta > div { display:flex; gap:12px; align-items:center; color:var(--muted); font-size:12px; }
         .favorite-button { display:grid; width:38px; height:38px; place-items:center; border:1px solid var(--rule); border-radius:6px; background:var(--surface); color:var(--muted); }
         .favorite-button.active { border-color:var(--red); color:var(--red); background:var(--red-soft); }
+        .evidence-strip { display:grid; gap:7px; margin-top:10px; border-block:1px solid var(--rule); padding:11px 0; }
+        .evidence-strip div { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+        .evidence-strip strong,.evidence-strip span { display:inline-flex; min-height:24px; align-items:center; border-radius:999px; padding:0 9px; font-size:11px; font-weight:700; }
+        .evidence-strip strong { background:var(--ink); color:white; }
+        .evidence-strip span { background:var(--blue-soft); color:var(--blue); }
+        .evidence-strip p { margin:0; color:var(--muted); font-size:12px; line-height:1.6; }
         .word-center { display:grid; flex:1; min-height:260px; place-content:center; text-align:center; }
         .word-center h1 { margin:0; font-family:Georgia,"Noto Serif JP",serif; font-size:clamp(72px,12vw,138px); font-weight:500; line-height:.95; }
         .word-center.en h1 { max-width:min(100%,840px); overflow-wrap:anywhere; font-family:Georgia,serif; font-size:clamp(52px,9vw,112px); line-height:1; }
@@ -118,7 +137,7 @@ export function VocabularyCardView({
         .related-words b { border:1px solid var(--rule); border-radius:999px; padding:4px 9px; color:var(--ink); }
         .reveal-button { display:flex; width:100%; min-height:78px; align-items:center; justify-content:center; gap:10px; border:0; background:transparent; color:var(--ink); font-size:16px; font-weight:700; }
         kbd { border:1px solid var(--rule); border-bottom-width:2px; border-radius:4px; padding:2px 6px; color:var(--muted); font-size:10px; }
-        .rating-bar { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; position:sticky; bottom:0; padding:14px 0 0; background:var(--paper); }
+        .rating-bar { position:sticky; z-index:25; bottom:0; display:grid; grid-template-columns:repeat(3,1fr); gap:10px; padding:14px 0 0; background:var(--paper); pointer-events:auto; }
         @keyframes answer-in { from { opacity:0; transform:translateY(7px); } to { opacity:1; transform:none; } }
         @media(max-width:760px) {
           .word-stage { min-height:calc(100vh - 190px); }
@@ -148,7 +167,7 @@ function RatingButton({ rating, label, shortcut, preview, onRate }: {
       <span>{label}</span>
       <small>{preview ?? "—"} · {shortcut}</small>
       <style jsx>{`
-        .rating-button { min-height:62px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); color:var(--ink); transition:border-color .18s ease, background .18s ease, color .18s ease, transform .18s ease, opacity .18s ease; }
+        .rating-button { min-height:62px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); color:var(--ink); touch-action:manipulation; transition:border-color .18s ease, background .18s ease, color .18s ease, transform .18s ease, opacity .18s ease; }
         .rating-button:disabled { cursor:not-allowed; opacity:.38; }
         .rating-button:not(:disabled):hover.unknown { border-color:var(--red); background:var(--red-soft); }
         .rating-button:not(:disabled):hover.fuzzy { border-color:#a47c18; background:var(--yellow-soft); }

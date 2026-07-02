@@ -1,4 +1,5 @@
 import { getStudyLevelMeta } from "@/lib/vocabulary/data";
+import type { ExamSection } from "@/lib/practice/examSections";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
 
 function cardSummary(card: VocabularyCard): string {
@@ -115,13 +116,19 @@ ${cardSummary(card)}
 }`;
 }
 
-export function buildPracticePaperPrompt(cards: VocabularyCard[], options: { questionCount: number }): string {
+export function buildPracticePaperPrompt(cards: VocabularyCard[], options: { questionCount: number; examSection?: ExamSection }): string {
   const firstCard = cards[0];
   const meta = firstCard ? getStudyLevelMeta(firstCard.level) : null;
   const questionCount = Math.min(Math.max(options.questionCount, 1), cards.length);
-  const examStyle = meta?.language === "ja"
+  const examStyle = options.examSection?.promptInstruction ?? (meta?.language === "ja"
     ? "JLPT 文字・語彙 / 文法 四选一，题干使用自然日语和（　）空格"
-    : "CET 词汇语境 / 完形填空 / 阅读词义辨析四选一，题干使用自然英文和 ____ 空格";
+    : "CET 词汇语境 / 完形填空 / 阅读词义辨析四选一，题干使用自然英文和 ____ 空格");
+  const sectionLabel = options.examSection
+    ? `${options.examSection.family} ${options.examSection.label}`
+    : meta?.language === "ja"
+      ? "JLPT 文字・語彙 / 文法"
+      : "CET 词汇语境";
+  const skillLabel = options.examSection?.skill ?? (meta?.language === "ja" ? "文字・語彙" : "词汇语境");
   const source = cards.slice(0, questionCount).map((card, index) => (
     [
       `#${index + 1}`,
@@ -132,13 +139,15 @@ export function buildPracticePaperPrompt(cards: VocabularyCard[], options: { que
   )).join("\n\n");
 
   return `你是一个严格的考试命题老师。请基于下面 ${questionCount} 个词生成一套原创专项小测，用来检测学习者是否真正掌握词义、搭配、语境和易混点。
+考试模块：${sectionLabel}。
 题型风格：${examStyle}。
 要求：
 1. 每个词只出 1 题，共 ${questionCount} 题。
 2. 不要复制真题、教材原文或任何受版权保护的题目，所有题干必须原创。
 3. 每题必须保留对应的 cardId，cardId 必须从给定词条中逐字复制。
 4. 每题 4 个选项，干扰项要合理，答案必须与 options 中某一项完全一致。
-5. explanation 用中文说明为什么选这个，以及常见误选原因。
+5. 每题的 skill 写成「${skillLabel}」，examSection 写成「${sectionLabel}」。
+6. explanation 用中文说明为什么选这个，以及常见误选原因。
 
 词条：
 ${source}
@@ -154,7 +163,9 @@ ${cards.slice(0, questionCount).map((card) => `{"cardId": "${card.id}"}`).join("
     {
       "id": "q1",
       "cardId": "${cards[0]?.id ?? "card-id"}",
-      "skill": "词汇语境",
+      "examSection": "${sectionLabel}",
+      "questionType": "${options.examSection?.outputHint ?? "四选一"}",
+      "skill": "${skillLabel}",
       "stem": "题干",
       "options": ["A 选项", "B 选项", "C 选项", "D 选项"],
       "answer": "A 选项",

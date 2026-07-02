@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildDifferencePrompt, buildExamplePrompt, buildPracticePaperPrompt, buildQuizPrompt } from "./prompts";
+import { findExamSection } from "@/lib/practice/examSections";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
 
 const card: VocabularyCard = {
@@ -85,11 +86,16 @@ describe("AI prompts", () => {
   });
 
   it("builds a practice paper prompt tied to source card ids", () => {
-    const prompt = buildPracticePaperPrompt([cetCard, card], { questionCount: 2 });
+    const prompt = buildPracticePaperPrompt([cetCard, card], {
+      questionCount: 2,
+      examSection: findExamSection("CET4", "cet-cloze"),
+    });
 
     expect(prompt).toContain('"kind": "practice-paper"');
     expect(prompt).toContain('"cardId": "cet4-abandon"');
     expect(prompt).toContain('"cardId": "n2-houshin"');
+    expect(prompt).toContain("考试模块：CET 完形填空");
+    expect(prompt).toContain('"examSection": "CET 完形填空"');
     expect(prompt).toContain('"questions"');
     expect(prompt).toContain("2");
   });
