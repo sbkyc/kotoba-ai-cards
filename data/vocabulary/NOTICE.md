@@ -5,6 +5,11 @@ The English CET-4 and CET-6 vocabulary JSON files are generated from
 licensed under the MIT License. ECDICT tags are used to select `cet4` and
 `cet6` entries.
 
+The app's exam-focus study mode uses only source-provided exam tags, including
+`cet4`, `cet6`, `gk`, `zk`, `ky`, `toefl`, and `ielts`. It should be read as a
+tag-backed exam-focus queue, not as an unsourced true frequency list from past
+exam papers.
+
 The JLPT N5-N1 vocabulary JSON files are generated from
 [`stephenmk/yomitan-jlpt-vocab`](https://github.com/stephenmk/yomitan-jlpt-vocab),
 which derives JLPT tags from Jonathan Waller's JLPT Resources and JMdict entry

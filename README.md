@@ -10,8 +10,8 @@ Live site: https://sbkyc.github.io/kotoba-ai-cards/
 
 - CET-4, CET-6, and JLPT N5-N1 vocabulary card study
 - Local progress for known, fuzzy, and unknown ratings
-- Due-review-first study queue with daily new-card goals
-- Difficult-word and favorite-word review modes
+- Due-review-first study queue with core vocabulary prioritized before ordinary new cards
+- Core, exam-focus, difficult-word, and favorite-word review modes
 - Daily stats and vocabulary library filters
 - Mastery status filtering in the library
 - Optional AI helpers using a user-provided API key, including exam-style memory checks
@@ -92,6 +92,9 @@ Please contribute only original or license-compatible vocabulary data and exampl
 
 English CET-4 and CET-6 vocabulary is generated from the MIT licensed
 `skywind3000/ECDICT` dataset using its `cet4` and `cet6` tags.
+The exam-focus mode is derived only from source vocabulary tags such as
+`cet4`, `cet6`, `gk`, `zk`, `ky`, `toefl`, and `ielts`; it is not presented as
+an unsourced real-exam frequency list.
 
 JLPT N5-N1 vocabulary is generated from the CC BY-SA 4.0 licensed
 `stephenmk/yomitan-jlpt-vocab` dataset, which is based on Jonathan Waller's JLPT

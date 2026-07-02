@@ -11,10 +11,11 @@ describe("StudyModeTabs", () => {
     expect(screen.getByRole("button", { name: "今日计划" })).toHaveAttribute("aria-pressed", "true");
     expect(screen.getByRole("button", { name: "错题优先" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "核心词" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "常考词" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "重点词" })).toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole("button", { name: "错题优先" }));
+    fireEvent.click(screen.getByRole("button", { name: "常考词" }));
 
-    expect(onChange).toHaveBeenCalledWith("difficult");
+    expect(onChange).toHaveBeenCalledWith("exam");
   });
 });

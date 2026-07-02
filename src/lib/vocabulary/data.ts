@@ -5,7 +5,15 @@ import n2Cards from "../../../data/vocabulary/jlpt-n2.json";
 import n3Cards from "../../../data/vocabulary/jlpt-n3.json";
 import n4Cards from "../../../data/vocabulary/jlpt-n4.json";
 import n5Cards from "../../../data/vocabulary/jlpt-n5.json";
-import { compareCoreVocabulary, getCoreSourceLevels, getCoreSourceLimit, isCoreVocabularyCard } from "./core";
+import {
+  compareCoreVocabulary,
+  compareExamFocusVocabulary,
+  getCoreSourceLevels,
+  getCoreSourceLimit,
+  getExamFocusSourceLimit,
+  isCoreVocabularyCard,
+  isExamFocusVocabularyCard,
+} from "./core";
 import type { StudyLevel, VocabularyCard } from "./types";
 
 export type StudyLevelMeta = {
@@ -112,6 +120,27 @@ export function getCoreVocabularyByLevel(level: StudyLevel): VocabularyCard[] {
   }
 
   return coreCards;
+}
+
+export function getExamFocusVocabularyByLevel(level: StudyLevel): VocabularyCard[] {
+  const seen = new Set<string>();
+  const examCards: VocabularyCard[] = [];
+
+  for (const sourceLevel of getCoreSourceLevels(level)) {
+    const candidates = getVocabularyByLevel(sourceLevel)
+      .filter(isExamFocusVocabularyCard)
+      .sort(compareExamFocusVocabulary)
+      .slice(0, getExamFocusSourceLimit(sourceLevel));
+
+    for (const card of candidates) {
+      const key = `${card.word.trim().toLowerCase()}|${card.kana.trim().toLowerCase()}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      examCards.push(card);
+    }
+  }
+
+  return examCards;
 }
 
 export function getStudyLevelMeta(level: StudyLevel): StudyLevelMeta {

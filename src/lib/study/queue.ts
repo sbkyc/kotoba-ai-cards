@@ -1,5 +1,10 @@
 import type { CardProgress } from "@/lib/scheduler/scheduler";
-import { compareCoreVocabulary, isCoreVocabularyCard } from "@/lib/vocabulary/core";
+import {
+  compareCoreVocabulary,
+  compareExamFocusVocabulary,
+  isCoreVocabularyCard,
+  isExamFocusVocabularyCard,
+} from "@/lib/vocabulary/core";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
 
 type QueueOptions = {
@@ -9,7 +14,7 @@ type QueueOptions = {
   favoriteIds?: string[];
 };
 
-export type StudyMode = "daily" | "difficult" | "core" | "favorites";
+export type StudyMode = "daily" | "difficult" | "core" | "exam" | "favorites";
 
 export function buildStudyQueue(
   cards: VocabularyCard[],
@@ -53,12 +58,33 @@ export function buildStudyQueue(
     return [...dueReviews, ...newCards].slice(0, limit);
   }
 
+  if (mode === "exam") {
+    const examCards = cards.filter(isExamFocusVocabularyCard);
+    const dueReviews = examCards.filter((card) => {
+      const cardProgress = progress[card.id];
+      return cardProgress ? new Date(cardProgress.dueAt).getTime() <= now.getTime() : false;
+    }).sort((a, b) => (
+      getReviewPriority(progress[b.id]) - getReviewPriority(progress[a.id])
+      || compareExamFocusVocabulary(a, b)
+    ));
+    const remainingNewSlots = Math.max(limit - dueReviews.length, 0);
+    const newCards = examCards
+      .filter((card) => !progress[card.id])
+      .sort(compareExamFocusVocabulary)
+      .slice(0, remainingNewSlots);
+
+    return [...dueReviews, ...newCards].slice(0, limit);
+  }
+
   const dueReviews = cards.filter((card) => {
     const cardProgress = progress[card.id];
     return cardProgress ? new Date(cardProgress.dueAt).getTime() <= now.getTime() : false;
   }).sort((a, b) => getReviewPriority(progress[b.id]) - getReviewPriority(progress[a.id]));
   const remainingNewSlots = Math.max(limit - dueReviews.length, 0);
-  const newCards = cards.filter((card) => !progress[card.id]).slice(0, remainingNewSlots);
+  const newCards = cards
+    .filter((card) => !progress[card.id])
+    .sort(compareCoreVocabulary)
+    .slice(0, remainingNewSlots);
 
   return [...dueReviews, ...newCards];
 }

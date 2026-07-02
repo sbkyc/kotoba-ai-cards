@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { getCoreVocabularyByLevel, getStudyLevelMeta, getVocabularyByLevel, studyLevels, vocabularyCards } from "./data";
+import {
+  getCoreVocabularyByLevel,
+  getExamFocusVocabularyByLevel,
+  getStudyLevelMeta,
+  getVocabularyByLevel,
+  studyLevels,
+  vocabularyCards,
+} from "./data";
 
 describe("vocabulary data", () => {
   it("loads both CET and JLPT study levels", () => {
@@ -25,6 +32,16 @@ describe("vocabulary data", () => {
     expect(n3CoreLevels).toEqual(new Set(["N5", "N4", "N3"]));
     expect(cet6CoreLevels).toEqual(new Set(["CET4", "CET6"]));
     expect(getCoreVocabularyByLevel("N3").length).toBeGreaterThan(getCoreVocabularyByLevel("N5").length);
+  });
+
+  it("builds a smaller exam-focus vocabulary pool from sourced exam tags", () => {
+    const n3ExamLevels = new Set(getExamFocusVocabularyByLevel("N3").map((card) => card.level));
+    const cet6ExamLevels = new Set(getExamFocusVocabularyByLevel("CET6").map((card) => card.level));
+
+    expect(n3ExamLevels).toEqual(new Set(["N5", "N4", "N3"]));
+    expect(cet6ExamLevels).toEqual(new Set(["CET4", "CET6"]));
+    expect(getExamFocusVocabularyByLevel("N3").length).toBeLessThan(getCoreVocabularyByLevel("N3").length);
+    expect(getExamFocusVocabularyByLevel("CET6").length).toBeLessThan(getCoreVocabularyByLevel("CET6").length);
   });
 
   it("does not expose TODO placeholders in user-visible vocabulary fields", () => {

@@ -251,16 +251,17 @@ button {
 
 .mode-tabs {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 6px;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: 7px;
   border: 1px solid var(--rule);
   border-radius: 8px;
   background: var(--surface);
-  padding: 4px;
+  padding: 5px;
 }
 
 .mode-tabs button {
-  min-height: 52px;
+  min-height: 54px;
+  min-width: 0;
   border: 0;
   border-radius: 6px;
   background: transparent;
@@ -368,12 +369,12 @@ button {
 
 @media (max-width: 560px) {
   .mode-tabs {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .mode-tabs button {
-    min-height: 40px;
-    padding: 6px 4px;
+    min-height: 44px;
+    padding: 7px 6px;
     text-align: center;
   }
 

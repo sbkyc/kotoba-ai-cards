@@ -83,6 +83,51 @@ describe("buildStudyQueue", () => {
     expect(queue.map((card) => card.id)).toEqual(["due-b"]);
   });
 
+  it("prioritizes core new cards in the daily queue", () => {
+    const mixedNewCards: VocabularyCard[] = [
+      {
+        id: "rare-gre",
+        level: "CET4",
+        word: "abstruse",
+        kana: "/abstruse/",
+        meaningZh: "深奥的",
+        partOfSpeech: "adjective",
+        exampleJa: "The argument is abstruse.",
+        exampleZh: "这个论证很深奥。",
+        tags: ["gre"],
+      },
+      {
+        id: "core-the",
+        level: "CET4",
+        word: "the",
+        kana: "/the/",
+        meaningZh: "这个；那个",
+        partOfSpeech: "article",
+        exampleJa: "The book is here.",
+        exampleZh: "那本书在这里。",
+        tags: ["zk", "gk", "cet4"],
+      },
+      {
+        id: "core-make",
+        level: "CET4",
+        word: "make",
+        kana: "/make/",
+        meaningZh: "制作；使得",
+        partOfSpeech: "verb",
+        exampleJa: "Make a sentence.",
+        exampleZh: "造一个句子。",
+        tags: ["gk", "cet4"],
+      },
+    ];
+
+    const queue = buildStudyQueue(mixedNewCards, {}, {
+      now: new Date("2026-06-16T08:00:00.000Z"),
+      dailyGoal: 2,
+    });
+
+    expect(queue.map((card) => card.id)).toEqual(["core-the", "core-make"]);
+  });
+
   it("prioritizes difficult due cards before easier due cards", () => {
     const queue = buildStudyQueue([cards[1], cards[0], cards[2]], {
       ...progress,
@@ -188,5 +233,51 @@ describe("buildStudyQueue", () => {
     });
 
     expect(queue.map((card) => card.id)).toEqual(["core-the", "core-make"]);
+  });
+
+  it("builds an exam-focus queue from cards with exam tag evidence", () => {
+    const examCards: VocabularyCard[] = [
+      {
+        id: "advanced-only",
+        level: "CET4",
+        word: "abstruse",
+        kana: "/abstruse/",
+        meaningZh: "深奥的",
+        partOfSpeech: "adjective",
+        exampleJa: "The argument is abstruse.",
+        exampleZh: "这个论证很深奥。",
+        tags: ["gre"],
+      },
+      {
+        id: "high-the",
+        level: "CET4",
+        word: "the",
+        kana: "/the/",
+        meaningZh: "这个；那个",
+        partOfSpeech: "article",
+        exampleJa: "The book is here.",
+        exampleZh: "那本书在这里。",
+        tags: ["zk", "gk", "cet4"],
+      },
+      {
+        id: "high-and",
+        level: "CET4",
+        word: "and",
+        kana: "/and/",
+        meaningZh: "和；并且",
+        partOfSpeech: "conjunction",
+        exampleJa: "You and I can read it.",
+        exampleZh: "你和我都能读它。",
+        tags: ["zk", "gk", "cet4"],
+      },
+    ];
+
+    const queue = buildStudyQueue(examCards, {}, {
+      now: new Date("2026-06-16T08:00:00.000Z"),
+      dailyGoal: 3,
+      mode: "exam",
+    });
+
+    expect(queue.map((card) => card.id)).toEqual(["high-and", "high-the"]);
   });
 });
