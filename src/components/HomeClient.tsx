@@ -6,6 +6,7 @@ import { aggregateRecentActivity, filterReviewEventsByCardIds, rankDifficultCard
 import { buildLearningLoopInsight } from "@/lib/progress/insights";
 import { getStudyStats } from "@/lib/progress/progress";
 import { getStudyLevelMeta, getVocabularyByLevel, studyLevels } from "@/lib/vocabulary/data";
+import { getVocabularyMeaningDisplay } from "@/lib/vocabulary/meaning";
 import { buildStudyQueue } from "@/lib/study/queue";
 import { AppShell } from "@/components/AppShell";
 import { ActivityChart } from "@/components/ActivityChart";
@@ -186,16 +187,19 @@ export function HomeClient() {
               <Link href="/library" className="text-button">查看词库</Link>
             </div>
             <div className="difficult-list">
-              {difficult.length ? difficult.map((card) => (
-                <div key={card.id} className="difficult-row">
-                  <div>
-                    <strong>{card.word}</strong>
-                    <span>{card.kana}</span>
+              {difficult.length ? difficult.map((card) => {
+                const meaning = getVocabularyMeaningDisplay(card);
+                return (
+                  <div key={card.id} className="difficult-row">
+                    <div>
+                      <strong>{card.word}</strong>
+                      <span>{card.kana}</span>
+                    </div>
+                    <p>{meaning.text}</p>
+                    <small>{progress[card.id]?.unknownCount ?? 0} 次错误</small>
                   </div>
-                  <p>{card.meaningZh}</p>
-                  <small>{progress[card.id]?.unknownCount ?? 0} 次错误</small>
-                </div>
-              )) : <p className="empty-copy">完成几次学习后，这里会列出最需要强化的词。</p>}
+                );
+              }) : <p className="empty-copy">完成几次学习后，这里会列出最需要强化的词。</p>}
             </div>
           </section>
         </div>

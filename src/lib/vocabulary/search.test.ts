@@ -38,6 +38,17 @@ const cards: VocabularyCard[] = [
     tags: ["core", "verb"],
     relatedWords: ["quit", "desert"],
   },
+  {
+    id: "n3-ah",
+    level: "N3",
+    word: "あっ",
+    kana: "あっ",
+    meaningZh: "Ah!,Oh!",
+    partOfSpeech: "vocabulary",
+    exampleJa: "",
+    exampleZh: "",
+    tags: ["jlpt"],
+  },
 ];
 
 describe("filterVocabulary", () => {
@@ -61,5 +72,10 @@ describe("filterVocabulary", () => {
     expect(filterVocabulary(cards, { query: "core" }).map((card) => card.id)).toEqual(["cet4-abandon"]);
     expect(filterVocabulary(cards, { query: "desert" }).map((card) => card.id)).toEqual(["cet4-abandon"]);
     expect(filterVocabulary(cards, { query: "plan too early" }).map((card) => card.id)).toEqual(["cet4-abandon"]);
+  });
+
+  it("searches reviewed Chinese display meanings while keeping source gloss searchable", () => {
+    expect(filterVocabulary(cards, { query: "啊" }).map((card) => card.id)).toEqual(["n3-ah"]);
+    expect(filterVocabulary(cards, { query: "Ah" }).map((card) => card.id)).toEqual(["n3-ah"]);
   });
 });

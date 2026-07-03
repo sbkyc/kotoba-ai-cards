@@ -23,20 +23,20 @@ export function AiPanel({ loading, error, payload, aiEnabled, revealed = false, 
 
   return (
     <div className="ai-tools">
-      <button type="button" className="ai-toggle" onClick={() => setOpen((value) => !value)} aria-label="?? AI ????">
-        <span><Sparkles size={16} /> AI ???????</span>
+      <button type="button" className="ai-toggle" onClick={() => setOpen((value) => !value)} aria-label="打开 AI 学习工具">
+        <span><Sparkles size={16} /> AI 刷题与学习工具</span>
         <ChevronDown size={16} className={open ? "rotate" : ""} />
       </button>
 
       {open ? (
         <div className="ai-content">
           {!aiEnabled ? (
-            <p className="ai-note">??? API Key???????????????????<Link href="/settings">????</Link>?? AI?</p>
+            <p className="ai-note">未填写 API Key，刷题会使用本地离线题；例句和解释需要<Link href="/settings">前往设置</Link>启用 AI。</p>
           ) : null}
           <div className="ai-actions">
-            <button type="button" className="quiz-action" onClick={() => onAction("quiz")}>{aiEnabled ? "AI ??" : "????"}</button>
-            <button type="button" disabled={!aiEnabled || !revealed} onClick={() => onAction("example")}>????</button>
-            <button type="button" disabled={!aiEnabled || !revealed} onClick={() => onAction("difference")}>????</button>
+            <button type="button" className="quiz-action" onClick={() => onAction("quiz")}>{aiEnabled ? "AI 刷题" : "离线刷题"}</button>
+            <button type="button" disabled={!aiEnabled || !revealed} onClick={() => onAction("example")}>生成例句</button>
+            <button type="button" disabled={!aiEnabled || !revealed} onClick={() => onAction("difference")}>解释区别</button>
           </div>
           {loading ? <p className="loading"><CatLoader size={15} /></p> : null}
           {error ? <p className="error"><AlertCircle size={15} /> {error}</p> : null}
@@ -71,8 +71,9 @@ export function AiPanel({ loading, error, payload, aiEnabled, revealed = false, 
         .ai-actions button:hover { border-color:var(--green); color:var(--green); }
         .ai-actions button:disabled { cursor:not-allowed; opacity:.45; }
         .ai-actions .quiz-action { border-color:var(--red); background:var(--red-soft); color:var(--red); }
-        .ai-note,.loading,.error { display:flex; align-items:center; gap:7px; margin:8px 0; color:var(--muted); font-size:13px; }
-        .ai-note a { color:var(--red); }
+        .ai-note { margin:8px 0; color:var(--muted); font-size:13px; line-height:1.65; }
+        .ai-note a { margin:0 3px; color:var(--red); font-weight:700; }
+        .loading,.error { display:flex; align-items:center; gap:7px; margin:8px 0; color:var(--muted); font-size:13px; }
         .error { color:var(--red); }
         .ai-result { display:grid; gap:12px; margin-top:16px; }
         .ai-result div { border-left:2px solid var(--red); padding-left:12px; }
@@ -115,9 +116,9 @@ function ExamQuizResult({
             <p>{stringValue(payload.answer)}</p>
           </div>
           {onQuizRate ? (
-            <div className="quiz-feedback" aria-label="AI??????">
-              <button type="button" onClick={() => onQuizRate("known")}>???</button>
-              <button type="button" onClick={() => onQuizRate("unknown")}>???</button>
+            <div className="quiz-feedback" aria-label="AI刷题结果记录">
+              <button type="button" onClick={() => onQuizRate("known")}>答对了</button>
+              <button type="button" onClick={() => onQuizRate("unknown")}>答错了</button>
             </div>
           ) : null}
           <div>
@@ -132,7 +133,7 @@ function ExamQuizResult({
           ) : null}
         </div>
       ) : (
-        <button type="button" className="secondary-button" onClick={onRevealAnswer}>???????</button>
+        <button type="button" className="secondary-button" onClick={onRevealAnswer}>显示答案和解析</button>
       )}
       <style jsx>{`
         .exam-quiz { display:grid; gap:12px; margin-top:16px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); padding:14px; }
@@ -165,17 +166,17 @@ function stringValue(value: unknown): string {
 
 function aiLabel(key: string) {
   const labels: Record<string, string> = {
-    answer: "??",
-    commonMistake: "????",
-    exampleJa: "????",
-    exampleZh: "????",
-    explanation: "??",
-    memoryCheck: "????",
-    options: "??",
-    question: "??",
-    raw: "????",
-    usageComparison: "????",
-    usageNote: "????",
+    answer: "答案",
+    commonMistake: "常见误用",
+    exampleJa: "日语例句",
+    exampleZh: "中文翻译",
+    explanation: "解释",
+    memoryCheck: "记忆检测",
+    options: "选项",
+    question: "问题",
+    raw: "原始输出",
+    usageComparison: "用法比较",
+    usageNote: "用法提示",
   };
   return labels[key] ?? key;
 }

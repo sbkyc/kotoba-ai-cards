@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ArrowLeft, BookOpenCheck } from "lucide-react";
 import { buildMistakeBook, buildMistakeRetakePaper } from "@/lib/practice/practice";
 import { getVocabularyByLevel } from "@/lib/vocabulary/data";
+import { getVocabularyMeaningDisplay } from "@/lib/vocabulary/meaning";
 import { AppShell } from "@/components/AppShell";
 import { useStudyStore } from "@/store/useStudyStore";
 
@@ -44,18 +45,21 @@ export function PracticeMistakesClient() {
 
         {mistakeBook.length ? (
           <div className="mistake-list">
-            {mistakeBook.map((item) => (
-              <article key={item.card.id} className="mistake-row">
-                <div>
-                  <strong>{item.card.word}</strong>
-                  {item.card.kana ? <span>{item.card.kana}</span> : null}
-                  <p>{item.card.meaningZh}</p>
-                </div>
-                <b>{item.wrongCount}</b>
-                <small>{item.lastQuestion?.stem ?? "旧历史记录暂无题干"}</small>
-                <Link href={`/library?query=${encodeURIComponent(item.card.word)}`} className="secondary-button">查词</Link>
-              </article>
-            ))}
+            {mistakeBook.map((item) => {
+              const meaning = getVocabularyMeaningDisplay(item.card);
+              return (
+                <article key={item.card.id} className="mistake-row">
+                  <div>
+                    <strong>{item.card.word}</strong>
+                    {item.card.kana ? <span>{item.card.kana}</span> : null}
+                    <p>{meaning.text}</p>
+                  </div>
+                  <b>{item.wrongCount}</b>
+                  <small>{item.lastQuestion?.stem ?? "旧历史记录暂无题干"}</small>
+                  <Link href={`/library?query=${encodeURIComponent(item.card.word)}`} className="secondary-button">查词</Link>
+                </article>
+              );
+            })}
           </div>
         ) : (
           <div className="empty-state">

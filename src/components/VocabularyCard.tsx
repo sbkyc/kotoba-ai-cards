@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Eye, Star } from "lucide-react";
 import type { ReviewPreview, ReviewRating } from "@/lib/scheduler/scheduler";
 import { getStudyLevelMeta } from "@/lib/vocabulary/data";
+import { getVocabularyMeaningDisplay } from "@/lib/vocabulary/meaning";
 import type { VocabularyEvidence } from "@/lib/vocabulary/trust";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
 
@@ -31,14 +32,21 @@ export function VocabularyCardView({
   children,
 }: VocabularyCardViewProps) {
   const [internalRevealed, setInternalRevealed] = useState(false);
+  const answerPanelRef = useRef<HTMLDivElement>(null);
   const revealed = controlledRevealed ?? internalRevealed;
   const levelMeta = getStudyLevelMeta(card.level);
+  const meaning = getVocabularyMeaningDisplay(card);
   const hasExample = Boolean(card.exampleJa.trim() || card.exampleZh.trim());
 
   const reveal = () => {
     if (onReveal) onReveal();
     else setInternalRevealed(true);
   };
+
+  useEffect(() => {
+    if (!revealed) return;
+    answerPanelRef.current?.scrollIntoView?.({ behavior: "smooth", block: "center" });
+  }, [card.id, revealed]);
 
   return (
     <section className="word-stage">
@@ -52,7 +60,7 @@ export function VocabularyCardView({
             type="button"
             className={isFavorite ? "favorite-button active" : "favorite-button"}
             onClick={onToggleFavorite}
-            aria-label={isFavorite ? "?????" : "?????"}
+            aria-label={isFavorite ? "取消重点词" : "加入重点词"}
           >
             <Star size={19} fill={isFavorite ? "currentColor" : "none"} />
           </button>
@@ -60,7 +68,7 @@ export function VocabularyCardView({
       </div>
 
       {evidence ? (
-        <div className="evidence-strip" aria-label="?????">
+        <div className="evidence-strip" aria-label="词库可信度">
           <div>
             {evidence.recommendationBadges.map((badge) => <strong key={badge}>{badge}</strong>)}
             {evidence.sourceBadges.slice(0, 3).map((badge) => <span key={badge.label}>{badge.label}</span>)}
@@ -76,11 +84,12 @@ export function VocabularyCardView({
 
       {children ? <div className="study-tools">{children}</div> : null}
 
-      <div className={revealed ? "answer-panel visible" : "answer-panel"}>
+      <div ref={answerPanelRef} className={revealed ? "answer-panel visible" : "answer-panel"}>
         {revealed ? (
           <>
-            <p className="answer-label">{levelMeta.meaningLabel}</p>
-            <h2>{card.meaningZh}</h2>
+            <p className="answer-label">{meaning.label}</p>
+            <h2>{meaning.text}</h2>
+            {meaning.sourceText ? <p className="answer-source">{meaning.sourceLabel}：{meaning.sourceText}</p> : null}
             {hasExample ? (
               <div className="example-block">
                 <small>{levelMeta.exampleLabel}</small>
@@ -90,22 +99,22 @@ export function VocabularyCardView({
             ) : null}
             {card.relatedWords?.length ? (
               <div className="related-words">
-                <span>???</span>
+                <span>易混词</span>
                 {card.relatedWords.map((word) => <b key={word}>{word}</b>)}
               </div>
             ) : null}
           </>
         ) : (
-          <button type="button" className="reveal-button" onClick={reveal} aria-label="????">
-            <Eye size={18} /> ???? <kbd>Space</kbd>
+          <button type="button" className="reveal-button" onClick={reveal} aria-label="显示释义">
+            <Eye size={18} /> 显示释义 <kbd>Space</kbd>
           </button>
         )}
       </div>
 
-      <div className="rating-bar" aria-label="??????">
-        <RatingButton rating="unknown" label="???" shortcut="1" preview={previews?.unknown.label} onRate={onRate} />
-        <RatingButton rating="fuzzy" label="??" shortcut="2" preview={previews?.fuzzy.label} onRate={onRate} />
-        <RatingButton rating="known" label="??" shortcut="3" preview={previews?.known.label} onRate={onRate} />
+      <div className="rating-bar" aria-label="掌握程度评分">
+        <RatingButton rating="unknown" label="不认识" shortcut="1" preview={previews?.unknown.label} onRate={onRate} />
+        <RatingButton rating="fuzzy" label="模糊" shortcut="2" preview={previews?.fuzzy.label} onRate={onRate} />
+        <RatingButton rating="known" label="认识" shortcut="3" preview={previews?.known.label} onRate={onRate} />
       </div>
 
       <style jsx>{`
@@ -129,6 +138,7 @@ export function VocabularyCardView({
         .answer-panel.visible { animation:answer-in .22s ease-out; }
         .answer-label { margin:0; color:var(--red); font-size:11px; font-weight:700; text-transform:uppercase; }
         .answer-panel h2 { margin:7px 0 20px; font-size:30px; }
+        .answer-source { margin:-12px 0 20px; color:var(--muted); font-size:12px; line-height:1.6; }
         .example-block { border-left:3px solid var(--green); padding-left:18px; }
         .example-block small { display:block; margin-bottom:6px; color:var(--green); font-size:10px; font-weight:700; }
         .example-block p { margin:0; font-size:18px; line-height:1.8; }
@@ -166,7 +176,7 @@ function RatingButton({ rating, label, shortcut, preview, onRate }: {
       aria-label={label}
     >
       <span>{label}</span>
-      <small>{preview ?? "?"} ? {shortcut}</small>
+      <small>{preview ?? "—"} · {shortcut}</small>
       <style jsx>{`
         .rating-button { min-height:62px; border:1px solid var(--rule); border-radius:6px; background:var(--surface); color:var(--ink); touch-action:manipulation; transition:border-color .18s ease, background .18s ease, color .18s ease, transform .18s ease, opacity .18s ease; }
         .rating-button:disabled { cursor:not-allowed; opacity:.38; }

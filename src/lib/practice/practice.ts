@@ -1,4 +1,5 @@
 import type { CardProgress, ReviewRating } from "@/lib/scheduler/scheduler";
+import { getVocabularyMeaningDisplay } from "@/lib/vocabulary/meaning";
 import type { StudyLevel } from "@/lib/vocabulary/types";
 import type { VocabularyCard } from "@/lib/vocabulary/types";
 
@@ -171,7 +172,7 @@ export function buildWeakCardSummaries(
       id: card.id,
       word: card.word,
       kana: card.kana,
-      meaningZh: card.meaningZh,
+      meaningZh: getVocabularyMeaningDisplay(card).text,
     }];
   });
 }
@@ -275,18 +276,19 @@ function spreadCards(cards: VocabularyCard[], size: number): VocabularyCard[] {
 
 function buildMistakeRetakeQuestion(item: MistakeBookItem, index: number): PracticeQuestion {
   const id = `mistake-${index + 1}`;
+  const meaning = getVocabularyMeaningDisplay(item.card).text;
   const fallbackQuestion: PracticeQuestion = {
     id,
     cardId: item.card.id,
     stem: `「${item.card.word}」最符合哪一项释义或用法？`,
     options: [
-      `A ${item.card.meaningZh}`,
+      `A ${meaning}`,
       "B 仅表示过去时间",
       "C 只用于人名或地名",
       "D 与本词无关的干扰释义",
     ],
-    answer: `A ${item.card.meaningZh}`,
-    explanation: item.card.exampleZh || item.card.meaningZh,
+    answer: `A ${meaning}`,
+    explanation: item.card.exampleZh || meaning,
     skill: "错题复训",
     examSection: "错题本",
     questionType: "释义辨析四选一",

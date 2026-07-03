@@ -1,3 +1,4 @@
+import { getVocabularyMeaningSearchText } from "./meaning";
 import type { VocabularyCard, VocabularyFilter } from "./types";
 
 export function filterVocabulary(cards: VocabularyCard[], filter: VocabularyFilter): VocabularyCard[] {
@@ -11,6 +12,7 @@ export function filterVocabulary(cards: VocabularyCard[], filter: VocabularyFilt
       card.word,
       card.kana,
       card.meaningZh,
+      ...getVocabularyMeaningSearchText(card),
       card.partOfSpeech,
       card.exampleJa,
       card.exampleZh,
